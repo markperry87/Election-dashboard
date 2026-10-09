@@ -1,0 +1,13 @@
+[
+  {
+    "firm": "Angus Reid",
+    "start": "2026-10-05",
+    "end": "2026-10-05",
+    "reportedAt": "2026-10-05",
+    "n": null,
+    "shares": [48, 43, 7, null, null, 2],
+    "sources": ["Rob Shaw (@RobShaw_BC), Oct 5, 2026 at 2:37 p.m. PT; user-supplied screenshot"],
+    "provisional": true,
+    "note": "Reported topline; primary release, sample size and fieldwork dates not yet verified. Weighting provisionally assumes n=500 and uses the report date as the fieldwork midpoint. Other 2% is an undivided bucket; OneBC and CentreBC are unknown, not zero. Under Astra's existing method, this poll informs the three named parties; the undivided Other bucket is excluded from the minor-party averages."
+  }
+]

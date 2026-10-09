@@ -1,0 +1,7057 @@
+{
+  "year": 2020,
+  "date": "2020-10-23",
+  "electionDay": "2020-10-24",
+  "baselineYear": 2017,
+  "baseline": [
+    {
+      "name": "Abbotsford-Mission",
+      "region": "Fraser Valley",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Dan Cameron",
+          "party": "other",
+          "votes": 644,
+          "share": 2.559720179657379
+        },
+        {
+          "name": "Andrew Murray Christie",
+          "party": "ndp",
+          "votes": 7339,
+          "share": 29.17047577407687
+        },
+        {
+          "name": "Simon John Gibson",
+          "party": "con",
+          "votes": 12879,
+          "share": 51.19042887237172
+        },
+        {
+          "name": "Jennifer Holmes",
+          "party": "green",
+          "votes": 4297,
+          "share": 17.079375173894032
+        }
+      ]
+    },
+    {
+      "name": "Abbotsford South",
+      "region": "Fraser Valley",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Jasleen Arora",
+          "party": "ndp",
+          "votes": 6297,
+          "share": 28.288409703504044
+        },
+        {
+          "name": "William Aird Flavelle",
+          "party": "green",
+          "votes": 3338,
+          "share": 14.99550763701707
+        },
+        {
+          "name": "Ron Gray",
+          "party": "other",
+          "votes": 942,
+          "share": 4.231805929919138
+        },
+        {
+          "name": "Darryl Plecas",
+          "party": "con",
+          "votes": 11683,
+          "share": 52.484276729559745
+        }
+      ]
+    },
+    {
+      "name": "Abbotsford West",
+      "region": "Fraser Valley",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Michael de Jong",
+          "party": "con",
+          "votes": 11618,
+          "share": 55.226505680467746
+        },
+        {
+          "name": "Kevin Allan Eastwood",
+          "party": "green",
+          "votes": 2280,
+          "share": 10.838047250083187
+        },
+        {
+          "name": "Preet Rai",
+          "party": "ndp",
+          "votes": 6474,
+          "share": 30.77434995484147
+        },
+        {
+          "name": "Dave Sharkey",
+          "party": "other",
+          "votes": 149,
+          "share": 0.7082758948519275
+        },
+        {
+          "name": "Lynn Simcox",
+          "party": "other",
+          "votes": 516,
+          "share": 2.4528212197556685
+        }
+      ]
+    },
+    {
+      "name": "Boundary-Similkameen",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Peter Entwistle",
+          "party": "other",
+          "votes": 3165,
+          "share": 14.239438520718046
+        },
+        {
+          "name": "Linda Margaret Larson",
+          "party": "con",
+          "votes": 9513,
+          "share": 42.799298150897556
+        },
+        {
+          "name": "Vonnie Lavers",
+          "party": "green",
+          "votes": 2274,
+          "share": 10.230800377918747
+        },
+        {
+          "name": "Colleen Ross",
+          "party": "ndp",
+          "votes": 7275,
+          "share": 32.73046295046565
+        }
+      ]
+    },
+    {
+      "name": "Burnaby-Deer Lake",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Graham Bowers",
+          "party": "centre",
+          "votes": 589,
+          "share": 3.2247467834656445
+        },
+        {
+          "name": "Elias Ishak",
+          "party": "other",
+          "votes": 229,
+          "share": 1.2537640295647412
+        },
+        {
+          "name": "Anne Kang",
+          "party": "ndp",
+          "votes": 8747,
+          "share": 47.88940596769778
+        },
+        {
+          "name": "Rick McGowan",
+          "party": "green",
+          "votes": 2209,
+          "share": 12.09416917601971
+        },
+        {
+          "name": "Karen Xiao Bao Wang",
+          "party": "con",
+          "votes": 6491,
+          "share": 35.53791404325212
+        }
+      ]
+    },
+    {
+      "name": "Burnaby-Edmonds",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Raj Chouhan",
+          "party": "ndp",
+          "votes": 10827,
+          "share": 54.24620471967533
+        },
+        {
+          "name": "Garrison Duke",
+          "party": "con",
+          "votes": 6404,
+          "share": 32.08577584047297
+        },
+        {
+          "name": "Valentine Wu",
+          "party": "green",
+          "votes": 2728,
+          "share": 13.668019439851696
+        }
+      ]
+    },
+    {
+      "name": "Burnaby-Lougheed",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Katrina Chen",
+          "party": "ndp",
+          "votes": 10911,
+          "share": 48.05972778927895
+        },
+        {
+          "name": "Steve Darling",
+          "party": "con",
+          "votes": 8391,
+          "share": 36.95987314451835
+        },
+        {
+          "name": "Sylvia Gung",
+          "party": "other",
+          "votes": 145,
+          "share": 0.6386821124961459
+        },
+        {
+          "name": "Joe Keithley",
+          "party": "green",
+          "votes": 3127,
+          "share": 13.773510108796195
+        },
+        {
+          "name": "Neeraj Murarka",
+          "party": "other",
+          "votes": 129,
+          "share": 0.5682068449103642
+        }
+      ]
+    },
+    {
+      "name": "Burnaby North",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Peter Hallschmid",
+          "party": "green",
+          "votes": 2831,
+          "share": 12.011540582969154
+        },
+        {
+          "name": "Richard T. Lee",
+          "party": "con",
+          "votes": 9290,
+          "share": 39.41618227332513
+        },
+        {
+          "name": "Janet Routledge",
+          "party": "ndp",
+          "votes": 11448,
+          "share": 48.57227714370571
+        }
+      ]
+    },
+    {
+      "name": "Cariboo-Chilcotin",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Donna Barnett",
+          "party": "con",
+          "votes": 8517,
+          "share": 58.766300972883464
+        },
+        {
+          "name": "Rita Helen Giesbrecht",
+          "party": "green",
+          "votes": 2175,
+          "share": 15.007244876837094
+        },
+        {
+          "name": "Sally Watson",
+          "party": "ndp",
+          "votes": 3801,
+          "share": 26.226454150279444
+        }
+      ]
+    },
+    {
+      "name": "Cariboo North",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Scott Elliott",
+          "party": "ndp",
+          "votes": 4430,
+          "share": 35.568044961862704
+        },
+        {
+          "name": "Tony Goulet",
+          "party": "centre",
+          "votes": 747,
+          "share": 5.997591328783621
+        },
+        {
+          "name": "Richard Edward Jaques",
+          "party": "green",
+          "votes": 919,
+          "share": 7.378562826174227
+        },
+        {
+          "name": "Coralee Ella Oakes",
+          "party": "con",
+          "votes": 6359,
+          "share": 51.055800883179444
+        }
+      ]
+    },
+    {
+      "name": "Chilliwack",
+      "region": "Fraser Valley",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Wayne Froese",
+          "party": "green",
+          "votes": 3277,
+          "share": 17.097986016904937
+        },
+        {
+          "name": "John Martin",
+          "party": "con",
+          "votes": 9280,
+          "share": 48.419075446102475
+        },
+        {
+          "name": "Ryan McKinnon",
+          "party": "other",
+          "votes": 402,
+          "share": 2.0974642596264217
+        },
+        {
+          "name": "Tracey Lorrean O'Hara",
+          "party": "ndp",
+          "votes": 6207,
+          "share": 32.38547427736617
+        }
+      ]
+    },
+    {
+      "name": "Chilliwack-Kent",
+      "region": "Fraser Valley",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Josie Bleuer",
+          "party": "green",
+          "votes": 3335,
+          "share": 14.855895585549467
+        },
+        {
+          "name": "Patti MacAhonic",
+          "party": "ndp",
+          "votes": 7273,
+          "share": 32.397879638291236
+        },
+        {
+          "name": "Laurie Throness",
+          "party": "con",
+          "votes": 11841,
+          "share": 52.746224776159295
+        }
+      ]
+    },
+    {
+      "name": "Columbia River-Revelstoke",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Samson Boyer",
+          "party": "green",
+          "votes": 1708,
+          "share": 11.722717913520933
+        },
+        {
+          "name": "Doug Clovechok",
+          "party": "con",
+          "votes": 6620,
+          "share": 45.43582704186685
+        },
+        {
+          "name": "Justin James Hooles",
+          "party": "other",
+          "votes": 371,
+          "share": 2.546328071379547
+        },
+        {
+          "name": "Rylan Kashuba",
+          "party": "other",
+          "votes": 154,
+          "share": 1.0569663692518874
+        },
+        {
+          "name": "Duncan Boyd MacLeod",
+          "party": "other",
+          "votes": 469,
+          "share": 3.2189430336307483
+        },
+        {
+          "name": "Gerry Taft",
+          "party": "ndp",
+          "votes": 5248,
+          "share": 36.01921757035004
+        }
+      ]
+    },
+    {
+      "name": "Coquitlam-Burke Mountain",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Joan Isaacs",
+          "party": "con",
+          "votes": 10388,
+          "share": 44.27962489343564
+        },
+        {
+          "name": "Ian Donnelly Soutar",
+          "party": "green",
+          "votes": 2771,
+          "share": 11.81159420289855
+        },
+        {
+          "name": "Jodie Wickens",
+          "party": "ndp",
+          "votes": 10301,
+          "share": 43.908780903665814
+        }
+      ]
+    },
+    {
+      "name": "Coquitlam-Maillardville",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Steve Kim",
+          "party": "con",
+          "votes": 8519,
+          "share": 37.69635824594008
+        },
+        {
+          "name": "Selina Mae Robinson",
+          "party": "ndp",
+          "votes": 11438,
+          "share": 50.612858976060885
+        },
+        {
+          "name": "Nicola Eyton Spurling",
+          "party": "green",
+          "votes": 2467,
+          "share": 10.916412230629675
+        },
+        {
+          "name": "Jesse Velay-Vitow",
+          "party": "other",
+          "votes": 175,
+          "share": 0.7743705473693526
+        }
+      ]
+    },
+    {
+      "name": "Courtenay-Comox",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Jim Benninger",
+          "party": "con",
+          "votes": 10697,
+          "share": 36.71529088724901
+        },
+        {
+          "name": "Ronna-Rae Leonard",
+          "party": "ndp",
+          "votes": 10886,
+          "share": 37.36399519478291
+        },
+        {
+          "name": "Leah Catherine McCulloch",
+          "party": "centre",
+          "votes": 2201,
+          "share": 7.554487729534924
+        },
+        {
+          "name": "Ernie Sellentin",
+          "party": "green",
+          "votes": 5351,
+          "share": 18.366226188433156
+        }
+      ]
+    },
+    {
+      "name": "Cowichan Valley",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "James Robert Anderson",
+          "party": "other",
+          "votes": 302,
+          "share": 0.9823693969162709
+        },
+        {
+          "name": "Sonia Furstenau",
+          "party": "green",
+          "votes": 11449,
+          "share": 37.24220935527942
+        },
+        {
+          "name": "Eden Haythornthwaite",
+          "party": "other",
+          "votes": 119,
+          "share": 0.3870925769305836
+        },
+        {
+          "name": "Steve Housser",
+          "party": "con",
+          "votes": 8502,
+          "share": 27.65597553835144
+        },
+        {
+          "name": "Lori Lynn Iannidinardo",
+          "party": "ndp",
+          "votes": 9723,
+          "share": 31.62774055038709
+        },
+        {
+          "name": "Samuel Lockhart",
+          "party": "other",
+          "votes": 145,
+          "share": 0.4716674256717195
+        },
+        {
+          "name": "Ian Morrison",
+          "party": "other",
+          "votes": 502,
+          "share": 1.6329451564634703
+        }
+      ]
+    },
+    {
+      "name": "Delta North",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Scott Hamilton",
+          "party": "con",
+          "votes": 9319,
+          "share": 39.68740683957242
+        },
+        {
+          "name": "Ravi Kahlon",
+          "party": "ndp",
+          "votes": 11465,
+          "share": 48.82671095779566
+        },
+        {
+          "name": "Jacquie Miller",
+          "party": "green",
+          "votes": 2697,
+          "share": 11.485882202631915
+        }
+      ]
+    },
+    {
+      "name": "Delta South",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Larry Colero",
+          "party": "green",
+          "votes": 2349,
+          "share": 9.31219028741328
+        },
+        {
+          "name": "Ian Paton",
+          "party": "con",
+          "votes": 11123,
+          "share": 44.095143706640236
+        },
+        {
+          "name": "Bruce Reid",
+          "party": "ndp",
+          "votes": 5228,
+          "share": 20.725470763131813
+        },
+        {
+          "name": "Errol Edmund Sherley",
+          "party": "other",
+          "votes": 88,
+          "share": 0.34886025768087214
+        },
+        {
+          "name": "Nicholas Wong",
+          "party": "other",
+          "votes": 6437,
+          "share": 25.518334985133794
+        }
+      ]
+    },
+    {
+      "name": "Esquimalt-Metchosin",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Mitzi Jayne Dean",
+          "party": "ndp",
+          "votes": 11816,
+          "share": 46.25019571003601
+        },
+        {
+          "name": "Barb Desjardins",
+          "party": "con",
+          "votes": 7055,
+          "share": 27.61468608110224
+        },
+        {
+          "name": "Andy MacKinnon",
+          "party": "green",
+          "votes": 6339,
+          "share": 24.81211836542978
+        },
+        {
+          "name": "Delmar Martay",
+          "party": "other",
+          "votes": 102,
+          "share": 0.3992484734617191
+        },
+        {
+          "name": "Josh Steffler",
+          "party": "other",
+          "votes": 171,
+          "share": 0.6693283231564114
+        },
+        {
+          "name": "Tyson Riel Strandlund",
+          "party": "other",
+          "votes": 65,
+          "share": 0.2544230468138406
+        }
+      ]
+    },
+    {
+      "name": "Fraser-Nicola",
+      "region": "Fraser Valley",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Arthur Alexander Green",
+          "party": "green",
+          "votes": 2519,
+          "share": 15.958188153310104
+        },
+        {
+          "name": "Michael Henshall",
+          "party": "other",
+          "votes": 596,
+          "share": 3.775736458663288
+        },
+        {
+          "name": "Harry Lali",
+          "party": "ndp",
+          "votes": 6073,
+          "share": 38.47323408299018
+        },
+        {
+          "name": "Jackie L. Tegart",
+          "party": "con",
+          "votes": 6597,
+          "share": 41.792841305036426
+        }
+      ]
+    },
+    {
+      "name": "Kamloops-North Thompson",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Dan Hines",
+          "party": "green",
+          "votes": 5111,
+          "share": 20.57816966622378
+        },
+        {
+          "name": "Peter Paul Kerek",
+          "party": "other",
+          "votes": 187,
+          "share": 0.7529089664613279
+        },
+        {
+          "name": "Peter Gordon Milobar",
+          "party": "con",
+          "votes": 12001,
+          "share": 48.31904014172404
+        },
+        {
+          "name": "Barb Nederpel",
+          "party": "ndp",
+          "votes": 7538,
+          "share": 30.349881225590853
+        }
+      ]
+    },
+    {
+      "name": "Kamloops-South Thompson",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Nancy Bepple",
+          "party": "ndp",
+          "votes": 6072,
+          "share": 21.901601500504977
+        },
+        {
+          "name": "Jessica Lea Bradshaw",
+          "party": "other",
+          "votes": 295,
+          "share": 1.0640600201991055
+        },
+        {
+          "name": "Donovan Cavers",
+          "party": "green",
+          "votes": 5783,
+          "share": 20.859183379021786
+        },
+        {
+          "name": "Beat Klossner",
+          "party": "other",
+          "votes": 109,
+          "share": 0.39316116000577117
+        },
+        {
+          "name": "Todd Graham Stone",
+          "party": "con",
+          "votes": 15465,
+          "share": 55.78199394026836
+        }
+      ]
+    },
+    {
+      "name": "Kelowna-Lake Country",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Norm Letnick",
+          "party": "con",
+          "votes": 15287,
+          "share": 59.756860292393085
+        },
+        {
+          "name": "Erik Olesen",
+          "party": "ndp",
+          "votes": 5344,
+          "share": 20.889688061918537
+        },
+        {
+          "name": "Alison Shaw",
+          "party": "green",
+          "votes": 4951,
+          "share": 19.353451645688374
+        }
+      ]
+    },
+    {
+      "name": "Kelowna-Mission",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Charles Hardy",
+          "party": "centre",
+          "votes": 1976,
+          "share": 7.336724464411688
+        },
+        {
+          "name": "Harwinder Kaur Sandhu",
+          "party": "ndp",
+          "votes": 5720,
+          "share": 21.23788660750752
+        },
+        {
+          "name": "Steve Thomson",
+          "party": "con",
+          "votes": 15401,
+          "share": 57.182638398990086
+        },
+        {
+          "name": "Rainer Wilkins",
+          "party": "green",
+          "votes": 3836,
+          "share": 14.242750529090706
+        }
+      ]
+    },
+    {
+      "name": "Kelowna West",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Christy Clark",
+          "party": "con",
+          "votes": 15674,
+          "share": 58.960276858260606
+        },
+        {
+          "name": "Shelley Cook",
+          "party": "ndp",
+          "votes": 6712,
+          "share": 25.2482696358712
+        },
+        {
+          "name": "Robert Mellalieu",
+          "party": "green",
+          "votes": 3628,
+          "share": 13.647306650616912
+        },
+        {
+          "name": "Brian Thiesen",
+          "party": "other",
+          "votes": 570,
+          "share": 2.144146855251279
+        }
+      ]
+    },
+    {
+      "name": "Kootenay East",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Keith D. Komar",
+          "party": "other",
+          "votes": 425,
+          "share": 2.487271024755662
+        },
+        {
+          "name": "Randal Macnair",
+          "party": "ndp",
+          "votes": 5070,
+          "share": 29.671680224732253
+        },
+        {
+          "name": "Yvonne Marie Prest",
+          "party": "green",
+          "votes": 1926,
+          "share": 11.271727043951541
+        },
+        {
+          "name": "Tom Glenn Shypitka",
+          "party": "con",
+          "votes": 9666,
+          "share": 56.569321706560544
+        }
+      ]
+    },
+    {
+      "name": "Kootenay West",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Katrine Conroy",
+          "party": "ndp",
+          "votes": 11297,
+          "share": 59.636805152299004
+        },
+        {
+          "name": "Jim Postnikoff",
+          "party": "con",
+          "votes": 4617,
+          "share": 24.373119358074224
+        },
+        {
+          "name": "Sam Troy",
+          "party": "green",
+          "votes": 3029,
+          "share": 15.990075489626776
+        }
+      ]
+    },
+    {
+      "name": "Langford-Juan de Fuca",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Scott Burton",
+          "party": "other",
+          "votes": 262,
+          "share": 1.0451988670363426
+        },
+        {
+          "name": "John Horgan",
+          "party": "ndp",
+          "votes": 13224,
+          "share": 52.75461762476563
+        },
+        {
+          "name": "Willie Nelson",
+          "party": "other",
+          "votes": 242,
+          "share": 0.9654126939801333
+        },
+        {
+          "name": "Cathy Noel",
+          "party": "con",
+          "votes": 6544,
+          "share": 26.106035823991704
+        },
+        {
+          "name": "Brendan Ralfs",
+          "party": "green",
+          "votes": 4795,
+          "share": 19.128734990226192
+        }
+      ]
+    },
+    {
+      "name": "Langley",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Gail Chaddock-Costello",
+          "party": "ndp",
+          "votes": 8384,
+          "share": 34.60887512899897
+        },
+        {
+          "name": "Justin Greenwood",
+          "party": "centre",
+          "votes": 1221,
+          "share": 5.040247678018575
+        },
+        {
+          "name": "Robert Kerr Pobran",
+          "party": "other",
+          "votes": 166,
+          "share": 0.6852425180598555
+        },
+        {
+          "name": "Mary Polak",
+          "party": "con",
+          "votes": 10755,
+          "share": 44.39628482972136
+        },
+        {
+          "name": "Elizabeth Helen Walker",
+          "party": "green",
+          "votes": 3699,
+          "share": 15.269349845201239
+        }
+      ]
+    },
+    {
+      "name": "Langley East",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Rich Coleman",
+          "party": "con",
+          "votes": 16348,
+          "share": 53.45278577033743
+        },
+        {
+          "name": "Alex Joehl",
+          "party": "other",
+          "votes": 448,
+          "share": 1.4648182055976982
+        },
+        {
+          "name": "Inder Johal",
+          "party": "ndp",
+          "votes": 8820,
+          "share": 28.83860842270468
+        },
+        {
+          "name": "Bill Masse",
+          "party": "green",
+          "votes": 4968,
+          "share": 16.24378760136019
+        }
+      ]
+    },
+    {
+      "name": "Maple Ridge-Mission",
+      "region": "Fraser Valley",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Marc Dalton",
+          "party": "con",
+          "votes": 10664,
+          "share": 40.70229007633588
+        },
+        {
+          "name": "Bob D'Eith",
+          "party": "ndp",
+          "votes": 10989,
+          "share": 41.94274809160305
+        },
+        {
+          "name": "Trevor Hamilton",
+          "party": "centre",
+          "votes": 935,
+          "share": 3.568702290076336
+        },
+        {
+          "name": "Jeff Monds",
+          "party": "other",
+          "votes": 148,
+          "share": 0.5648854961832062
+        },
+        {
+          "name": "Peter Pak Chiu Tam",
+          "party": "green",
+          "votes": 3464,
+          "share": 13.221374045801527
+        }
+      ]
+    },
+    {
+      "name": "Maple Ridge-Pitt Meadows",
+      "region": "Fraser Valley",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Lisa Marie Beare",
+          "party": "ndp",
+          "votes": 12045,
+          "share": 44.80026779736666
+        },
+        {
+          "name": "Doug Bing",
+          "party": "con",
+          "votes": 10428,
+          "share": 38.78598527114483
+        },
+        {
+          "name": "Gary John O'Driscoll",
+          "party": "centre",
+          "votes": 676,
+          "share": 2.514319720300528
+        },
+        {
+          "name": "Alex Pope",
+          "party": "green",
+          "votes": 3329,
+          "share": 12.381908800119021
+        },
+        {
+          "name": "Steve Ranta",
+          "party": "other",
+          "votes": 408,
+          "share": 1.517518411068958
+        }
+      ]
+    },
+    {
+      "name": "Mid Island-Pacific Rim",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Dan Cebuliak",
+          "party": "other",
+          "votes": 86,
+          "share": 0.33596374716774746
+        },
+        {
+          "name": "Robert Alexander Clarke",
+          "party": "other",
+          "votes": 294,
+          "share": 1.1485272286897414
+        },
+        {
+          "name": "Darren Frank DeLuca",
+          "party": "con",
+          "votes": 6576,
+          "share": 25.689506992733808
+        },
+        {
+          "name": "Julian Fell",
+          "party": "centre",
+          "votes": 878,
+          "share": 3.4299554652707243
+        },
+        {
+          "name": "Scott Kenneth Fraser",
+          "party": "ndp",
+          "votes": 12556,
+          "share": 49.05070708649113
+        },
+        {
+          "name": "Alicia La Rue",
+          "party": "green",
+          "votes": 5208,
+          "share": 20.345339479646846
+        }
+      ]
+    },
+    {
+      "name": "Nanaimo",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Paris Gaudet",
+          "party": "con",
+          "votes": 8911,
+          "share": 32.536147217759606
+        },
+        {
+          "name": "Kathleen Harris",
+          "party": "green",
+          "votes": 5454,
+          "share": 19.913830874835693
+        },
+        {
+          "name": "Leonard Krog",
+          "party": "ndp",
+          "votes": 12746,
+          "share": 46.53863005695925
+        },
+        {
+          "name": "Bill Walker",
+          "party": "other",
+          "votes": 277,
+          "share": 1.0113918504454507
+        }
+      ]
+    },
+    {
+      "name": "Nanaimo-North Cowichan",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Alana DeLong",
+          "party": "con",
+          "votes": 7379,
+          "share": 28.1845613230969
+        },
+        {
+          "name": "P. Anna Paddon",
+          "party": "other",
+          "votes": 274,
+          "share": 1.046560482792865
+        },
+        {
+          "name": "Doug Routley",
+          "party": "ndp",
+          "votes": 12276,
+          "share": 46.888965280165
+        },
+        {
+          "name": "Lia Marie Constance Versaevel",
+          "party": "green",
+          "votes": 6252,
+          "share": 23.879912913945226
+        }
+      ]
+    },
+    {
+      "name": "Nechako Lakes",
+      "region": "Northern BC",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Douglas Norman Gook",
+          "party": "green",
+          "votes": 878,
+          "share": 8.99774543963927
+        },
+        {
+          "name": "Jon Rempel",
+          "party": "other",
+          "votes": 438,
+          "share": 4.488624718179955
+        },
+        {
+          "name": "John Rustad",
+          "party": "con",
+          "votes": 5307,
+          "share": 54.38614470178315
+        },
+        {
+          "name": "Anne Marie Sam",
+          "party": "ndp",
+          "votes": 2909,
+          "share": 29.811436769829882
+        },
+        {
+          "name": "Al Trampuh",
+          "party": "other",
+          "votes": 226,
+          "share": 2.3160483705677395
+        }
+      ]
+    },
+    {
+      "name": "Nelson-Creston",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Kim Charlesworth",
+          "party": "green",
+          "votes": 5130,
+          "share": 28.163601427395005
+        },
+        {
+          "name": "Michelle Mungall",
+          "party": "ndp",
+          "votes": 7685,
+          "share": 42.19050233324183
+        },
+        {
+          "name": "Jesse O'Leary",
+          "party": "other",
+          "votes": 164,
+          "share": 0.9003568487510294
+        },
+        {
+          "name": "Tom Prior",
+          "party": "other",
+          "votes": 149,
+          "share": 0.8180071369750206
+        },
+        {
+          "name": "Tanya Rae Wall",
+          "party": "con",
+          "votes": 5087,
+          "share": 27.92753225363711
+        }
+      ]
+    },
+    {
+      "name": "New Westminster",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Lorraine Brett",
+          "party": "con",
+          "votes": 5870,
+          "share": 21.204349239605534
+        },
+        {
+          "name": "Rex Brocki",
+          "party": "other",
+          "votes": 199,
+          "share": 0.7188527254994039
+        },
+        {
+          "name": "Jonina Campbell",
+          "party": "green",
+          "votes": 6939,
+          "share": 25.065924935881227
+        },
+        {
+          "name": "James Crosty",
+          "party": "other",
+          "votes": 298,
+          "share": 1.076472925622223
+        },
+        {
+          "name": "Judy Darcy",
+          "party": "ndp",
+          "votes": 14377,
+          "share": 51.93440017339161
+        }
+      ]
+    },
+    {
+      "name": "North Coast",
+      "region": "Northern BC",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Hondo Arendt",
+          "party": "green",
+          "votes": 826,
+          "share": 9.028309104820199
+        },
+        {
+          "name": "Herb Pond",
+          "party": "con",
+          "votes": 3081,
+          "share": 33.675811564105366
+        },
+        {
+          "name": "Jennifer Rice",
+          "party": "ndp",
+          "votes": 5242,
+          "share": 57.29587933107443
+        }
+      ]
+    },
+    {
+      "name": "North Island",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Sue Moen",
+          "party": "green",
+          "votes": 3846,
+          "share": 14.854008960296616
+        },
+        {
+          "name": "Dallas William Smith",
+          "party": "con",
+          "votes": 9148,
+          "share": 35.33137648694577
+        },
+        {
+          "name": "Claire Felicity Trevena",
+          "party": "ndp",
+          "votes": 12355,
+          "share": 47.71744168082805
+        },
+        {
+          "name": "John M. Twigg",
+          "party": "other",
+          "votes": 543,
+          "share": 2.0971728719295535
+        }
+      ]
+    },
+    {
+      "name": "North Vancouver-Lonsdale",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Bowinn Ma",
+          "party": "ndp",
+          "votes": 12361,
+          "share": 45.448194720200014
+        },
+        {
+          "name": "Richard Warrington",
+          "party": "green",
+          "votes": 4148,
+          "share": 15.251121405985733
+        },
+        {
+          "name": "Donald N.S. Wilson",
+          "party": "other",
+          "votes": 316,
+          "share": 1.1618501360394147
+        },
+        {
+          "name": "Naomi Yamamoto",
+          "party": "con",
+          "votes": 10373,
+          "share": 38.13883373777484
+        }
+      ]
+    },
+    {
+      "name": "North Vancouver-Seymour",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Michael Rene Charrois",
+          "party": "ndp",
+          "votes": 9808,
+          "share": 34.46603647608673
+        },
+        {
+          "name": "Joshua Johnson",
+          "party": "green",
+          "votes": 5208,
+          "share": 18.301296693256493
+        },
+        {
+          "name": "Jane Ann Thornthwaite",
+          "party": "con",
+          "votes": 13194,
+          "share": 46.36469058579611
+        },
+        {
+          "name": "Clayton Welwood",
+          "party": "other",
+          "votes": 247,
+          "share": 0.8679762448606669
+        }
+      ]
+    },
+    {
+      "name": "Oak Bay-Gordon Head",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Bryce Casavant",
+          "party": "ndp",
+          "votes": 6972,
+          "share": 23.62588952897323
+        },
+        {
+          "name": "Alex Dutton",
+          "party": "con",
+          "votes": 7008,
+          "share": 23.747882073873264
+        },
+        {
+          "name": "Xaanja Ganja Free",
+          "party": "other",
+          "votes": 59,
+          "share": 0.19993222636394442
+        },
+        {
+          "name": "Andrew John Weaver",
+          "party": "green",
+          "votes": 15405,
+          "share": 52.202643171806166
+        },
+        {
+          "name": "Jin Dong Yang-Riley",
+          "party": "other",
+          "votes": 66,
+          "share": 0.22365299898339547
+        }
+      ]
+    },
+    {
+      "name": "Parksville-Qualicum",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Terry Hand",
+          "party": "other",
+          "votes": 245,
+          "share": 0.7642159767927883
+        },
+        {
+          "name": "Sue Powell",
+          "party": "ndp",
+          "votes": 9189,
+          "share": 28.662778003056864
+        },
+        {
+          "name": "Glenn Sollitt",
+          "party": "green",
+          "votes": 8157,
+          "share": 25.443713153872547
+        },
+        {
+          "name": "Michelle Stilwell",
+          "party": "con",
+          "votes": 14468,
+          "share": 45.1292928662778
+        }
+      ]
+    },
+    {
+      "name": "Peace River North",
+      "region": "Northern BC",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Dan Davies",
+          "party": "con",
+          "votes": 9707,
+          "share": 66.27748190632255
+        },
+        {
+          "name": "Rob Dempsey",
+          "party": "ndp",
+          "votes": 962,
+          "share": 6.568346306158678
+        },
+        {
+          "name": "Bob Fedderly",
+          "party": "other",
+          "votes": 2785,
+          "share": 19.015430834357502
+        },
+        {
+          "name": "Rob Fraser",
+          "party": "other",
+          "votes": 917,
+          "share": 6.261095179571214
+        },
+        {
+          "name": "Jeff Richert",
+          "party": "other",
+          "votes": 275,
+          "share": 1.8776457735900587
+        }
+      ]
+    },
+    {
+      "name": "Peace River South",
+      "region": "Northern BC",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Mike Bernier",
+          "party": "con",
+          "votes": 6637,
+          "share": 75.97298534798534
+        },
+        {
+          "name": "Stephanie Goudie",
+          "party": "ndp",
+          "votes": 2099,
+          "share": 24.027014652014653
+        }
+      ]
+    },
+    {
+      "name": "Penticton",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Dan Ashton",
+          "party": "con",
+          "votes": 14470,
+          "share": 52.8005838350666
+        },
+        {
+          "name": "Connie Sahlmark",
+          "party": "green",
+          "votes": 5061,
+          "share": 18.467432950191572
+        },
+        {
+          "name": "Tarik Sayeed",
+          "party": "ndp",
+          "votes": 7874,
+          "share": 28.731983214741835
+        }
+      ]
+    },
+    {
+      "name": "Port Coquitlam",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Susan Chambers",
+          "party": "con",
+          "votes": 7582,
+          "share": 30.04676230482682
+        },
+        {
+          "name": "Lewis Clarke Dahlby",
+          "party": "other",
+          "votes": 248,
+          "share": 0.9828009828009828
+        },
+        {
+          "name": "Mike Farnworth",
+          "party": "ndp",
+          "votes": 14079,
+          "share": 55.793770309899344
+        },
+        {
+          "name": "Billy Gibbons",
+          "party": "other",
+          "votes": 88,
+          "share": 0.34873583260680036
+        },
+        {
+          "name": "Jason Hanley",
+          "party": "green",
+          "votes": 3237,
+          "share": 12.827930569866053
+        }
+      ]
+    },
+    {
+      "name": "Port Moody-Coquitlam",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Don Barthel",
+          "party": "green",
+          "votes": 2985,
+          "share": 12.110024747454258
+        },
+        {
+          "name": "Rick Glumac",
+          "party": "ndp",
+          "votes": 11754,
+          "share": 47.68550448294049
+        },
+        {
+          "name": "Linda Reimer",
+          "party": "con",
+          "votes": 9910,
+          "share": 40.20447076960526
+        }
+      ]
+    },
+    {
+      "name": "Powell River-Sunshine Coast",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Kim Darwin",
+          "party": "green",
+          "votes": 6505,
+          "share": 24.170475235016536
+        },
+        {
+          "name": "Reuben Richards",
+          "party": "other",
+          "votes": 160,
+          "share": 0.5945082302233121
+        },
+        {
+          "name": "Nicholas Simons",
+          "party": "ndp",
+          "votes": 13646,
+          "share": 50.704120685170736
+        },
+        {
+          "name": "Mathew Wilson",
+          "party": "con",
+          "votes": 6602,
+          "share": 24.530895849589417
+        }
+      ]
+    },
+    {
+      "name": "Prince George-Mackenzie",
+      "region": "Northern BC",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Hilary Crowley",
+          "party": "green",
+          "votes": 2109,
+          "share": 11.232424371538134
+        },
+        {
+          "name": "Bobby Deepak",
+          "party": "ndp",
+          "votes": 5942,
+          "share": 31.646783127396677
+        },
+        {
+          "name": "Mike Morris",
+          "party": "con",
+          "votes": 10725,
+          "share": 57.12079250106519
+        }
+      ]
+    },
+    {
+      "name": "Prince George-Valemount",
+      "region": "Northern BC",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Shirley Bond",
+          "party": "con",
+          "votes": 11209,
+          "share": 58.2013604029285
+        },
+        {
+          "name": "Natalie Fletcher",
+          "party": "ndp",
+          "votes": 5694,
+          "share": 29.565397995742252
+        },
+        {
+          "name": "Nan Kendy",
+          "party": "green",
+          "votes": 2356,
+          "share": 12.233241601329249
+        }
+      ]
+    },
+    {
+      "name": "Richmond North Centre",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Lyren Chiu",
+          "party": "ndp",
+          "votes": 5135,
+          "share": 34.04495126964132
+        },
+        {
+          "name": "John Crocock",
+          "party": "other",
+          "votes": 117,
+          "share": 0.7757077504475237
+        },
+        {
+          "name": "Ryan Kemp Marciniw",
+          "party": "green",
+          "votes": 1579,
+          "share": 10.468739640655041
+        },
+        {
+          "name": "Dong Pan",
+          "party": "other",
+          "votes": 336,
+          "share": 2.2276735397467347
+        },
+        {
+          "name": "Teresa Wat",
+          "party": "con",
+          "votes": 7916,
+          "share": 52.48292779950938
+        }
+      ]
+    },
+    {
+      "name": "Richmond-Queensborough",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Lawrence Chen",
+          "party": "other",
+          "votes": 318,
+          "share": 1.6029841717915112
+        },
+        {
+          "name": "Kay Khilvinder Hale",
+          "party": "centre",
+          "votes": 694,
+          "share": 3.4983365258594614
+        },
+        {
+          "name": "Jas Johal",
+          "party": "con",
+          "votes": 8218,
+          "share": 41.42554693013409
+        },
+        {
+          "name": "Aman Singh",
+          "party": "ndp",
+          "votes": 8084,
+          "share": 40.75007561246093
+        },
+        {
+          "name": "Michael Wolfe",
+          "party": "green",
+          "votes": 2524,
+          "share": 12.723056759754007
+        }
+      ]
+    },
+    {
+      "name": "Richmond South Centre",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Chak Au",
+          "party": "ndp",
+          "votes": 5716,
+          "share": 40.279050102177436
+        },
+        {
+          "name": "Greg Powell",
+          "party": "green",
+          "votes": 1561,
+          "share": 10.999929532802481
+        },
+        {
+          "name": "Linda Reid",
+          "party": "con",
+          "votes": 6914,
+          "share": 48.72102036502008
+        }
+      ]
+    },
+    {
+      "name": "Richmond-Steveston",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Kelly Greene",
+          "party": "ndp",
+          "votes": 8542,
+          "share": 39.351361312019165
+        },
+        {
+          "name": "Roy Sakata",
+          "party": "green",
+          "votes": 2833,
+          "share": 13.051089510296217
+        },
+        {
+          "name": "John Yap",
+          "party": "con",
+          "votes": 10332,
+          "share": 47.59754917768462
+        }
+      ]
+    },
+    {
+      "name": "Saanich North and the Islands",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Gary Holman",
+          "party": "ndp",
+          "votes": 10764,
+          "share": 30.558709970474677
+        },
+        {
+          "name": "Adam Olsen",
+          "party": "green",
+          "votes": 14775,
+          "share": 41.945832387008856
+        },
+        {
+          "name": "Stephen P. Roberts",
+          "party": "con",
+          "votes": 9321,
+          "share": 26.46207131501249
+        },
+        {
+          "name": "Jordan Templeman",
+          "party": "other",
+          "votes": 364,
+          "share": 1.0333863275039745
+        }
+      ]
+    },
+    {
+      "name": "Saanich South",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "David Calder",
+          "party": "con",
+          "votes": 8716,
+          "share": 31.04762583265059
+        },
+        {
+          "name": "Andrew Paul McLean",
+          "party": "other",
+          "votes": 177,
+          "share": 0.6304990560324867
+        },
+        {
+          "name": "Mark Neufeld",
+          "party": "green",
+          "votes": 7129,
+          "share": 25.39450717771524
+        },
+        {
+          "name": "Richard Percival Pattee",
+          "party": "other",
+          "votes": 130,
+          "share": 0.4630784027357247
+        },
+        {
+          "name": "Lana Popham",
+          "party": "ndp",
+          "votes": 11921,
+          "share": 42.464289530865955
+        }
+      ]
+    },
+    {
+      "name": "Shuswap",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Kevin Babcock",
+          "party": "green",
+          "votes": 4175,
+          "share": 15.710253998118532
+        },
+        {
+          "name": "Gregory James Kyllo",
+          "party": "con",
+          "votes": 14829,
+          "share": 55.80056444026341
+        },
+        {
+          "name": "Sylvia Jean Lindgren",
+          "party": "ndp",
+          "votes": 7161,
+          "share": 26.94637817497648
+        },
+        {
+          "name": "Kyle McCormack",
+          "party": "other",
+          "votes": 410,
+          "share": 1.5428033866415805
+        }
+      ]
+    },
+    {
+      "name": "Skeena",
+      "region": "Northern BC",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Bruce Alan Bidgood",
+          "party": "ndp",
+          "votes": 5613,
+          "share": 43.293482452757424
+        },
+        {
+          "name": "Merv Ritchie",
+          "party": "other",
+          "votes": 580,
+          "share": 4.473582722715002
+        },
+        {
+          "name": "Ellis Ross",
+          "party": "con",
+          "votes": 6772,
+          "share": 52.232934824527575
+        }
+      ]
+    },
+    {
+      "name": "Stikine",
+      "region": "Northern BC",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Doug Donaldson",
+          "party": "ndp",
+          "votes": 4748,
+          "share": 52.10139361351915
+        },
+        {
+          "name": "Wanda Good",
+          "party": "con",
+          "votes": 3531,
+          "share": 38.746845166246025
+        },
+        {
+          "name": "Rod Taylor",
+          "party": "other",
+          "votes": 834,
+          "share": 9.15176122023483
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Cloverdale",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Marvin Hunt",
+          "party": "con",
+          "votes": 11948,
+          "share": 47.67376905274918
+        },
+        {
+          "name": "Aleksandra Muniak",
+          "party": "green",
+          "votes": 3100,
+          "share": 12.369324076290798
+        },
+        {
+          "name": "Peter Poelstra",
+          "party": "other",
+          "votes": 276,
+          "share": 1.101268853243955
+        },
+        {
+          "name": "Rebecca Smith",
+          "party": "ndp",
+          "votes": 9738,
+          "share": 38.85563801771607
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Fleetwood",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Tim Binnema",
+          "party": "green",
+          "votes": 2004,
+          "share": 9.68677494199536
+        },
+        {
+          "name": "Jagrup Brar",
+          "party": "ndp",
+          "votes": 11085,
+          "share": 53.58178654292343
+        },
+        {
+          "name": "Peter Fassbender",
+          "party": "con",
+          "votes": 7599,
+          "share": 36.73143851508121
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Green Timbers",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Saira Aujla",
+          "party": "green",
+          "votes": 1112,
+          "share": 7.246660149885956
+        },
+        {
+          "name": "Vikram Bajwa",
+          "party": "other",
+          "votes": 163,
+          "share": 1.062235255783643
+        },
+        {
+          "name": "Brenda Joy Locke",
+          "party": "con",
+          "votes": 5056,
+          "share": 32.94884327142392
+        },
+        {
+          "name": "Kanwaljit Singh Moti",
+          "party": "other",
+          "votes": 69,
+          "share": 0.4496578690127077
+        },
+        {
+          "name": "Rachna Singh",
+          "party": "ndp",
+          "votes": 8945,
+          "share": 58.292603453893776
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Guildford",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Garry Begg",
+          "party": "ndp",
+          "votes": 9263,
+          "share": 49.854682454251886
+        },
+        {
+          "name": "Jodi Murphy",
+          "party": "green",
+          "votes": 1840,
+          "share": 9.903121636167922
+        },
+        {
+          "name": "Kevin Pielak",
+          "party": "other",
+          "votes": 462,
+          "share": 2.4865446716899893
+        },
+        {
+          "name": "Amrik Virk",
+          "party": "con",
+          "votes": 7015,
+          "share": 37.755651237890206
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Newton",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Harry Bains",
+          "party": "ndp",
+          "votes": 9744,
+          "share": 57.307533964594484
+        },
+        {
+          "name": "Balpreet Singh Bal",
+          "party": "other",
+          "votes": 988,
+          "share": 5.8107392813033
+        },
+        {
+          "name": "Richard Krieger",
+          "party": "green",
+          "votes": 1172,
+          "share": 6.892901252720108
+        },
+        {
+          "name": "Gurminder Singh Parihar",
+          "party": "con",
+          "votes": 5099,
+          "share": 29.98882550138211
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Panorama",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Liz Galenzoski",
+          "party": "other",
+          "votes": 132,
+          "share": 0.5490163457139292
+        },
+        {
+          "name": "Veronica Laurel Greer",
+          "party": "green",
+          "votes": 1620,
+          "share": 6.737927879216404
+        },
+        {
+          "name": "Puneet Sandhar",
+          "party": "con",
+          "votes": 10064,
+          "share": 41.85833714594685
+        },
+        {
+          "name": "Jinny Sims",
+          "party": "ndp",
+          "votes": 12227,
+          "share": 50.85471862912282
+        }
+      ]
+    },
+    {
+      "name": "Surrey South",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Josh Barrett",
+          "party": "other",
+          "votes": 311,
+          "share": 1.1726998491704375
+        },
+        {
+          "name": "Stephanie Cadieux",
+          "party": "con",
+          "votes": 13509,
+          "share": 50.93891402714932
+        },
+        {
+          "name": "Gary Hee",
+          "party": "other",
+          "votes": 140,
+          "share": 0.5279034690799397
+        },
+        {
+          "name": "Peter Njenga",
+          "party": "other",
+          "votes": 634,
+          "share": 2.3906485671191553
+        },
+        {
+          "name": "Fabiola Cecilia Palomino",
+          "party": "other",
+          "votes": 67,
+          "share": 0.2526395173453997
+        },
+        {
+          "name": "Jonathan Silveira",
+          "party": "ndp",
+          "votes": 8718,
+          "share": 32.873303167420815
+        },
+        {
+          "name": "Pascal Tremblay",
+          "party": "green",
+          "votes": 3141,
+          "share": 11.843891402714933
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Whalley",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Sargy Chima",
+          "party": "con",
+          "votes": 5293,
+          "share": 30.078990737057453
+        },
+        {
+          "name": "Rita Anne Fromholt",
+          "party": "green",
+          "votes": 1893,
+          "share": 10.757515485594135
+        },
+        {
+          "name": "George Gidora",
+          "party": "other",
+          "votes": 96,
+          "share": 0.5455475365119055
+        },
+        {
+          "name": "Bruce Ralston",
+          "party": "ndp",
+          "votes": 10315,
+          "share": 58.61794624083651
+        }
+      ]
+    },
+    {
+      "name": "Surrey-White Rock",
+      "region": "South of Fraser",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Tom Bryant",
+          "party": "other",
+          "votes": 950,
+          "share": 3.3600962048597602
+        },
+        {
+          "name": "Bill Marshall",
+          "party": "green",
+          "votes": 4574,
+          "share": 16.177978990556362
+        },
+        {
+          "name": "Niovi Patsicakis",
+          "party": "ndp",
+          "votes": 8648,
+          "share": 30.587486294344426
+        },
+        {
+          "name": "Tracy Redies",
+          "party": "con",
+          "votes": 14101,
+          "share": 49.87443851023945
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Fairview",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Louise Boutin",
+          "party": "green",
+          "votes": 4007,
+          "share": 13.524825328247882
+        },
+        {
+          "name": "Joey Doyle",
+          "party": "other",
+          "votes": 149,
+          "share": 0.5029196341175279
+        },
+        {
+          "name": "Gabe Garfinkel",
+          "party": "con",
+          "votes": 9436,
+          "share": 31.84932662773821
+        },
+        {
+          "name": "George Heyman",
+          "party": "ndp",
+          "votes": 16035,
+          "share": 54.12292840989638
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-False Creek",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "James Filippelli",
+          "party": "other",
+          "votes": 91,
+          "share": 0.36993373714378636
+        },
+        {
+          "name": "Liz Jaluague",
+          "party": "other",
+          "votes": 213,
+          "share": 0.8658888572706207
+        },
+        {
+          "name": "Morgane Oger",
+          "party": "ndp",
+          "votes": 9955,
+          "share": 40.469124761169155
+        },
+        {
+          "name": "Phillip James Ryan",
+          "party": "other",
+          "votes": 90,
+          "share": 0.36586853124110735
+        },
+        {
+          "name": "Bradley Darren Shende",
+          "party": "green",
+          "votes": 3880,
+          "share": 15.772998902394406
+        },
+        {
+          "name": "Sam Sullivan",
+          "party": "con",
+          "votes": 10370,
+          "share": 42.156185210780926
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Fraserview",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Suzanne Anton",
+          "party": "con",
+          "votes": 9985,
+          "share": 42.21808803010443
+        },
+        {
+          "name": "Harpreet S. Bajwa",
+          "party": "other",
+          "votes": 174,
+          "share": 0.7356982791425309
+        },
+        {
+          "name": "George Chow",
+          "party": "ndp",
+          "votes": 11487,
+          "share": 48.568770876495705
+        },
+        {
+          "name": "Hiroshi Hyde",
+          "party": "other",
+          "votes": 179,
+          "share": 0.7568390342903049
+        },
+        {
+          "name": "Eric Kolotyluk",
+          "party": "green",
+          "votes": 1826,
+          "share": 7.72060377996702
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Hastings",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Kimball Mark Cariou",
+          "party": "other",
+          "votes": 206,
+          "share": 0.8591208607890566
+        },
+        {
+          "name": "Shane Lee Simpson",
+          "party": "ndp",
+          "votes": 14382,
+          "share": 59.97998164984569
+        },
+        {
+          "name": "Jane Spitz",
+          "party": "con",
+          "votes": 5152,
+          "share": 21.486362498957376
+        },
+        {
+          "name": "David H.T. Wong",
+          "party": "green",
+          "votes": 4238,
+          "share": 17.674534990407874
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Kensington",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Kim Jee Chan Logan",
+          "party": "con",
+          "votes": 7236,
+          "share": 32.16
+        },
+        {
+          "name": "Ramanjit Kaur Dhillon",
+          "party": "other",
+          "votes": 181,
+          "share": 0.8044444444444444
+        },
+        {
+          "name": "Mable Elmore",
+          "party": "ndp",
+          "votes": 12503,
+          "share": 55.568888888888885
+        },
+        {
+          "name": "Simon Alexander Rear",
+          "party": "green",
+          "votes": 2580,
+          "share": 11.466666666666667
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Kingsway",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Charles Bae",
+          "party": "centre",
+          "votes": 504,
+          "share": 2.5396825396825395
+        },
+        {
+          "name": "Ellisa Calder",
+          "party": "green",
+          "votes": 1848,
+          "share": 9.312169312169312
+        },
+        {
+          "name": "Adrian Dix",
+          "party": "ndp",
+          "votes": 12031,
+          "share": 60.624842529604436
+        },
+        {
+          "name": "Brette Mullins",
+          "party": "other",
+          "votes": 85,
+          "share": 0.42831947593852354
+        },
+        {
+          "name": "Trang Nguyen",
+          "party": "con",
+          "votes": 5377,
+          "share": 27.09498614260519
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Langara",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Janet Rhoda Fraser",
+          "party": "green",
+          "votes": 2894,
+          "share": 13.669642435406924
+        },
+        {
+          "name": "Michael Lee",
+          "party": "con",
+          "votes": 10047,
+          "share": 47.456426243446224
+        },
+        {
+          "name": "Surinder Singh Trehan",
+          "party": "other",
+          "votes": 172,
+          "share": 0.8124321005148553
+        },
+        {
+          "name": "James Wang",
+          "party": "ndp",
+          "votes": 8058,
+          "share": 38.061499220631994
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Mount Pleasant",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Mike Hansen",
+          "party": "other",
+          "votes": 212,
+          "share": 0.8676434476549071
+        },
+        {
+          "name": "Jerry Kroll",
+          "party": "green",
+          "votes": 4136,
+          "share": 16.927232544814604
+        },
+        {
+          "name": "Conny Lin",
+          "party": "con",
+          "votes": 3917,
+          "share": 16.030940492755995
+        },
+        {
+          "name": "Peter Marcus",
+          "party": "other",
+          "votes": 135,
+          "share": 0.5525087992142097
+        },
+        {
+          "name": "Melanie Mark",
+          "party": "ndp",
+          "votes": 15962,
+          "share": 65.32700335597937
+        },
+        {
+          "name": "Shai Joseph Mor",
+          "party": "other",
+          "votes": 72,
+          "share": 0.29467135958091184
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Point Grey",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "David Robert Patrick Eby",
+          "party": "ndp",
+          "votes": 14195,
+          "share": 55.94088669950739
+        },
+        {
+          "name": "Amanda Konkin",
+          "party": "green",
+          "votes": 2604,
+          "share": 10.26206896551724
+        },
+        {
+          "name": "James Lombardi",
+          "party": "con",
+          "votes": 8414,
+          "share": 33.15862068965517
+        },
+        {
+          "name": "David Stall",
+          "party": "other",
+          "votes": 77,
+          "share": 0.30344827586206896
+        },
+        {
+          "name": "Brian Taylor",
+          "party": "other",
+          "votes": 85,
+          "share": 0.33497536945812806
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Quilchena",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Michael Barkusky",
+          "party": "green",
+          "votes": 3301,
+          "share": 14.819969471132262
+        },
+        {
+          "name": "Madeline Lalonde",
+          "party": "ndp",
+          "votes": 6244,
+          "share": 28.032683846637337
+        },
+        {
+          "name": "William Morrison",
+          "party": "other",
+          "votes": 265,
+          "share": 1.1897279339139804
+        },
+        {
+          "name": "Andrew Wilkinson",
+          "party": "con",
+          "votes": 12464,
+          "share": 55.95761874831642
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-West End",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Spencer Chandra Herbert",
+          "party": "ndp",
+          "votes": 13420,
+          "share": 60.96951524237881
+        },
+        {
+          "name": "John Clarke",
+          "party": "other",
+          "votes": 352,
+          "share": 1.5992003998000999
+        },
+        {
+          "name": "Leon David Dunn",
+          "party": "other",
+          "votes": 116,
+          "share": 0.5270092226613966
+        },
+        {
+          "name": "Nigel Elliott",
+          "party": "con",
+          "votes": 5064,
+          "share": 23.006678478942348
+        },
+        {
+          "name": "James Marshall",
+          "party": "green",
+          "votes": 3059,
+          "share": 13.897596656217345
+        }
+      ]
+    },
+    {
+      "name": "Vernon-Monashee",
+      "region": "Interior",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Barry Charles Dorval",
+          "party": "ndp",
+          "votes": 8355,
+          "share": 29.356992269852423
+        },
+        {
+          "name": "Eric Bailey Foster",
+          "party": "con",
+          "votes": 13625,
+          "share": 47.87420941672523
+        },
+        {
+          "name": "Don Jefcoat",
+          "party": "other",
+          "votes": 341,
+          "share": 1.1981728742094166
+        },
+        {
+          "name": "Keli Westgate",
+          "party": "green",
+          "votes": 6139,
+          "share": 21.57062543921293
+        }
+      ]
+    },
+    {
+      "name": "Victoria-Beacon Hill",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Karen Bill",
+          "party": "con",
+          "votes": 4689,
+          "share": 15.492120130835563
+        },
+        {
+          "name": "Kalen Harris",
+          "party": "green",
+          "votes": 9194,
+          "share": 30.37631744143787
+        },
+        {
+          "name": "Carole James",
+          "party": "ndp",
+          "votes": 16057,
+          "share": 53.0511778504642
+        },
+        {
+          "name": "Art Lowe",
+          "party": "other",
+          "votes": 190,
+          "share": 0.6277463904582549
+        },
+        {
+          "name": "Jordan Reichert",
+          "party": "other",
+          "votes": 102,
+          "share": 0.3370006938249579
+        },
+        {
+          "name": "David Shebib",
+          "party": "other",
+          "votes": 35,
+          "share": 0.11563749297915221
+        }
+      ]
+    },
+    {
+      "name": "Victoria-Swan Lake",
+      "region": "Vancouver Island",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "David Costigane",
+          "party": "other",
+          "votes": 203,
+          "share": 0.8136272545090181
+        },
+        {
+          "name": "Rob Fleming",
+          "party": "ndp",
+          "votes": 13374,
+          "share": 53.60320641282565
+        },
+        {
+          "name": "Christopher Alan Maxwell",
+          "party": "green",
+          "votes": 7413,
+          "share": 29.711422845691384
+        },
+        {
+          "name": "Stacey Piercey",
+          "party": "con",
+          "votes": 3960,
+          "share": 15.871743486973948
+        }
+      ]
+    },
+    {
+      "name": "West Vancouver-Capilano",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Michael Markwick",
+          "party": "green",
+          "votes": 4570,
+          "share": 19.211367075836556
+        },
+        {
+          "name": "Mehdi Russel",
+          "party": "ndp",
+          "votes": 5622,
+          "share": 23.633764923490837
+        },
+        {
+          "name": "Ralph Sultan",
+          "party": "con",
+          "votes": 13596,
+          "share": 57.15486800067261
+        }
+      ]
+    },
+    {
+      "name": "West Vancouver-Sea to Sky",
+      "region": "Metro Vancouver",
+      "url": "https://elections.bc.ca/docs/rpt/2017-election-report/xlsx/2017-provincial-general-election-sov.xlsx",
+      "results": [
+        {
+          "name": "Michael Cambridge",
+          "party": "other",
+          "votes": 186,
+          "share": 0.7667889681329101
+        },
+        {
+          "name": "Tristan Andrew Galbraith",
+          "party": "other",
+          "votes": 143,
+          "share": 0.5895205507688502
+        },
+        {
+          "name": "Michelle Livaja",
+          "party": "ndp",
+          "votes": 6532,
+          "share": 26.928309354000906
+        },
+        {
+          "name": "Jordan Sturdy",
+          "party": "con",
+          "votes": 10449,
+          "share": 43.076225419466546
+        },
+        {
+          "name": "Dana Moore Taylor",
+          "party": "green",
+          "votes": 6947,
+          "share": 28.63915570763079
+        }
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "district": "Abbotsford-Mission",
+      "name": "Aeriol Alderking",
+      "party": "other",
+      "affiliation": "CHP"
+    },
+    {
+      "district": "Abbotsford-Mission",
+      "name": "Pam Alexis",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Abbotsford-Mission",
+      "name": "Stephen Fowler",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Abbotsford-Mission",
+      "name": "Simon Gibson",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Abbotsford-Mission",
+      "name": "Trevor Hamilton",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Abbotsford South",
+      "name": "Bruce Banman",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Abbotsford South",
+      "name": "Aird Flavelle",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Abbotsford South",
+      "name": "Inder Johal",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Abbotsford South",
+      "name": "Laura-Lynn Thompson",
+      "party": "other",
+      "affiliation": "CHP"
+    },
+    {
+      "district": "Abbotsford West",
+      "name": "Michael de Jong",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Abbotsford West",
+      "name": "Kevin Eastwood",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Abbotsford West",
+      "name": "Sukhi Gill",
+      "party": "other",
+      "affiliation": "BCV"
+    },
+    {
+      "district": "Abbotsford West",
+      "name": "Michael Henshall",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Abbotsford West",
+      "name": "Preet Rai",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Boundary-Similkameen",
+      "name": "Arlyn Greig",
+      "party": "other",
+      "affiliation": "WEX"
+    },
+    {
+      "district": "Boundary-Similkameen",
+      "name": "Roly Russell",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Boundary-Similkameen",
+      "name": "Darryl Seres",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Boundary-Similkameen",
+      "name": "Petra Veintimilla",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Burnaby-Deer Lake",
+      "name": "Glynnis Hoi Sum Chan",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Burnaby-Deer Lake",
+      "name": "Mehreen Chaudry",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Burnaby-Deer Lake",
+      "name": "Anne Kang",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Burnaby-Edmonds",
+      "name": "Tripat Atwal",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Burnaby-Edmonds",
+      "name": "Raj Chouhan",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Burnaby-Edmonds",
+      "name": "Iqbal Parekh",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Burnaby-Lougheed",
+      "name": "Katrina Chen",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Burnaby-Lougheed",
+      "name": "Tariq Malik",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Burnaby-Lougheed",
+      "name": "Dominique Paynter",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Burnaby-Lougheed",
+      "name": "Andrew Williamson",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Burnaby North",
+      "name": "Raymond Dong",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Burnaby North",
+      "name": "Janet Routledge",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Burnaby North",
+      "name": "Norine Shim",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Cariboo-Chilcotin",
+      "name": "Scott Andrews",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Cariboo-Chilcotin",
+      "name": "James Buckley",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Cariboo-Chilcotin",
+      "name": "Lorne Doerkson",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Cariboo-Chilcotin",
+      "name": "David Laing",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Cariboo-Chilcotin",
+      "name": "Katya Potekhina",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Cariboo North",
+      "name": "Scott Elliott",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Cariboo North",
+      "name": "Douglas Gook",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Cariboo North",
+      "name": "Coralee Oakes",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Cariboo North",
+      "name": "Kyle Townsend",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Chilliwack",
+      "name": "Josue Anderson",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Chilliwack",
+      "name": "Andrew Coombes",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Chilliwack",
+      "name": "Tim Cooper",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Chilliwack",
+      "name": "Dan Coulter",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Chilliwack",
+      "name": "Diane Janzen",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Chilliwack",
+      "name": "John Martin",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Chilliwack-Kent",
+      "name": "Eli Gagn\u00e9",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Chilliwack-Kent",
+      "name": "Jeff Hammersmark",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Chilliwack-Kent",
+      "name": "Jason Lum",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Chilliwack-Kent",
+      "name": "Kelli Paddon",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Chilliwack-Kent",
+      "name": "Laurie Throness",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Columbia River-Revelstoke",
+      "name": "Samson Boyer",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Columbia River-Revelstoke",
+      "name": "Nicole Cherlet",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Columbia River-Revelstoke",
+      "name": "Doug Clovechok",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Coquitlam-Burke Mountain",
+      "name": "Adam Bremner-Akins",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Coquitlam-Burke Mountain",
+      "name": "Fin Donnelly",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Coquitlam-Burke Mountain",
+      "name": "Joan Isaacs",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Coquitlam-Maillardville",
+      "name": "Will Davis",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Coquitlam-Maillardville",
+      "name": "Selina Robinson",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Coquitlam-Maillardville",
+      "name": "Nicola Spurling",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Courtenay-Comox",
+      "name": "Gillian Anderson",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Courtenay-Comox",
+      "name": "Brennan Day",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Courtenay-Comox",
+      "name": "Ronna-Rae Leonard",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Cowichan Valley",
+      "name": "Rob Douglas",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Cowichan Valley",
+      "name": "Sonia Furstenau",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Cowichan Valley",
+      "name": "Tanya Kaul",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Delta North",
+      "name": "Ravi Kahlon",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Delta North",
+      "name": "Neema Manral",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Delta North",
+      "name": "Jet Sunner",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Delta South",
+      "name": "Ian Paton",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Delta South",
+      "name": "Bruce Reid",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Delta South",
+      "name": "Peter van der Velden",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Esquimalt-Metchosin",
+      "name": "Mitzi Dean",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Esquimalt-Metchosin",
+      "name": "Andy MacKinnon",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Esquimalt-Metchosin",
+      "name": "Desta McPherson",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Esquimalt-Metchosin",
+      "name": "RJ Senko",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Fraser-Nicola",
+      "name": "Dennis Adamson",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Fraser-Nicola",
+      "name": "Mike Bhangu",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Fraser-Nicola",
+      "name": "Aaron Sumexheltza",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Fraser-Nicola",
+      "name": "Jackie Tegart",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Fraser-Nicola",
+      "name": "Jonah Timms",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Kamloops-North Thompson",
+      "name": "Dennis Giesbrecht",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Kamloops-North Thompson",
+      "name": "Sadie Hunter",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Kamloops-North Thompson",
+      "name": "Thomas Martin",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Kamloops-North Thompson",
+      "name": "Peter Milobar",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Kamloops-North Thompson",
+      "name": "Brandon Russell",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Kamloops-South Thompson",
+      "name": "Dan Hines",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Kamloops-South Thompson",
+      "name": "Todd Graham Stone",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Kamloops-South Thompson",
+      "name": "Anna Thomas",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Kelowna-Lake Country",
+      "name": "Kyle Geronazzo",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Kelowna-Lake Country",
+      "name": "John Janmaat",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Kelowna-Lake Country",
+      "name": "Justin Kulik",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Kelowna-Lake Country",
+      "name": "Norm Letnick",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Kelowna-Lake Country",
+      "name": "Silverado Brooks Socrates",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Kelowna-Mission",
+      "name": "Renee Merrifield",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Kelowna-Mission",
+      "name": "Amanda Poon",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Kelowna-Mission",
+      "name": "Krystal Smith",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Kelowna West",
+      "name": "Matt Badura",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Kelowna West",
+      "name": "Spring Hawes",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Kelowna West",
+      "name": "Magee Mitchell",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Kelowna West",
+      "name": "Ben Stewart",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Kelowna West",
+      "name": "Peter A. Truch",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Kootenay East",
+      "name": "Tom Shypitka",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Kootenay East",
+      "name": "Wayne Stetski",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Kootenay East",
+      "name": "Kerri Wall",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Kootenay West",
+      "name": "Glen Byle",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Kootenay West",
+      "name": "Katrine Conroy",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Kootenay West",
+      "name": "Andrew Duncan",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Kootenay West",
+      "name": "Corbin Kelley",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Kootenay West",
+      "name": "Fletcher Quince",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Kootenay West",
+      "name": "Ed Varney",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Langford-Juan de Fuca",
+      "name": "Gord Baird",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Langford-Juan de Fuca",
+      "name": "Kelly Darwin",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Langford-Juan de Fuca",
+      "name": "John Horgan",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Langford-Juan de Fuca",
+      "name": "Tyson Riel Strandlund",
+      "party": "other",
+      "affiliation": "COMM"
+    },
+    {
+      "district": "Langley",
+      "name": "Shelly Jan",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Langley",
+      "name": "Bill Masse",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Langley",
+      "name": "Andrew Mercier",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Langley",
+      "name": "Mary Polak",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Langley East",
+      "name": "Megan Dykeman",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Langley East",
+      "name": "Alex Joehl",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Langley East",
+      "name": "Margaret Kunst",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Langley East",
+      "name": "Tara Reeve",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Langley East",
+      "name": "Ryan Warawa",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Langley East",
+      "name": "Cheryl Wiens",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Maple Ridge-Mission",
+      "name": "Bob D'Eith",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Maple Ridge-Mission",
+      "name": "Chelsa Meadus",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Maple Ridge-Mission",
+      "name": "Matt Trenholm",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Maple Ridge-Pitt Meadows",
+      "name": "Cheryl Ashlie",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Maple Ridge-Pitt Meadows",
+      "name": "Lisa Beare",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Mid Island-Pacific Rim",
+      "name": "Robert Alexander Clarke",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Mid Island-Pacific Rim",
+      "name": "Graham Hughes",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Mid Island-Pacific Rim",
+      "name": "Evan Jolicoeur",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Mid Island-Pacific Rim",
+      "name": "Josie Osborne",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Mid Island-Pacific Rim",
+      "name": "Helen Poon",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Nanaimo",
+      "name": "Kathleen Jones",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Nanaimo",
+      "name": "Sheila Malcolmson",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Nanaimo",
+      "name": "Lia Marie Constance Versaevel",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Nanaimo-North Cowichan",
+      "name": "Chris Istace",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Nanaimo-North Cowichan",
+      "name": "Duck (don) Paterson",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Nanaimo-North Cowichan",
+      "name": "Doug Routley",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Nechako Lakes",
+      "name": "Margo Maley",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Nechako Lakes",
+      "name": "Jon Rempel",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Nechako Lakes",
+      "name": "John Rustad",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Nechako Lakes",
+      "name": "Anne Marie Sam",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Nechako Lakes",
+      "name": "Dan Stuart",
+      "party": "other",
+      "affiliation": "CHP"
+    },
+    {
+      "district": "Nelson-Creston",
+      "name": "Brittny Anderson",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Nelson-Creston",
+      "name": "Nicole Charlwood",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Nelson-Creston",
+      "name": "Tanya Finley",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Nelson-Creston",
+      "name": "Terry Tiessen",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "New Westminster",
+      "name": "Lorraine Brett",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "New Westminster",
+      "name": "Benny Ogden",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "New Westminster",
+      "name": "Cyrus Sy",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "New Westminster",
+      "name": "Jennifer Whiteside",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "New Westminster",
+      "name": "Donald Wilson",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "North Coast",
+      "name": "Jody Craven",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "North Coast",
+      "name": "Roy S Jones Jr",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "North Coast",
+      "name": "Jennifer Rice",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "North Island",
+      "name": "Michele Babchuk",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "North Island",
+      "name": "Norm Facey",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "North Island",
+      "name": "Alexandra Morton",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "North Island",
+      "name": "John Twigg",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "North Vancouver-Lonsdale",
+      "name": "Lyn Anglin",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "North Vancouver-Lonsdale",
+      "name": "Christopher Hakes",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "North Vancouver-Lonsdale",
+      "name": "Bowinn Ma",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "North Vancouver-Seymour",
+      "name": "Susie Chant",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "North Vancouver-Seymour",
+      "name": "Harrison Johnston",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "North Vancouver-Seymour",
+      "name": "Jane Thornthwaite",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "North Vancouver-Seymour",
+      "name": "Clayton Welwood",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Oak Bay-Gordon Head",
+      "name": "Florian Castle",
+      "party": "other",
+      "affiliation": "COMM"
+    },
+    {
+      "district": "Oak Bay-Gordon Head",
+      "name": "Nicole Duncan",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Oak Bay-Gordon Head",
+      "name": "Roxanne Helme",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Oak Bay-Gordon Head",
+      "name": "Murray Rankin",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Parksville-Qualicum",
+      "name": "Rob Lyon",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Parksville-Qualicum",
+      "name": "Don Purdey",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Parksville-Qualicum",
+      "name": "John St John",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Parksville-Qualicum",
+      "name": "Michelle Stilwell",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Parksville-Qualicum",
+      "name": "Adam Walker",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Peace River North",
+      "name": "Trevor Bolin",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Peace River North",
+      "name": "Dan Davies",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Peace River North",
+      "name": "Danielle Monroe",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Peace River South",
+      "name": "Mike Bernier",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Peace River South",
+      "name": "Kathleen Connolly",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Peace River South",
+      "name": "Cory Grizz Longley",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Peace River South",
+      "name": "Dorothy Sharon Smith",
+      "party": "other",
+      "affiliation": "WEX"
+    },
+    {
+      "district": "Penticton",
+      "name": "Dan Ashton",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Penticton",
+      "name": "Toni Boot",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Penticton",
+      "name": "Keith MacIntyre",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Penticton",
+      "name": "Ted Shumaker",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Port Coquitlam",
+      "name": "Lewis Clarke Dahlby",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Port Coquitlam",
+      "name": "Mike Farnworth",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Port Coquitlam",
+      "name": "Erik Minty",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Port Coquitlam",
+      "name": "Mehran Zargham",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Port Moody-Coquitlam",
+      "name": "Brandon Fonseca",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Port Moody-Coquitlam",
+      "name": "Rick Glumac",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Port Moody-Coquitlam",
+      "name": "John Latimer",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Port Moody-Coquitlam",
+      "name": "James Robertson",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Port Moody-Coquitlam",
+      "name": "Logan Smith",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Powell River-Sunshine Coast",
+      "name": "Kim Darwin",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Powell River-Sunshine Coast",
+      "name": "Nicholas Simons",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Powell River-Sunshine Coast",
+      "name": "Sandra Stoddart-Hansen",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Prince George-Mackenzie",
+      "name": "Joan Atkinson",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Prince George-Mackenzie",
+      "name": "Catharine Kendall",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Prince George-Mackenzie",
+      "name": "Dee Kranz",
+      "party": "other",
+      "affiliation": "CHP"
+    },
+    {
+      "district": "Prince George-Mackenzie",
+      "name": "Mike Morris",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Prince George-Mackenzie",
+      "name": "Raymond Rodgers",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Prince George-Valemount",
+      "name": "Shirley Bond",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Prince George-Valemount",
+      "name": "MacKenzie Kerr",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Prince George-Valemount",
+      "name": "Laura Parent",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Prince George-Valemount",
+      "name": "Sean Robson",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Richmond North Centre",
+      "name": "Jaeden Dela Torre",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Richmond North Centre",
+      "name": "Vernon Wang",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Richmond North Centre",
+      "name": "Teresa Wat",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Richmond-Queensborough",
+      "name": "Earl Einarson",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Richmond-Queensborough",
+      "name": "Kay Hale",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Richmond-Queensborough",
+      "name": "Jas Johal",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Richmond-Queensborough",
+      "name": "Aman Singh",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Richmond South Centre",
+      "name": "Alexa Loo",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Richmond South Centre",
+      "name": "Henry Yao",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Richmond-Steveston",
+      "name": "Kelly Greene",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Richmond-Steveston",
+      "name": "Vince Li",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Richmond-Steveston",
+      "name": "Matt Pitcairn",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Saanich North and the Islands",
+      "name": "Zeb King",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Saanich North and the Islands",
+      "name": "Adam Olsen",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Saanich North and the Islands",
+      "name": "Stephen P Roberts",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Saanich South",
+      "name": "Kate O'Connor",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Saanich South",
+      "name": "Lana Popham",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Saanich South",
+      "name": "Rishi Sharma",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Shuswap",
+      "name": "Greg Kyllo",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Shuswap",
+      "name": "Sylvia Lindgren",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Shuswap",
+      "name": "Owen Madden",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Skeena",
+      "name": "Nicole Halbauer",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Skeena",
+      "name": "Martin Holzbauer",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Skeena",
+      "name": "Ellis Ross",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Stikine",
+      "name": "Nathan Cullen",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Stikine",
+      "name": "Darcy Repen",
+      "party": "other",
+      "affiliation": "RURL"
+    },
+    {
+      "district": "Stikine",
+      "name": "Gordon Sebastian",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Stikine",
+      "name": "Rod Taylor",
+      "party": "other",
+      "affiliation": "CHP"
+    },
+    {
+      "district": "Surrey-Cloverdale",
+      "name": "Aisha Rehana Bali",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Surrey-Cloverdale",
+      "name": "Marvin Hunt",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Surrey-Cloverdale",
+      "name": "Rebecca Smith",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Surrey-Cloverdale",
+      "name": "Mike Starchuk",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Surrey-Cloverdale",
+      "name": "Marcella Williams",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Surrey-Fleetwood",
+      "name": "Jagrup Brar",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Surrey-Fleetwood",
+      "name": "Dean McGee",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Surrey-Fleetwood",
+      "name": "Garry Thind",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Surrey-Green Timbers",
+      "name": "Dilraj Atwal",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Surrey-Green Timbers",
+      "name": "Rachna Singh",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Surrey-Guildford",
+      "name": "Garry Begg",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Surrey-Guildford",
+      "name": "Dave Hans",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Surrey-Guildford",
+      "name": "Sam Kofalt",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Surrey-Guildford",
+      "name": "Jodi Murphy",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Surrey-Newton",
+      "name": "Harry Bains",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Surrey-Newton",
+      "name": "Paul Boparai",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Surrey-Newton",
+      "name": "Asad Syed",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Surrey-Panorama",
+      "name": "Gulzar Cheema",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Surrey-Panorama",
+      "name": "Sophie Shrestha",
+      "party": "other",
+      "affiliation": "BCV"
+    },
+    {
+      "district": "Surrey-Panorama",
+      "name": "Jinny Sims",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Surrey South",
+      "name": "Stephanie Cadieux",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Surrey South",
+      "name": "Pauline Greaves",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Surrey South",
+      "name": "Tim Ibbotson",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Surrey-Whalley",
+      "name": "Ryan Abbott",
+      "party": "other",
+      "affiliation": "COMM"
+    },
+    {
+      "district": "Surrey-Whalley",
+      "name": "Jag Bhandari",
+      "party": "other",
+      "affiliation": "BCV"
+    },
+    {
+      "district": "Surrey-Whalley",
+      "name": "Shaukat Khan",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Surrey-Whalley",
+      "name": "Bruce Ralston",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Surrey-White Rock",
+      "name": "Jason Bax",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Surrey-White Rock",
+      "name": "Trevor Halford",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Surrey-White Rock",
+      "name": "Beverly (Pixie) Hobby",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Surrey-White Rock",
+      "name": "Megan Knight",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Surrey-White Rock",
+      "name": "Bryn Smith",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-Fairview",
+      "name": "George Affleck",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vancouver-Fairview",
+      "name": "Sandra Filosof-Schipper",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Vancouver-Fairview",
+      "name": "Ian Goldman",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Vancouver-Fairview",
+      "name": "George Heyman",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-False Creek",
+      "name": "Brenda Bailey",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-False Creek",
+      "name": "Naomi Chocyk",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Vancouver-False Creek",
+      "name": "Erik Gretland",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Vancouver-False Creek",
+      "name": "Maayan Kreitzman",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Vancouver-False Creek",
+      "name": "Sam Sullivan",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vancouver-Fraserview",
+      "name": "George Chow",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-Fraserview",
+      "name": "David Grewal",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vancouver-Fraserview",
+      "name": "Fran\u00e7oise Raunet",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Vancouver-Hastings",
+      "name": "G\u00f6l\u00f6k Z Buday",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Vancouver-Hastings",
+      "name": "Bridget Burns",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Vancouver-Hastings",
+      "name": "Kimball Cariou",
+      "party": "other",
+      "affiliation": "COMM"
+    },
+    {
+      "district": "Vancouver-Hastings",
+      "name": "Alex Read",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vancouver-Hastings",
+      "name": "Niki Sharma",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-Kensington",
+      "name": "Mable Elmore",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-Kensington",
+      "name": "Paul Lepage",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vancouver-Kensington",
+      "name": "Nazanin Moghadami",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Vancouver-Kensington",
+      "name": "Salvatore Vetro",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Vancouver-Kingsway",
+      "name": "Cole Anderson",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vancouver-Kingsway",
+      "name": "Scott Bernstein",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Vancouver-Kingsway",
+      "name": "Adrian Dix",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-Kingsway",
+      "name": "Karin Litzcke",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Vancouver-Langara",
+      "name": "Stephanie Hendy",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Vancouver-Langara",
+      "name": "Michael Lee",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vancouver-Langara",
+      "name": "Paul Matthews",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Vancouver-Langara",
+      "name": "Tesicca Chi-Ying Truong",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-Mount Pleasant",
+      "name": "Melanie Mark",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-Mount Pleasant",
+      "name": "Kelly Tatham",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Vancouver-Mount Pleasant",
+      "name": "George Vassilas",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vancouver-Point Grey",
+      "name": "Mark Bowen",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vancouver-Point Grey",
+      "name": "David Eby",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-Point Grey",
+      "name": "Devyani Singh",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Vancouver-Quilchena",
+      "name": "Michael Barkusky",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Vancouver-Quilchena",
+      "name": "Heather McQuillan",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-Quilchena",
+      "name": "Andrew Wilkinson",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vancouver-West End",
+      "name": "Spencer Chandra Herbert",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vancouver-West End",
+      "name": "Jon Ellacott",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vancouver-West End",
+      "name": "James Marshall",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Vancouver-West End",
+      "name": "Kim McCann",
+      "party": "other",
+      "affiliation": "LBN"
+    },
+    {
+      "district": "Vernon-Monashee",
+      "name": "Kyle Delfing",
+      "party": "centre",
+      "affiliation": "CP"
+    },
+    {
+      "district": "Vernon-Monashee",
+      "name": "Eric Foster",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Vernon-Monashee",
+      "name": "Harwinder Sandhu",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Vernon-Monashee",
+      "name": "Keli Westgate",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Victoria-Beacon Hill",
+      "name": "Karen Bill",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "Victoria-Beacon Hill",
+      "name": "Grace Lore",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Victoria-Beacon Hill",
+      "name": "Jenn Neilson",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Victoria-Beacon Hill",
+      "name": "Jordan Reichert",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Victoria-Swan Lake",
+      "name": "Rob Fleming",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "Victoria-Swan Lake",
+      "name": "Annemieke Holthuis",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "Victoria-Swan Lake",
+      "name": "Walt Parsons",
+      "party": "other",
+      "affiliation": "COMM"
+    },
+    {
+      "district": "Victoria-Swan Lake",
+      "name": "Jenn Smith",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "Victoria-Swan Lake",
+      "name": "David Somerville",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "West Vancouver-Capilano",
+      "name": "Amelia Hill",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "West Vancouver-Capilano",
+      "name": "Karin Kirkpatrick",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "West Vancouver-Capilano",
+      "name": "Rasoul Narimani",
+      "party": "green",
+      "affiliation": "GP"
+    },
+    {
+      "district": "West Vancouver-Capilano",
+      "name": "Anton Shendryk",
+      "party": "other",
+      "affiliation": "Independent"
+    },
+    {
+      "district": "West Vancouver-Sea to Sky",
+      "name": "Keith Murdoch",
+      "party": "ndp",
+      "affiliation": "NDP"
+    },
+    {
+      "district": "West Vancouver-Sea to Sky",
+      "name": "Jordan Sturdy",
+      "party": "con",
+      "affiliation": "LIB"
+    },
+    {
+      "district": "West Vancouver-Sea to Sky",
+      "name": "Jeremy Valeriote",
+      "party": "green",
+      "affiliation": "GP"
+    }
+  ],
+  "actual": {
+    "Abbotsford-Mission": [
+      {
+        "name": "Aeriol Alderking",
+        "party": "other",
+        "votes": 595,
+        "share": 2.36
+      },
+      {
+        "name": "Pam Alexis",
+        "party": "ndp",
+        "votes": 10364,
+        "share": 41.07
+      },
+      {
+        "name": "Stephen Fowler",
+        "party": "green",
+        "votes": 2667,
+        "share": 10.57
+      },
+      {
+        "name": "Simon Gibson",
+        "party": "con",
+        "votes": 9620,
+        "share": 38.12
+      },
+      {
+        "name": "Trevor Hamilton",
+        "party": "centre",
+        "votes": 1989,
+        "share": 7.88
+      }
+    ],
+    "Abbotsford South": [
+      {
+        "name": "Bruce Banman",
+        "party": "con",
+        "votes": 9730,
+        "share": 44.69
+      },
+      {
+        "name": "Aird Flavelle",
+        "party": "green",
+        "votes": 2617,
+        "share": 12.02
+      },
+      {
+        "name": "Inder Johal",
+        "party": "ndp",
+        "votes": 7706,
+        "share": 35.39
+      },
+      {
+        "name": "Laura-Lynn Thompson",
+        "party": "other",
+        "votes": 1720,
+        "share": 7.9
+      }
+    ],
+    "Abbotsford West": [
+      {
+        "name": "Michael de Jong",
+        "party": "con",
+        "votes": 8880,
+        "share": 45.51
+      },
+      {
+        "name": "Kevin Eastwood",
+        "party": "green",
+        "votes": 1671,
+        "share": 8.56
+      },
+      {
+        "name": "Sukhi Gill",
+        "party": "other",
+        "votes": 75,
+        "share": 0.38
+      },
+      {
+        "name": "Michael Henshall",
+        "party": "centre",
+        "votes": 1766,
+        "share": 9.05
+      },
+      {
+        "name": "Preet Rai",
+        "party": "ndp",
+        "votes": 7119,
+        "share": 36.49
+      }
+    ],
+    "Boundary-Similkameen": [
+      {
+        "name": "Arlyn Greig",
+        "party": "other",
+        "votes": 474,
+        "share": 2.25
+      },
+      {
+        "name": "Roly Russell",
+        "party": "ndp",
+        "votes": 10500,
+        "share": 49.85
+      },
+      {
+        "name": "Darryl Seres",
+        "party": "centre",
+        "votes": 2354,
+        "share": 11.18
+      },
+      {
+        "name": "Petra Veintimilla",
+        "party": "con",
+        "votes": 7735,
+        "share": 36.72
+      }
+    ],
+    "Burnaby-Deer Lake": [
+      {
+        "name": "Glynnis Hoi Sum Chan",
+        "party": "con",
+        "votes": 5163,
+        "share": 31.81
+      },
+      {
+        "name": "Mehreen Chaudry",
+        "party": "green",
+        "votes": 1878,
+        "share": 11.57
+      },
+      {
+        "name": "Anne Kang",
+        "party": "ndp",
+        "votes": 9190,
+        "share": 56.62
+      }
+    ],
+    "Burnaby-Edmonds": [
+      {
+        "name": "Tripat Atwal",
+        "party": "con",
+        "votes": 4754,
+        "share": 26.65
+      },
+      {
+        "name": "Raj Chouhan",
+        "party": "ndp",
+        "votes": 11063,
+        "share": 62.01
+      },
+      {
+        "name": "Iqbal Parekh",
+        "party": "green",
+        "votes": 2023,
+        "share": 11.34
+      }
+    ],
+    "Burnaby-Lougheed": [
+      {
+        "name": "Katrina Chen",
+        "party": "ndp",
+        "votes": 12574,
+        "share": 60.25
+      },
+      {
+        "name": "Tariq Malik",
+        "party": "con",
+        "votes": 5386,
+        "share": 25.81
+      },
+      {
+        "name": "Dominique Paynter",
+        "party": "other",
+        "votes": 281,
+        "share": 1.35
+      },
+      {
+        "name": "Andrew Williamson",
+        "party": "green",
+        "votes": 2628,
+        "share": 12.59
+      }
+    ],
+    "Burnaby North": [
+      {
+        "name": "Raymond Dong",
+        "party": "con",
+        "votes": 6846,
+        "share": 30.69
+      },
+      {
+        "name": "Janet Routledge",
+        "party": "ndp",
+        "votes": 12894,
+        "share": 57.8
+      },
+      {
+        "name": "Norine Shim",
+        "party": "green",
+        "votes": 2568,
+        "share": 11.51
+      }
+    ],
+    "Cariboo-Chilcotin": [
+      {
+        "name": "Scott Andrews",
+        "party": "ndp",
+        "votes": 4180,
+        "share": 32.46
+      },
+      {
+        "name": "James Buckley",
+        "party": "other",
+        "votes": 263,
+        "share": 2.04
+      },
+      {
+        "name": "Lorne Doerkson",
+        "party": "con",
+        "votes": 6600,
+        "share": 51.25
+      },
+      {
+        "name": "David Laing",
+        "party": "green",
+        "votes": 1379,
+        "share": 10.71
+      },
+      {
+        "name": "Katya Potekhina",
+        "party": "other",
+        "votes": 457,
+        "share": 3.55
+      }
+    ],
+    "Cariboo North": [
+      {
+        "name": "Scott Elliott",
+        "party": "ndp",
+        "votes": 3809,
+        "share": 34.36
+      },
+      {
+        "name": "Douglas Gook",
+        "party": "green",
+        "votes": 707,
+        "share": 6.38
+      },
+      {
+        "name": "Coralee Oakes",
+        "party": "con",
+        "votes": 5367,
+        "share": 48.42
+      },
+      {
+        "name": "Kyle Townsend",
+        "party": "centre",
+        "votes": 1201,
+        "share": 10.84
+      }
+    ],
+    "Chilliwack": [
+      {
+        "name": "Josue Anderson",
+        "party": "other",
+        "votes": 257,
+        "share": 1.45
+      },
+      {
+        "name": "Andrew Coombes",
+        "party": "other",
+        "votes": 177,
+        "share": 1.0
+      },
+      {
+        "name": "Tim Cooper",
+        "party": "green",
+        "votes": 1888,
+        "share": 10.68
+      },
+      {
+        "name": "Dan Coulter",
+        "party": "ndp",
+        "votes": 7349,
+        "share": 41.56
+      },
+      {
+        "name": "Diane Janzen",
+        "party": "centre",
+        "votes": 2910,
+        "share": 16.46
+      },
+      {
+        "name": "John Martin",
+        "party": "con",
+        "votes": 5102,
+        "share": 28.85
+      }
+    ],
+    "Chilliwack-Kent": [
+      {
+        "name": "Eli Gagn\u00e9",
+        "party": "other",
+        "votes": 278,
+        "share": 1.22
+      },
+      {
+        "name": "Jeff Hammersmark",
+        "party": "green",
+        "votes": 1822,
+        "share": 8.03
+      },
+      {
+        "name": "Jason Lum",
+        "party": "other",
+        "votes": 5370,
+        "share": 23.65
+      },
+      {
+        "name": "Kelli Paddon",
+        "party": "ndp",
+        "votes": 8268,
+        "share": 36.42
+      },
+      {
+        "name": "Laurie Throness",
+        "party": "con",
+        "votes": 6964,
+        "share": 30.68
+      }
+    ],
+    "Columbia River-Revelstoke": [
+      {
+        "name": "Samson Boyer",
+        "party": "green",
+        "votes": 1904,
+        "share": 13.0
+      },
+      {
+        "name": "Nicole Cherlet",
+        "party": "ndp",
+        "votes": 5708,
+        "share": 38.97
+      },
+      {
+        "name": "Doug Clovechok",
+        "party": "con",
+        "votes": 7034,
+        "share": 48.03
+      }
+    ],
+    "Coquitlam-Burke Mountain": [
+      {
+        "name": "Adam Bremner-Akins",
+        "party": "green",
+        "votes": 2033,
+        "share": 8.85
+      },
+      {
+        "name": "Fin Donnelly",
+        "party": "ndp",
+        "votes": 12627,
+        "share": 54.94
+      },
+      {
+        "name": "Joan Isaacs",
+        "party": "con",
+        "votes": 8324,
+        "share": 36.22
+      }
+    ],
+    "Coquitlam-Maillardville": [
+      {
+        "name": "Will Davis",
+        "party": "con",
+        "votes": 5882,
+        "share": 28.6
+      },
+      {
+        "name": "Selina Robinson",
+        "party": "ndp",
+        "votes": 12278,
+        "share": 59.7
+      },
+      {
+        "name": "Nicola Spurling",
+        "party": "green",
+        "votes": 2405,
+        "share": 11.69
+      }
+    ],
+    "Courtenay-Comox": [
+      {
+        "name": "Gillian Anderson",
+        "party": "green",
+        "votes": 5681,
+        "share": 19.59
+      },
+      {
+        "name": "Brennan Day",
+        "party": "con",
+        "votes": 8655,
+        "share": 29.85
+      },
+      {
+        "name": "Ronna-Rae Leonard",
+        "party": "ndp",
+        "votes": 14663,
+        "share": 50.56
+      }
+    ],
+    "Cowichan Valley": [
+      {
+        "name": "Rob Douglas",
+        "party": "ndp",
+        "votes": 11875,
+        "share": 40.2
+      },
+      {
+        "name": "Sonia Furstenau",
+        "party": "green",
+        "votes": 13059,
+        "share": 44.21
+      },
+      {
+        "name": "Tanya Kaul",
+        "party": "con",
+        "votes": 4606,
+        "share": 15.59
+      }
+    ],
+    "Delta North": [
+      {
+        "name": "Ravi Kahlon",
+        "party": "ndp",
+        "votes": 12215,
+        "share": 56.78
+      },
+      {
+        "name": "Neema Manral",
+        "party": "green",
+        "votes": 2120,
+        "share": 9.85
+      },
+      {
+        "name": "Jet Sunner",
+        "party": "con",
+        "votes": 7179,
+        "share": 33.37
+      }
+    ],
+    "Delta South": [
+      {
+        "name": "Ian Paton",
+        "party": "con",
+        "votes": 12828,
+        "share": 51.7
+      },
+      {
+        "name": "Bruce Reid",
+        "party": "ndp",
+        "votes": 8404,
+        "share": 33.87
+      },
+      {
+        "name": "Peter van der Velden",
+        "party": "green",
+        "votes": 3581,
+        "share": 14.43
+      }
+    ],
+    "Esquimalt-Metchosin": [
+      {
+        "name": "Mitzi Dean",
+        "party": "ndp",
+        "votes": 15070,
+        "share": 59.32
+      },
+      {
+        "name": "Andy MacKinnon",
+        "party": "green",
+        "votes": 6140,
+        "share": 24.17
+      },
+      {
+        "name": "Desta McPherson",
+        "party": "other",
+        "votes": 254,
+        "share": 1.0
+      },
+      {
+        "name": "RJ Senko",
+        "party": "con",
+        "votes": 3940,
+        "share": 15.51
+      }
+    ],
+    "Fraser-Nicola": [
+      {
+        "name": "Dennis Adamson",
+        "party": "other",
+        "votes": 438,
+        "share": 3.2
+      },
+      {
+        "name": "Mike Bhangu",
+        "party": "other",
+        "votes": 343,
+        "share": 2.51
+      },
+      {
+        "name": "Aaron Sumexheltza",
+        "party": "ndp",
+        "votes": 5414,
+        "share": 39.58
+      },
+      {
+        "name": "Jackie Tegart",
+        "party": "con",
+        "votes": 5696,
+        "share": 41.64
+      },
+      {
+        "name": "Jonah Timms",
+        "party": "green",
+        "votes": 1788,
+        "share": 13.07
+      }
+    ],
+    "Kamloops-North Thompson": [
+      {
+        "name": "Dennis Giesbrecht",
+        "party": "centre",
+        "votes": 1928,
+        "share": 8.46
+      },
+      {
+        "name": "Sadie Hunter",
+        "party": "ndp",
+        "votes": 9145,
+        "share": 40.13
+      },
+      {
+        "name": "Thomas Martin",
+        "party": "green",
+        "votes": 2224,
+        "share": 9.76
+      },
+      {
+        "name": "Peter Milobar",
+        "party": "con",
+        "votes": 9341,
+        "share": 40.99
+      },
+      {
+        "name": "Brandon Russell",
+        "party": "other",
+        "votes": 149,
+        "share": 0.65
+      }
+    ],
+    "Kamloops-South Thompson": [
+      {
+        "name": "Dan Hines",
+        "party": "green",
+        "votes": 4276,
+        "share": 16.26
+      },
+      {
+        "name": "Todd Graham Stone",
+        "party": "con",
+        "votes": 13453,
+        "share": 51.14
+      },
+      {
+        "name": "Anna Thomas",
+        "party": "ndp",
+        "votes": 8575,
+        "share": 32.6
+      }
+    ],
+    "Kelowna-Lake Country": [
+      {
+        "name": "Kyle Geronazzo",
+        "party": "other",
+        "votes": 515,
+        "share": 1.96
+      },
+      {
+        "name": "John Janmaat",
+        "party": "green",
+        "votes": 3833,
+        "share": 14.55
+      },
+      {
+        "name": "Justin Kulik",
+        "party": "ndp",
+        "votes": 7121,
+        "share": 27.04
+      },
+      {
+        "name": "Norm Letnick",
+        "party": "con",
+        "votes": 14679,
+        "share": 55.73
+      },
+      {
+        "name": "Silverado Brooks Socrates",
+        "party": "other",
+        "votes": 190,
+        "share": 0.72
+      }
+    ],
+    "Kelowna-Mission": [
+      {
+        "name": "Renee Merrifield",
+        "party": "con",
+        "votes": 13483,
+        "share": 50.76
+      },
+      {
+        "name": "Amanda Poon",
+        "party": "green",
+        "votes": 4476,
+        "share": 16.85
+      },
+      {
+        "name": "Krystal Smith",
+        "party": "ndp",
+        "votes": 8605,
+        "share": 32.39
+      }
+    ],
+    "Kelowna West": [
+      {
+        "name": "Matt Badura",
+        "party": "other",
+        "votes": 474,
+        "share": 1.82
+      },
+      {
+        "name": "Spring Hawes",
+        "party": "ndp",
+        "votes": 8854,
+        "share": 34.0
+      },
+      {
+        "name": "Magee Mitchell",
+        "party": "other",
+        "votes": 446,
+        "share": 1.71
+      },
+      {
+        "name": "Ben Stewart",
+        "party": "con",
+        "votes": 12991,
+        "share": 49.89
+      },
+      {
+        "name": "Peter A. Truch",
+        "party": "green",
+        "votes": 3274,
+        "share": 12.57
+      }
+    ],
+    "Kootenay East": [
+      {
+        "name": "Tom Shypitka",
+        "party": "con",
+        "votes": 9897,
+        "share": 57.9
+      },
+      {
+        "name": "Wayne Stetski",
+        "party": "ndp",
+        "votes": 5499,
+        "share": 32.17
+      },
+      {
+        "name": "Kerri Wall",
+        "party": "green",
+        "votes": 1697,
+        "share": 9.93
+      }
+    ],
+    "Kootenay West": [
+      {
+        "name": "Glen Byle",
+        "party": "centre",
+        "votes": 1447,
+        "share": 8.18
+      },
+      {
+        "name": "Katrine Conroy",
+        "party": "ndp",
+        "votes": 10822,
+        "share": 61.15
+      },
+      {
+        "name": "Andrew Duncan",
+        "party": "green",
+        "votes": 3040,
+        "share": 17.18
+      },
+      {
+        "name": "Corbin Kelley",
+        "party": "con",
+        "votes": 1975,
+        "share": 11.16
+      },
+      {
+        "name": "Fletcher Quince",
+        "party": "other",
+        "votes": 189,
+        "share": 1.07
+      },
+      {
+        "name": "Ed Varney",
+        "party": "other",
+        "votes": 224,
+        "share": 1.27
+      }
+    ],
+    "Langford-Juan de Fuca": [
+      {
+        "name": "Gord Baird",
+        "party": "green",
+        "votes": 4437,
+        "share": 16.67
+      },
+      {
+        "name": "Kelly Darwin",
+        "party": "con",
+        "votes": 3980,
+        "share": 14.95
+      },
+      {
+        "name": "John Horgan",
+        "party": "ndp",
+        "votes": 18073,
+        "share": 67.89
+      },
+      {
+        "name": "Tyson Riel Strandlund",
+        "party": "other",
+        "votes": 130,
+        "share": 0.49
+      }
+    ],
+    "Langley": [
+      {
+        "name": "Shelly Jan",
+        "party": "centre",
+        "votes": 1936,
+        "share": 8.24
+      },
+      {
+        "name": "Bill Masse",
+        "party": "green",
+        "votes": 2469,
+        "share": 10.5
+      },
+      {
+        "name": "Andrew Mercier",
+        "party": "ndp",
+        "votes": 11089,
+        "share": 47.17
+      },
+      {
+        "name": "Mary Polak",
+        "party": "con",
+        "votes": 8014,
+        "share": 34.09
+      }
+    ],
+    "Langley East": [
+      {
+        "name": "Megan Dykeman",
+        "party": "ndp",
+        "votes": 13169,
+        "share": 42.56
+      },
+      {
+        "name": "Alex Joehl",
+        "party": "other",
+        "votes": 231,
+        "share": 0.75
+      },
+      {
+        "name": "Margaret Kunst",
+        "party": "con",
+        "votes": 10385,
+        "share": 33.56
+      },
+      {
+        "name": "Tara Reeve",
+        "party": "other",
+        "votes": 195,
+        "share": 0.63
+      },
+      {
+        "name": "Ryan Warawa",
+        "party": "centre",
+        "votes": 3428,
+        "share": 11.08
+      },
+      {
+        "name": "Cheryl Wiens",
+        "party": "green",
+        "votes": 3533,
+        "share": 11.42
+      }
+    ],
+    "Maple Ridge-Mission": [
+      {
+        "name": "Bob D'Eith",
+        "party": "ndp",
+        "votes": 13915,
+        "share": 55.27
+      },
+      {
+        "name": "Chelsa Meadus",
+        "party": "con",
+        "votes": 8412,
+        "share": 33.41
+      },
+      {
+        "name": "Matt Trenholm",
+        "party": "green",
+        "votes": 2849,
+        "share": 11.32
+      }
+    ],
+    "Maple Ridge-Pitt Meadows": [
+      {
+        "name": "Cheryl Ashlie",
+        "party": "con",
+        "votes": 9163,
+        "share": 36.59
+      },
+      {
+        "name": "Lisa Beare",
+        "party": "ndp",
+        "votes": 15877,
+        "share": 63.41
+      }
+    ],
+    "Mid Island-Pacific Rim": [
+      {
+        "name": "Robert Alexander Clarke",
+        "party": "other",
+        "votes": 370,
+        "share": 1.51
+      },
+      {
+        "name": "Graham Hughes",
+        "party": "other",
+        "votes": 610,
+        "share": 2.48
+      },
+      {
+        "name": "Evan Jolicoeur",
+        "party": "green",
+        "votes": 4991,
+        "share": 20.32
+      },
+      {
+        "name": "Josie Osborne",
+        "party": "ndp",
+        "votes": 14298,
+        "share": 58.22
+      },
+      {
+        "name": "Helen Poon",
+        "party": "con",
+        "votes": 4291,
+        "share": 17.47
+      }
+    ],
+    "Nanaimo": [
+      {
+        "name": "Kathleen Jones",
+        "party": "con",
+        "votes": 5903,
+        "share": 22.42
+      },
+      {
+        "name": "Sheila Malcolmson",
+        "party": "ndp",
+        "votes": 14344,
+        "share": 54.49
+      },
+      {
+        "name": "Lia Marie Constance Versaevel",
+        "party": "green",
+        "votes": 6078,
+        "share": 23.09
+      }
+    ],
+    "Nanaimo-North Cowichan": [
+      {
+        "name": "Chris Istace",
+        "party": "green",
+        "votes": 7700,
+        "share": 29.8
+      },
+      {
+        "name": "Duck (don) Paterson",
+        "party": "con",
+        "votes": 5354,
+        "share": 20.72
+      },
+      {
+        "name": "Doug Routley",
+        "party": "ndp",
+        "votes": 12787,
+        "share": 49.48
+      }
+    ],
+    "Nechako Lakes": [
+      {
+        "name": "Margo Maley",
+        "party": "other",
+        "votes": 368,
+        "share": 4.17
+      },
+      {
+        "name": "Jon Rempel",
+        "party": "other",
+        "votes": 403,
+        "share": 4.57
+      },
+      {
+        "name": "John Rustad",
+        "party": "con",
+        "votes": 4611,
+        "share": 52.24
+      },
+      {
+        "name": "Anne Marie Sam",
+        "party": "ndp",
+        "votes": 3031,
+        "share": 34.34
+      },
+      {
+        "name": "Dan Stuart",
+        "party": "other",
+        "votes": 413,
+        "share": 4.68
+      }
+    ],
+    "Nelson-Creston": [
+      {
+        "name": "Brittny Anderson",
+        "party": "ndp",
+        "votes": 7296,
+        "share": 41.78
+      },
+      {
+        "name": "Nicole Charlwood",
+        "party": "green",
+        "votes": 5611,
+        "share": 32.13
+      },
+      {
+        "name": "Tanya Finley",
+        "party": "con",
+        "votes": 4171,
+        "share": 23.89
+      },
+      {
+        "name": "Terry Tiessen",
+        "party": "other",
+        "votes": 384,
+        "share": 2.2
+      }
+    ],
+    "New Westminster": [
+      {
+        "name": "Lorraine Brett",
+        "party": "con",
+        "votes": 4291,
+        "share": 16.26
+      },
+      {
+        "name": "Benny Ogden",
+        "party": "centre",
+        "votes": 912,
+        "share": 3.46
+      },
+      {
+        "name": "Cyrus Sy",
+        "party": "green",
+        "votes": 5020,
+        "share": 19.02
+      },
+      {
+        "name": "Jennifer Whiteside",
+        "party": "ndp",
+        "votes": 15903,
+        "share": 60.25
+      },
+      {
+        "name": "Donald Wilson",
+        "party": "other",
+        "votes": 269,
+        "share": 1.02
+      }
+    ],
+    "North Coast": [
+      {
+        "name": "Jody Craven",
+        "party": "other",
+        "votes": 267,
+        "share": 4.28
+      },
+      {
+        "name": "Roy S Jones Jr",
+        "party": "con",
+        "votes": 1429,
+        "share": 22.9
+      },
+      {
+        "name": "Jennifer Rice",
+        "party": "ndp",
+        "votes": 4544,
+        "share": 72.82
+      }
+    ],
+    "North Island": [
+      {
+        "name": "Michele Babchuk",
+        "party": "ndp",
+        "votes": 12467,
+        "share": 50.75
+      },
+      {
+        "name": "Norm Facey",
+        "party": "con",
+        "votes": 5904,
+        "share": 24.04
+      },
+      {
+        "name": "Alexandra Morton",
+        "party": "green",
+        "votes": 4731,
+        "share": 19.26
+      },
+      {
+        "name": "John Twigg",
+        "party": "centre",
+        "votes": 1462,
+        "share": 5.95
+      }
+    ],
+    "North Vancouver-Lonsdale": [
+      {
+        "name": "Lyn Anglin",
+        "party": "con",
+        "votes": 7274,
+        "share": 27.43
+      },
+      {
+        "name": "Christopher Hakes",
+        "party": "green",
+        "votes": 3369,
+        "share": 12.7
+      },
+      {
+        "name": "Bowinn Ma",
+        "party": "ndp",
+        "votes": 15878,
+        "share": 59.87
+      }
+    ],
+    "North Vancouver-Seymour": [
+      {
+        "name": "Susie Chant",
+        "party": "ndp",
+        "votes": 12891,
+        "share": 46.84
+      },
+      {
+        "name": "Harrison Johnston",
+        "party": "green",
+        "votes": 4514,
+        "share": 16.4
+      },
+      {
+        "name": "Jane Thornthwaite",
+        "party": "con",
+        "votes": 9827,
+        "share": 35.7
+      },
+      {
+        "name": "Clayton Welwood",
+        "party": "other",
+        "votes": 291,
+        "share": 1.06
+      }
+    ],
+    "Oak Bay-Gordon Head": [
+      {
+        "name": "Florian Castle",
+        "party": "other",
+        "votes": 142,
+        "share": 0.49
+      },
+      {
+        "name": "Nicole Duncan",
+        "party": "green",
+        "votes": 7362,
+        "share": 25.52
+      },
+      {
+        "name": "Roxanne Helme",
+        "party": "con",
+        "votes": 6597,
+        "share": 22.87
+      },
+      {
+        "name": "Murray Rankin",
+        "party": "ndp",
+        "votes": 14748,
+        "share": 51.12
+      }
+    ],
+    "Parksville-Qualicum": [
+      {
+        "name": "Rob Lyon",
+        "party": "green",
+        "votes": 5227,
+        "share": 16.62
+      },
+      {
+        "name": "Don Purdey",
+        "party": "centre",
+        "votes": 1404,
+        "share": 4.46
+      },
+      {
+        "name": "John St John",
+        "party": "other",
+        "votes": 454,
+        "share": 1.44
+      },
+      {
+        "name": "Michelle Stilwell",
+        "party": "con",
+        "votes": 11155,
+        "share": 35.47
+      },
+      {
+        "name": "Adam Walker",
+        "party": "ndp",
+        "votes": 13207,
+        "share": 42.0
+      }
+    ],
+    "Peace River North": [
+      {
+        "name": "Trevor Bolin",
+        "party": "centre",
+        "votes": 4150,
+        "share": 34.3
+      },
+      {
+        "name": "Dan Davies",
+        "party": "con",
+        "votes": 6746,
+        "share": 55.76
+      },
+      {
+        "name": "Danielle Monroe",
+        "party": "ndp",
+        "votes": 1202,
+        "share": 9.94
+      }
+    ],
+    "Peace River South": [
+      {
+        "name": "Mike Bernier",
+        "party": "con",
+        "votes": 3862,
+        "share": 51.19
+      },
+      {
+        "name": "Kathleen Connolly",
+        "party": "centre",
+        "votes": 2303,
+        "share": 30.53
+      },
+      {
+        "name": "Cory Grizz Longley",
+        "party": "ndp",
+        "votes": 1180,
+        "share": 15.64
+      },
+      {
+        "name": "Dorothy Sharon Smith",
+        "party": "other",
+        "votes": 199,
+        "share": 2.64
+      }
+    ],
+    "Penticton": [
+      {
+        "name": "Dan Ashton",
+        "party": "con",
+        "votes": 13217,
+        "share": 48.19
+      },
+      {
+        "name": "Toni Boot",
+        "party": "ndp",
+        "votes": 10343,
+        "share": 37.71
+      },
+      {
+        "name": "Keith MacIntyre",
+        "party": "other",
+        "votes": 717,
+        "share": 2.61
+      },
+      {
+        "name": "Ted Shumaker",
+        "party": "green",
+        "votes": 3152,
+        "share": 11.49
+      }
+    ],
+    "Port Coquitlam": [
+      {
+        "name": "Lewis Clarke Dahlby",
+        "party": "other",
+        "votes": 563,
+        "share": 2.35
+      },
+      {
+        "name": "Mike Farnworth",
+        "party": "ndp",
+        "votes": 15370,
+        "share": 64.14
+      },
+      {
+        "name": "Erik Minty",
+        "party": "green",
+        "votes": 3023,
+        "share": 12.61
+      },
+      {
+        "name": "Mehran Zargham",
+        "party": "con",
+        "votes": 5009,
+        "share": 20.9
+      }
+    ],
+    "Port Moody-Coquitlam": [
+      {
+        "name": "Brandon Fonseca",
+        "party": "centre",
+        "votes": 800,
+        "share": 3.36
+      },
+      {
+        "name": "Rick Glumac",
+        "party": "ndp",
+        "votes": 12783,
+        "share": 53.75
+      },
+      {
+        "name": "John Latimer",
+        "party": "green",
+        "votes": 2802,
+        "share": 11.78
+      },
+      {
+        "name": "James Robertson",
+        "party": "con",
+        "votes": 7253,
+        "share": 30.5
+      },
+      {
+        "name": "Logan Smith",
+        "party": "other",
+        "votes": 144,
+        "share": 0.61
+      }
+    ],
+    "Powell River-Sunshine Coast": [
+      {
+        "name": "Kim Darwin",
+        "party": "green",
+        "votes": 8104,
+        "share": 32.47
+      },
+      {
+        "name": "Nicholas Simons",
+        "party": "ndp",
+        "votes": 12701,
+        "share": 50.88
+      },
+      {
+        "name": "Sandra Stoddart-Hansen",
+        "party": "con",
+        "votes": 4156,
+        "share": 16.65
+      }
+    ],
+    "Prince George-Mackenzie": [
+      {
+        "name": "Joan Atkinson",
+        "party": "ndp",
+        "votes": 5717,
+        "share": 33.99
+      },
+      {
+        "name": "Catharine Kendall",
+        "party": "green",
+        "votes": 1935,
+        "share": 11.51
+      },
+      {
+        "name": "Dee Kranz",
+        "party": "other",
+        "votes": 336,
+        "share": 2.0
+      },
+      {
+        "name": "Mike Morris",
+        "party": "con",
+        "votes": 8543,
+        "share": 50.8
+      },
+      {
+        "name": "Raymond Rodgers",
+        "party": "other",
+        "votes": 287,
+        "share": 1.71
+      }
+    ],
+    "Prince George-Valemount": [
+      {
+        "name": "Shirley Bond",
+        "party": "con",
+        "votes": 9703,
+        "share": 55.62
+      },
+      {
+        "name": "MacKenzie Kerr",
+        "party": "green",
+        "votes": 2597,
+        "share": 14.89
+      },
+      {
+        "name": "Laura Parent",
+        "party": "ndp",
+        "votes": 4717,
+        "share": 27.04
+      },
+      {
+        "name": "Sean Robson",
+        "party": "other",
+        "votes": 428,
+        "share": 2.45
+      }
+    ],
+    "Richmond North Centre": [
+      {
+        "name": "Jaeden Dela Torre",
+        "party": "ndp",
+        "votes": 5964,
+        "share": 39.83
+      },
+      {
+        "name": "Vernon Wang",
+        "party": "green",
+        "votes": 1333,
+        "share": 8.9
+      },
+      {
+        "name": "Teresa Wat",
+        "party": "con",
+        "votes": 7675,
+        "share": 51.26
+      }
+    ],
+    "Richmond-Queensborough": [
+      {
+        "name": "Earl Einarson",
+        "party": "green",
+        "votes": 1496,
+        "share": 7.58
+      },
+      {
+        "name": "Kay Hale",
+        "party": "centre",
+        "votes": 1108,
+        "share": 5.61
+      },
+      {
+        "name": "Jas Johal",
+        "party": "con",
+        "votes": 7728,
+        "share": 39.15
+      },
+      {
+        "name": "Aman Singh",
+        "party": "ndp",
+        "votes": 9406,
+        "share": 47.65
+      }
+    ],
+    "Richmond South Centre": [
+      {
+        "name": "Alexa Loo",
+        "party": "con",
+        "votes": 6564,
+        "share": 49.33
+      },
+      {
+        "name": "Henry Yao",
+        "party": "ndp",
+        "votes": 6743,
+        "share": 50.67
+      }
+    ],
+    "Richmond-Steveston": [
+      {
+        "name": "Kelly Greene",
+        "party": "ndp",
+        "votes": 10733,
+        "share": 52.07
+      },
+      {
+        "name": "Vince Li",
+        "party": "other",
+        "votes": 483,
+        "share": 2.34
+      },
+      {
+        "name": "Matt Pitcairn",
+        "party": "con",
+        "votes": 9398,
+        "share": 45.59
+      }
+    ],
+    "Saanich North and the Islands": [
+      {
+        "name": "Zeb King",
+        "party": "ndp",
+        "votes": 9990,
+        "share": 29.01
+      },
+      {
+        "name": "Adam Olsen",
+        "party": "green",
+        "votes": 17897,
+        "share": 51.97
+      },
+      {
+        "name": "Stephen P Roberts",
+        "party": "con",
+        "votes": 6547,
+        "share": 19.01
+      }
+    ],
+    "Saanich South": [
+      {
+        "name": "Kate O'Connor",
+        "party": "green",
+        "votes": 5488,
+        "share": 20.11
+      },
+      {
+        "name": "Lana Popham",
+        "party": "ndp",
+        "votes": 15190,
+        "share": 55.67
+      },
+      {
+        "name": "Rishi Sharma",
+        "party": "con",
+        "votes": 6608,
+        "share": 24.22
+      }
+    ],
+    "Shuswap": [
+      {
+        "name": "Greg Kyllo",
+        "party": "con",
+        "votes": 13300,
+        "share": 51.35
+      },
+      {
+        "name": "Sylvia Lindgren",
+        "party": "ndp",
+        "votes": 8816,
+        "share": 34.04
+      },
+      {
+        "name": "Owen Madden",
+        "party": "green",
+        "votes": 3784,
+        "share": 14.61
+      }
+    ],
+    "Skeena": [
+      {
+        "name": "Nicole Halbauer",
+        "party": "ndp",
+        "votes": 4961,
+        "share": 44.45
+      },
+      {
+        "name": "Martin Holzbauer",
+        "party": "other",
+        "votes": 389,
+        "share": 3.49
+      },
+      {
+        "name": "Ellis Ross",
+        "party": "con",
+        "votes": 5810,
+        "share": 52.06
+      }
+    ],
+    "Stikine": [
+      {
+        "name": "Nathan Cullen",
+        "party": "ndp",
+        "votes": 3745,
+        "share": 51.77
+      },
+      {
+        "name": "Darcy Repen",
+        "party": "other",
+        "votes": 754,
+        "share": 10.42
+      },
+      {
+        "name": "Gordon Sebastian",
+        "party": "con",
+        "votes": 1904,
+        "share": 26.32
+      },
+      {
+        "name": "Rod Taylor",
+        "party": "other",
+        "votes": 831,
+        "share": 11.49
+      }
+    ],
+    "Surrey-Cloverdale": [
+      {
+        "name": "Aisha Rehana Bali",
+        "party": "centre",
+        "votes": 867,
+        "share": 3.48
+      },
+      {
+        "name": "Marvin Hunt",
+        "party": "con",
+        "votes": 8758,
+        "share": 35.12
+      },
+      {
+        "name": "Rebecca Smith",
+        "party": "green",
+        "votes": 2169,
+        "share": 8.7
+      },
+      {
+        "name": "Mike Starchuk",
+        "party": "ndp",
+        "votes": 12992,
+        "share": 52.1
+      },
+      {
+        "name": "Marcella Williams",
+        "party": "other",
+        "votes": 149,
+        "share": 0.6
+      }
+    ],
+    "Surrey-Fleetwood": [
+      {
+        "name": "Jagrup Brar",
+        "party": "ndp",
+        "votes": 11457,
+        "share": 60.93
+      },
+      {
+        "name": "Dean McGee",
+        "party": "green",
+        "votes": 1571,
+        "share": 8.35
+      },
+      {
+        "name": "Garry Thind",
+        "party": "con",
+        "votes": 5776,
+        "share": 30.72
+      }
+    ],
+    "Surrey-Green Timbers": [
+      {
+        "name": "Dilraj Atwal",
+        "party": "con",
+        "votes": 5540,
+        "share": 40.41
+      },
+      {
+        "name": "Rachna Singh",
+        "party": "ndp",
+        "votes": 8171,
+        "share": 59.59
+      }
+    ],
+    "Surrey-Guildford": [
+      {
+        "name": "Garry Begg",
+        "party": "ndp",
+        "votes": 10403,
+        "share": 60.59
+      },
+      {
+        "name": "Dave Hans",
+        "party": "con",
+        "votes": 5139,
+        "share": 29.93
+      },
+      {
+        "name": "Sam Kofalt",
+        "party": "other",
+        "votes": 282,
+        "share": 1.64
+      },
+      {
+        "name": "Jodi Murphy",
+        "party": "green",
+        "votes": 1345,
+        "share": 7.83
+      }
+    ],
+    "Surrey-Newton": [
+      {
+        "name": "Harry Bains",
+        "party": "ndp",
+        "votes": 8893,
+        "share": 62.64
+      },
+      {
+        "name": "Paul Boparai",
+        "party": "con",
+        "votes": 3911,
+        "share": 27.55
+      },
+      {
+        "name": "Asad Syed",
+        "party": "green",
+        "votes": 1393,
+        "share": 9.81
+      }
+    ],
+    "Surrey-Panorama": [
+      {
+        "name": "Gulzar Cheema",
+        "party": "con",
+        "votes": 9607,
+        "share": 42.89
+      },
+      {
+        "name": "Sophie Shrestha",
+        "party": "other",
+        "votes": 458,
+        "share": 2.04
+      },
+      {
+        "name": "Jinny Sims",
+        "party": "ndp",
+        "votes": 12336,
+        "share": 55.07
+      }
+    ],
+    "Surrey South": [
+      {
+        "name": "Stephanie Cadieux",
+        "party": "con",
+        "votes": 12970,
+        "share": 47.36
+      },
+      {
+        "name": "Pauline Greaves",
+        "party": "ndp",
+        "votes": 11794,
+        "share": 43.06
+      },
+      {
+        "name": "Tim Ibbotson",
+        "party": "green",
+        "votes": 2623,
+        "share": 9.58
+      }
+    ],
+    "Surrey-Whalley": [
+      {
+        "name": "Ryan Abbott",
+        "party": "other",
+        "votes": 223,
+        "share": 1.44
+      },
+      {
+        "name": "Jag Bhandari",
+        "party": "other",
+        "votes": 228,
+        "share": 1.47
+      },
+      {
+        "name": "Shaukat Khan",
+        "party": "con",
+        "votes": 4052,
+        "share": 26.15
+      },
+      {
+        "name": "Bruce Ralston",
+        "party": "ndp",
+        "votes": 10994,
+        "share": 70.94
+      }
+    ],
+    "Surrey-White Rock": [
+      {
+        "name": "Jason Bax",
+        "party": "other",
+        "votes": 443,
+        "share": 1.63
+      },
+      {
+        "name": "Trevor Halford",
+        "party": "con",
+        "votes": 10718,
+        "share": 39.51
+      },
+      {
+        "name": "Beverly (Pixie) Hobby",
+        "party": "green",
+        "votes": 3862,
+        "share": 14.24
+      },
+      {
+        "name": "Megan Knight",
+        "party": "other",
+        "votes": 1607,
+        "share": 5.92
+      },
+      {
+        "name": "Bryn Smith",
+        "party": "ndp",
+        "votes": 10494,
+        "share": 38.69
+      }
+    ],
+    "Vancouver-Fairview": [
+      {
+        "name": "George Affleck",
+        "party": "con",
+        "votes": 7570,
+        "share": 27.32
+      },
+      {
+        "name": "Sandra Filosof-Schipper",
+        "party": "other",
+        "votes": 234,
+        "share": 0.84
+      },
+      {
+        "name": "Ian Goldman",
+        "party": "green",
+        "votes": 4368,
+        "share": 15.76
+      },
+      {
+        "name": "George Heyman",
+        "party": "ndp",
+        "votes": 15538,
+        "share": 56.07
+      }
+    ],
+    "Vancouver-False Creek": [
+      {
+        "name": "Brenda Bailey",
+        "party": "ndp",
+        "votes": 11484,
+        "share": 46.77
+      },
+      {
+        "name": "Naomi Chocyk",
+        "party": "other",
+        "votes": 280,
+        "share": 1.14
+      },
+      {
+        "name": "Erik Gretland",
+        "party": "centre",
+        "votes": 465,
+        "share": 1.89
+      },
+      {
+        "name": "Maayan Kreitzman",
+        "party": "green",
+        "votes": 3108,
+        "share": 12.66
+      },
+      {
+        "name": "Sam Sullivan",
+        "party": "con",
+        "votes": 9217,
+        "share": 37.54
+      }
+    ],
+    "Vancouver-Fraserview": [
+      {
+        "name": "George Chow",
+        "party": "ndp",
+        "votes": 12247,
+        "share": 56.37
+      },
+      {
+        "name": "David Grewal",
+        "party": "con",
+        "votes": 7511,
+        "share": 34.57
+      },
+      {
+        "name": "Fran\u00e7oise Raunet",
+        "party": "green",
+        "votes": 1969,
+        "share": 9.06
+      }
+    ],
+    "Vancouver-Hastings": [
+      {
+        "name": "G\u00f6l\u00f6k Z Buday",
+        "party": "other",
+        "votes": 321,
+        "share": 1.45
+      },
+      {
+        "name": "Bridget Burns",
+        "party": "green",
+        "votes": 4312,
+        "share": 19.54
+      },
+      {
+        "name": "Kimball Cariou",
+        "party": "other",
+        "votes": 184,
+        "share": 0.83
+      },
+      {
+        "name": "Alex Read",
+        "party": "con",
+        "votes": 3885,
+        "share": 17.61
+      },
+      {
+        "name": "Niki Sharma",
+        "party": "ndp",
+        "votes": 13362,
+        "share": 60.56
+      }
+    ],
+    "Vancouver-Kensington": [
+      {
+        "name": "Mable Elmore",
+        "party": "ndp",
+        "votes": 12481,
+        "share": 59.97
+      },
+      {
+        "name": "Paul Lepage",
+        "party": "con",
+        "votes": 5255,
+        "share": 25.25
+      },
+      {
+        "name": "Nazanin Moghadami",
+        "party": "green",
+        "votes": 2874,
+        "share": 13.81
+      },
+      {
+        "name": "Salvatore Vetro",
+        "party": "other",
+        "votes": 202,
+        "share": 0.97
+      }
+    ],
+    "Vancouver-Kingsway": [
+      {
+        "name": "Cole Anderson",
+        "party": "con",
+        "votes": 3919,
+        "share": 21.61
+      },
+      {
+        "name": "Scott Bernstein",
+        "party": "green",
+        "votes": 1662,
+        "share": 9.16
+      },
+      {
+        "name": "Adrian Dix",
+        "party": "ndp",
+        "votes": 12297,
+        "share": 67.81
+      },
+      {
+        "name": "Karin Litzcke",
+        "party": "other",
+        "votes": 257,
+        "share": 1.42
+      }
+    ],
+    "Vancouver-Langara": [
+      {
+        "name": "Stephanie Hendy",
+        "party": "green",
+        "votes": 1840,
+        "share": 9.03
+      },
+      {
+        "name": "Michael Lee",
+        "party": "con",
+        "votes": 9888,
+        "share": 48.51
+      },
+      {
+        "name": "Paul Matthews",
+        "party": "other",
+        "votes": 224,
+        "share": 1.1
+      },
+      {
+        "name": "Tesicca Chi-Ying Truong",
+        "party": "ndp",
+        "votes": 8431,
+        "share": 41.36
+      }
+    ],
+    "Vancouver-Mount Pleasant": [
+      {
+        "name": "Melanie Mark",
+        "party": "ndp",
+        "votes": 14530,
+        "share": 66.95
+      },
+      {
+        "name": "Kelly Tatham",
+        "party": "green",
+        "votes": 4356,
+        "share": 20.07
+      },
+      {
+        "name": "George Vassilas",
+        "party": "con",
+        "votes": 2816,
+        "share": 12.98
+      }
+    ],
+    "Vancouver-Point Grey": [
+      {
+        "name": "Mark Bowen",
+        "party": "con",
+        "votes": 7712,
+        "share": 31.41
+      },
+      {
+        "name": "David Eby",
+        "party": "ndp",
+        "votes": 12602,
+        "share": 51.32
+      },
+      {
+        "name": "Devyani Singh",
+        "party": "green",
+        "votes": 4241,
+        "share": 17.27
+      }
+    ],
+    "Vancouver-Quilchena": [
+      {
+        "name": "Michael Barkusky",
+        "party": "green",
+        "votes": 3341,
+        "share": 15.4
+      },
+      {
+        "name": "Heather McQuillan",
+        "party": "ndp",
+        "votes": 6197,
+        "share": 28.56
+      },
+      {
+        "name": "Andrew Wilkinson",
+        "party": "con",
+        "votes": 12157,
+        "share": 56.04
+      }
+    ],
+    "Vancouver-West End": [
+      {
+        "name": "Spencer Chandra Herbert",
+        "party": "ndp",
+        "votes": 12439,
+        "share": 62.31
+      },
+      {
+        "name": "Jon Ellacott",
+        "party": "con",
+        "votes": 4014,
+        "share": 20.11
+      },
+      {
+        "name": "James Marshall",
+        "party": "green",
+        "votes": 3250,
+        "share": 16.28
+      },
+      {
+        "name": "Kim McCann",
+        "party": "other",
+        "votes": 259,
+        "share": 1.3
+      }
+    ],
+    "Vernon-Monashee": [
+      {
+        "name": "Kyle Delfing",
+        "party": "centre",
+        "votes": 3472,
+        "share": 12.42
+      },
+      {
+        "name": "Eric Foster",
+        "party": "con",
+        "votes": 9798,
+        "share": 35.05
+      },
+      {
+        "name": "Harwinder Sandhu",
+        "party": "ndp",
+        "votes": 10222,
+        "share": 36.56
+      },
+      {
+        "name": "Keli Westgate",
+        "party": "green",
+        "votes": 4464,
+        "share": 15.97
+      }
+    ],
+    "Victoria-Beacon Hill": [
+      {
+        "name": "Karen Bill",
+        "party": "con",
+        "votes": 4329,
+        "share": 14.35
+      },
+      {
+        "name": "Grace Lore",
+        "party": "ndp",
+        "votes": 16474,
+        "share": 54.61
+      },
+      {
+        "name": "Jenn Neilson",
+        "party": "green",
+        "votes": 9031,
+        "share": 29.93
+      },
+      {
+        "name": "Jordan Reichert",
+        "party": "other",
+        "votes": 335,
+        "share": 1.11
+      }
+    ],
+    "Victoria-Swan Lake": [
+      {
+        "name": "Rob Fleming",
+        "party": "ndp",
+        "votes": 14186,
+        "share": 59.35
+      },
+      {
+        "name": "Annemieke Holthuis",
+        "party": "green",
+        "votes": 6638,
+        "share": 27.77
+      },
+      {
+        "name": "Walt Parsons",
+        "party": "other",
+        "votes": 107,
+        "share": 0.45
+      },
+      {
+        "name": "Jenn Smith",
+        "party": "other",
+        "votes": 241,
+        "share": 1.01
+      },
+      {
+        "name": "David Somerville",
+        "party": "con",
+        "votes": 2729,
+        "share": 11.42
+      }
+    ],
+    "West Vancouver-Capilano": [
+      {
+        "name": "Amelia Hill",
+        "party": "ndp",
+        "votes": 7194,
+        "share": 30.25
+      },
+      {
+        "name": "Karin Kirkpatrick",
+        "party": "con",
+        "votes": 12734,
+        "share": 53.55
+      },
+      {
+        "name": "Rasoul Narimani",
+        "party": "green",
+        "votes": 3664,
+        "share": 15.41
+      },
+      {
+        "name": "Anton Shendryk",
+        "party": "other",
+        "votes": 186,
+        "share": 0.78
+      }
+    ],
+    "West Vancouver-Sea to Sky": [
+      {
+        "name": "Keith Murdoch",
+        "party": "ndp",
+        "votes": 6197,
+        "share": 25.16
+      },
+      {
+        "name": "Jordan Sturdy",
+        "party": "con",
+        "votes": 9249,
+        "share": 37.54
+      },
+      {
+        "name": "Jeremy Valeriote",
+        "party": "green",
+        "votes": 9189,
+        "share": 37.3
+      }
+    ]
+  },
+  "labels": {
+    "con": "BC Liberals",
+    "ndp": "BC NDP",
+    "green": "BC Greens",
+    "centre": "BC Conservatives",
+    "one": "Not running",
+    "other": "Other candidates"
+  },
+  "polls": [
+    {
+      "firm": "Research Co.",
+      "start": "2020-10-22",
+      "end": "2020-10-23",
+      "n": 705,
+      "shares": [
+        35,
+        50,
+        13,
+        0,
+        2,
+        0
+      ],
+      "published": "2020-10-23",
+      "sources": [
+        "https://researchco.ca/2020/10/23/bcelxn2020-final/"
+      ]
+    },
+    {
+      "firm": "Angus Reid",
+      "start": "2020-10-16",
+      "end": "2020-10-19",
+      "n": 1155,
+      "shares": [
+        35,
+        45,
+        16,
+        0,
+        null,
+        null
+      ],
+      "published": "2020-10-20",
+      "sources": [
+        "https://angusreid.org/wp-content/uploads/2020/10/2020.10.20_BC_politics.pdf"
+      ]
+    },
+    {
+      "firm": "Angus Reid",
+      "start": "2020-10-14",
+      "end": "2020-10-15",
+      "n": 714,
+      "shares": [
+        33,
+        49,
+        14,
+        0,
+        null,
+        null
+      ],
+      "published": "2020-10-16",
+      "sources": [
+        "https://angusreid.org/wp-content/uploads/2020/10/2020.10.15_BCElxn-2.pdf"
+      ]
+    }
+  ]
+}

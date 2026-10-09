@@ -1,0 +1,130 @@
+{
+  "version": "2.0",
+  "createdAt": "2026-10-04",
+  "description": "Retrospective election-eve checks with small verified subsets of pre-election polls. Not a full historical replay or proof of calibration.",
+  "results": [
+    {
+      "year": 2020,
+      "date": "2020-10-23",
+      "electionDay": "2020-10-24",
+      "simulations": 20000,
+      "polls": 3,
+      "firms": 2,
+      "winner": "BC NDP",
+      "winnerProbability": 99.785,
+      "parties": [
+        {
+          "id": "con",
+          "name": "BC Liberals",
+          "probability": 0.16999999999999998,
+          "mean": 27.18265,
+          "low": 20,
+          "high": 34,
+          "actual": 28
+        },
+        {
+          "id": "ndp",
+          "name": "BC NDP",
+          "probability": 99.785,
+          "mean": 55.62135,
+          "low": 49,
+          "high": 63,
+          "actual": 57
+        },
+        {
+          "id": "green",
+          "name": "BC Greens",
+          "probability": 0,
+          "mean": 1.75725,
+          "low": 1,
+          "high": 3,
+          "actual": 2
+        },
+        {
+          "id": "centre",
+          "name": "BC Conservatives",
+          "probability": 0,
+          "mean": 2.43875,
+          "low": 1,
+          "high": 3,
+          "actual": 0
+        },
+        {
+          "id": "other",
+          "name": "Other candidates",
+          "probability": 0,
+          "mean": 0,
+          "low": 0,
+          "high": 0,
+          "actual": 0
+        }
+      ],
+      "brier": 0.000007714999999999937,
+      "seatMAE": 0.9755000000000003,
+      "covered": 4,
+      "scored": 5,
+      "sources": [
+        "https://researchco.ca/2020/10/23/bcelxn2020-final/",
+        "https://angusreid.org/wp-content/uploads/2020/10/2020.10.20_BC_politics.pdf",
+        "https://angusreid.org/wp-content/uploads/2020/10/2020.10.15_BCElxn-2.pdf"
+      ]
+    },
+    {
+      "year": 2024,
+      "date": "2024-10-18",
+      "electionDay": "2024-10-19",
+      "simulations": 20000,
+      "polls": 3,
+      "firms": 3,
+      "winner": "BC NDP",
+      "winnerProbability": 73.275,
+      "parties": [
+        {
+          "id": "con",
+          "name": "BC Conservatives",
+          "probability": 22.415,
+          "mean": 42.68425,
+          "low": 37,
+          "high": 49,
+          "actual": 44
+        },
+        {
+          "id": "ndp",
+          "name": "BC NDP",
+          "probability": 73.275,
+          "mean": 49.0356,
+          "low": 43,
+          "high": 55,
+          "actual": 47
+        },
+        {
+          "id": "green",
+          "name": "BC Greens",
+          "probability": 0,
+          "mean": 1.27835,
+          "low": 1,
+          "high": 2,
+          "actual": 2
+        },
+        {
+          "id": "other",
+          "name": "Other candidates",
+          "probability": 0,
+          "mean": 0.0018,
+          "low": 0,
+          "high": 0,
+          "actual": 0
+        }
+      ],
+      "brier": 0.123523395,
+      "seatMAE": 1.018700000000001,
+      "covered": 4,
+      "scored": 4,
+      "sources": [
+        "https://researchco.ca/2024/10/18/final-bcpoli-2024/",
+        "https://www.ipsos.com/en-ca/ndp-are-favourites-win-third-term",
+        "https://pallas-data.ca/2024/10/18/pallas-final-british-columbia-election-poll-ndp-45-conservatives-42-greens-9/"
+      ]
+    }
+  ]
+}

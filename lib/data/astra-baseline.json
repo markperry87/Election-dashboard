@@ -1,0 +1,2589 @@
+{
+  "source": "Northern Vibe district pages: certified 2024 results",
+  "retrievedAt": "2026-10-04",
+  "districts": [
+    {
+      "name": "Courtenay-Comox",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/courtenay-comox",
+      "results": [
+        {
+          "name": "Brennan Day",
+          "party": "con",
+          "votes": 13481,
+          "share": 38.8
+        },
+        {
+          "name": "Ronna-Rae Leonard",
+          "party": "ndp",
+          "votes": 13388,
+          "share": 38.6
+        },
+        {
+          "name": "Arzeena Hamir",
+          "party": "green",
+          "votes": 7202,
+          "share": 20.7
+        },
+        {
+          "name": "John Hedican",
+          "party": "other",
+          "votes": 504,
+          "share": 1.4
+        },
+        {
+          "name": "Devin Howell",
+          "party": "other",
+          "votes": 143,
+          "share": 0.4
+        }
+      ]
+    },
+    {
+      "name": "Cowichan Valley",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/cowichan-valley",
+      "results": [
+        {
+          "name": "Debra Toporowski",
+          "party": "ndp",
+          "votes": 11795,
+          "share": 40.5
+        },
+        {
+          "name": "John Koury",
+          "party": "con",
+          "votes": 10946,
+          "share": 37.6
+        },
+        {
+          "name": "Cammy Lockwood",
+          "party": "green",
+          "votes": 5773,
+          "share": 19.8
+        },
+        {
+          "name": "Eden Haythornthwaite",
+          "party": "other",
+          "votes": 341,
+          "share": 1.2
+        },
+        {
+          "name": "Jon Coleman",
+          "party": "other",
+          "votes": 263,
+          "share": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Esquimalt-Colwood",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/esquimalt-colwood",
+      "results": [
+        {
+          "name": "Darlene Rotchford",
+          "party": "ndp",
+          "votes": 15238,
+          "share": 51.5
+        },
+        {
+          "name": "John Wilson",
+          "party": "con",
+          "votes": 8652,
+          "share": 29.2
+        },
+        {
+          "name": "Camille Currie",
+          "party": "green",
+          "votes": 5716,
+          "share": 19.3
+        }
+      ]
+    },
+    {
+      "name": "Juan de Fuca-Malahat",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/juan-de-fuca-malahat",
+      "results": [
+        {
+          "name": "Dana Lajeunesse",
+          "party": "ndp",
+          "votes": 9308,
+          "share": 38.8
+        },
+        {
+          "name": "Marina Sapozhnikov",
+          "party": "con",
+          "votes": 9167,
+          "share": 38.2
+        },
+        {
+          "name": "David Evans",
+          "party": "green",
+          "votes": 5522,
+          "share": 23.0
+        }
+      ]
+    },
+    {
+      "name": "Ladysmith-Oceanside",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/ladysmith-oceanside",
+      "results": [
+        {
+          "name": "Stephanie Higginson",
+          "party": "ndp",
+          "votes": 14144,
+          "share": 41.5
+        },
+        {
+          "name": "Brett Fee",
+          "party": "con",
+          "votes": 12097,
+          "share": 35.5
+        },
+        {
+          "name": "Adam Walker",
+          "party": "other",
+          "votes": 5559,
+          "share": 16.3
+        },
+        {
+          "name": "Laura Ferreira",
+          "party": "green",
+          "votes": 2292,
+          "share": 6.7
+        }
+      ]
+    },
+    {
+      "name": "Langford-Highlands",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/langford-highlands",
+      "results": [
+        {
+          "name": "Ravi Parmar",
+          "party": "ndp",
+          "votes": 11444,
+          "share": 51.9
+        },
+        {
+          "name": "Mike Harris",
+          "party": "con",
+          "votes": 8251,
+          "share": 37.4
+        },
+        {
+          "name": "Erin Cassels",
+          "party": "green",
+          "votes": 2368,
+          "share": 10.7
+        }
+      ]
+    },
+    {
+      "name": "Mid Island-Pacific Rim",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/mid-island-pacific-rim",
+      "results": [
+        {
+          "name": "Josie Osborne",
+          "party": "ndp",
+          "votes": 14042,
+          "share": 48.7
+        },
+        {
+          "name": "Adam Hayduk",
+          "party": "con",
+          "votes": 11366,
+          "share": 39.5
+        },
+        {
+          "name": "Ross Reid",
+          "party": "green",
+          "votes": 3402,
+          "share": 11.8
+        }
+      ]
+    },
+    {
+      "name": "Nanaimo-Gabriola Island",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/nanaimo-gabriola-island",
+      "results": [
+        {
+          "name": "Sheila Malcolmson",
+          "party": "ndp",
+          "votes": 14663,
+          "share": 52.8
+        },
+        {
+          "name": "Dale Parker",
+          "party": "con",
+          "votes": 9633,
+          "share": 34.6
+        },
+        {
+          "name": "Shirley Lambrecht",
+          "party": "green",
+          "votes": 3502,
+          "share": 12.6
+        }
+      ]
+    },
+    {
+      "name": "Nanaimo-Lantzville",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/nanaimo-lantzville",
+      "results": [
+        {
+          "name": "George Anderson",
+          "party": "ndp",
+          "votes": 15307,
+          "share": 51.8
+        },
+        {
+          "name": "Gwen O'Mahony",
+          "party": "con",
+          "votes": 11687,
+          "share": 39.5
+        },
+        {
+          "name": "Lia Versaevel",
+          "party": "green",
+          "votes": 2586,
+          "share": 8.7
+        }
+      ]
+    },
+    {
+      "name": "North Island",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/north-island",
+      "results": [
+        {
+          "name": "Anna Kindy",
+          "party": "con",
+          "votes": 14100,
+          "share": 47.1
+        },
+        {
+          "name": "Michele Babchuk",
+          "party": "ndp",
+          "votes": 13461,
+          "share": 44.9
+        },
+        {
+          "name": "Nic Dedeluk",
+          "party": "green",
+          "votes": 2397,
+          "share": 8.0
+        }
+      ]
+    },
+    {
+      "name": "Oak Bay-Gordon Head",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/oak-bay-gordon-head",
+      "results": [
+        {
+          "name": "Diana Gibson",
+          "party": "ndp",
+          "votes": 14519,
+          "share": 49.1
+        },
+        {
+          "name": "Stephen Andrew",
+          "party": "con",
+          "votes": 8542,
+          "share": 28.9
+        },
+        {
+          "name": "Lisa Gunderson",
+          "party": "green",
+          "votes": 6509,
+          "share": 22.0
+        }
+      ]
+    },
+    {
+      "name": "Powell River-Sunshine Coast",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/powell-river-sunshine-coast",
+      "results": [
+        {
+          "name": "Randene Neill",
+          "party": "ndp",
+          "votes": 14474,
+          "share": 49.6
+        },
+        {
+          "name": "Chris Moore",
+          "party": "con",
+          "votes": 10409,
+          "share": 35.7
+        },
+        {
+          "name": "Chris Hergesheimer",
+          "party": "green",
+          "votes": 3932,
+          "share": 13.5
+        },
+        {
+          "name": "Greg Reid",
+          "party": "other",
+          "votes": 356,
+          "share": 1.2
+        }
+      ]
+    },
+    {
+      "name": "Saanich North and the Islands",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/saanich-north-and-the-islands",
+      "results": [
+        {
+          "name": "Rob Botterell",
+          "party": "green",
+          "votes": 12308,
+          "share": 36.1
+        },
+        {
+          "name": "Sarah Riddell",
+          "party": "ndp",
+          "votes": 10958,
+          "share": 32.2
+        },
+        {
+          "name": "David Busch",
+          "party": "con",
+          "votes": 10145,
+          "share": 29.8
+        },
+        {
+          "name": "Amy Haysom",
+          "party": "other",
+          "votes": 635,
+          "share": 1.9
+        }
+      ]
+    },
+    {
+      "name": "Saanich South",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/saanich-south",
+      "results": [
+        {
+          "name": "Lana Popham",
+          "party": "ndp",
+          "votes": 15338,
+          "share": 49.8
+        },
+        {
+          "name": "Adam Kubel",
+          "party": "con",
+          "votes": 10003,
+          "share": 32.5
+        },
+        {
+          "name": "Ned Taylor",
+          "party": "green",
+          "votes": 5485,
+          "share": 17.8
+        }
+      ]
+    },
+    {
+      "name": "Victoria-Beacon Hill",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/victoria-beacon-hill",
+      "results": [
+        {
+          "name": "Grace Lore",
+          "party": "ndp",
+          "votes": 13634,
+          "share": 47.4
+        },
+        {
+          "name": "Sonia Furstenau",
+          "party": "green",
+          "votes": 9644,
+          "share": 33.5
+        },
+        {
+          "name": "Tim Thielmann",
+          "party": "con",
+          "votes": 5514,
+          "share": 19.1
+        }
+      ]
+    },
+    {
+      "name": "Victoria-Swan Lake",
+      "region": "Vancouver Island",
+      "url": "https://northernvibe.ca/en/bc/district/victoria-swan-lake",
+      "results": [
+        {
+          "name": "Nina Krieger",
+          "party": "ndp",
+          "votes": 14273,
+          "share": 56.0
+        },
+        {
+          "name": "Christina Winter",
+          "party": "green",
+          "votes": 5899,
+          "share": 23.2
+        },
+        {
+          "name": "Tim Taylor",
+          "party": "con",
+          "votes": 5146,
+          "share": 20.2
+        },
+        {
+          "name": "Robert Crooks",
+          "party": "other",
+          "votes": 156,
+          "share": 0.6
+        }
+      ]
+    },
+    {
+      "name": "Burnaby Centre",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/burnaby-centre",
+      "results": [
+        {
+          "name": "Anne Kang",
+          "party": "ndp",
+          "votes": 9780,
+          "share": 57.3
+        },
+        {
+          "name": "Dharam Kajal",
+          "party": "con",
+          "votes": 7294,
+          "share": 42.7
+        }
+      ]
+    },
+    {
+      "name": "Burnaby East",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/burnaby-east",
+      "results": [
+        {
+          "name": "Reah Arora",
+          "party": "ndp",
+          "votes": 10490,
+          "share": 51.9
+        },
+        {
+          "name": "Simon Chandler",
+          "party": "con",
+          "votes": 8198,
+          "share": 40.5
+        },
+        {
+          "name": "Tara Shushtarian",
+          "party": "green",
+          "votes": 1544,
+          "share": 7.6
+        }
+      ]
+    },
+    {
+      "name": "Burnaby North",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/burnaby-north",
+      "results": [
+        {
+          "name": "Janet Routledge",
+          "party": "ndp",
+          "votes": 10724,
+          "share": 53.3
+        },
+        {
+          "name": "Michael Wu",
+          "party": "con",
+          "votes": 8658,
+          "share": 43.0
+        },
+        {
+          "name": "Martin Kendell",
+          "party": "other",
+          "votes": 754,
+          "share": 3.7
+        }
+      ]
+    },
+    {
+      "name": "Burnaby South-Metrotown",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/burnaby-south-metrotown",
+      "results": [
+        {
+          "name": "Paul Choi",
+          "party": "ndp",
+          "votes": 7560,
+          "share": 49.3
+        },
+        {
+          "name": "Han Lee",
+          "party": "con",
+          "votes": 6373,
+          "share": 41.6
+        },
+        {
+          "name": "Carrie McLaren",
+          "party": "green",
+          "votes": 960,
+          "share": 6.3
+        },
+        {
+          "name": "Meiling Chia",
+          "party": "other",
+          "votes": 290,
+          "share": 1.9
+        },
+        {
+          "name": "MichaelAngelo Abc RobinHood",
+          "party": "other",
+          "votes": 142,
+          "share": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Burnaby-New Westminster",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/burnaby-new-westminster",
+      "results": [
+        {
+          "name": "Raj Chouhan",
+          "party": "ndp",
+          "votes": 10647,
+          "share": 60.0
+        },
+        {
+          "name": "Deepak Suri",
+          "party": "con",
+          "votes": 6161,
+          "share": 34.7
+        },
+        {
+          "name": "Daniel Kofi Ampong",
+          "party": "other",
+          "votes": 940,
+          "share": 5.3
+        }
+      ]
+    },
+    {
+      "name": "Coquitlam-Burke Mountain",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/coquitlam-burke-mountain",
+      "results": [
+        {
+          "name": "Jodie Wickens",
+          "party": "ndp",
+          "votes": 11020,
+          "share": 50.9
+        },
+        {
+          "name": "Stephen Frolek",
+          "party": "con",
+          "votes": 10652,
+          "share": 49.1
+        }
+      ]
+    },
+    {
+      "name": "Coquitlam-Maillardville",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/coquitlam-maillardville",
+      "results": [
+        {
+          "name": "Jennifer Blatherwick",
+          "party": "ndp",
+          "votes": 11972,
+          "share": 51.8
+        },
+        {
+          "name": "Hamed Najafi",
+          "party": "con",
+          "votes": 9146,
+          "share": 39.6
+        },
+        {
+          "name": "Nicola Spurling",
+          "party": "green",
+          "votes": 1461,
+          "share": 6.3
+        },
+        {
+          "name": "Ken Holowanky",
+          "party": "other",
+          "votes": 535,
+          "share": 2.3
+        }
+      ]
+    },
+    {
+      "name": "Delta North",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/delta-north",
+      "results": [
+        {
+          "name": "Ravi Kahlon",
+          "party": "ndp",
+          "votes": 10988,
+          "share": 52.7
+        },
+        {
+          "name": "Raj Veauli",
+          "party": "con",
+          "votes": 8381,
+          "share": 40.2
+        },
+        {
+          "name": "Nick Dickinson-Wilde",
+          "party": "green",
+          "votes": 1292,
+          "share": 6.2
+        },
+        {
+          "name": "Manqoosh Khan",
+          "party": "other",
+          "votes": 177,
+          "share": 0.8
+        }
+      ]
+    },
+    {
+      "name": "Delta South",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/delta-south",
+      "results": [
+        {
+          "name": "Ian Paton",
+          "party": "con",
+          "votes": 14491,
+          "share": 55.1
+        },
+        {
+          "name": "Jason McCormick",
+          "party": "ndp",
+          "votes": 11822,
+          "share": 44.9
+        }
+      ]
+    },
+    {
+      "name": "Maple Ridge East",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/maple-ridge-east",
+      "results": [
+        {
+          "name": "Lawrence Mok",
+          "party": "con",
+          "votes": 12058,
+          "share": 47.0
+        },
+        {
+          "name": "Bob D'Eith",
+          "party": "ndp",
+          "votes": 11961,
+          "share": 46.6
+        },
+        {
+          "name": "Kylee Williams",
+          "party": "green",
+          "votes": 1626,
+          "share": 6.3
+        }
+      ]
+    },
+    {
+      "name": "Maple Ridge-Pitt Meadows",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/maple-ridge-pitt-meadows",
+      "results": [
+        {
+          "name": "Lisa Beare",
+          "party": "ndp",
+          "votes": 14480,
+          "share": 54.9
+        },
+        {
+          "name": "Mike Morden",
+          "party": "con",
+          "votes": 11901,
+          "share": 45.1
+        }
+      ]
+    },
+    {
+      "name": "New Westminster-Coquitlam",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/new-westminster-coquitlam",
+      "results": [
+        {
+          "name": "Jennifer Whiteside",
+          "party": "ndp",
+          "votes": 12757,
+          "share": 59.1
+        },
+        {
+          "name": "Ndellie Massey",
+          "party": "con",
+          "votes": 6438,
+          "share": 29.8
+        },
+        {
+          "name": "Maureen Curran",
+          "party": "green",
+          "votes": 2380,
+          "share": 11.0
+        }
+      ]
+    },
+    {
+      "name": "North Vancouver-Lonsdale",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/north-vancouver-lonsdale",
+      "results": [
+        {
+          "name": "Bowinn Ma",
+          "party": "ndp",
+          "votes": 16759,
+          "share": 64.9
+        },
+        {
+          "name": "David Splett",
+          "party": "con",
+          "votes": 9073,
+          "share": 35.1
+        }
+      ]
+    },
+    {
+      "name": "North Vancouver-Seymour",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/north-vancouver-seymour",
+      "results": [
+        {
+          "name": "Susie Chant",
+          "party": "ndp",
+          "votes": 16210,
+          "share": 52.8
+        },
+        {
+          "name": "Sam Chandola",
+          "party": "con",
+          "votes": 10995,
+          "share": 35.8
+        },
+        {
+          "name": "Mitchell Baker",
+          "party": "other",
+          "votes": 1794,
+          "share": 5.8
+        },
+        {
+          "name": "Subhadarshi Tripathy",
+          "party": "green",
+          "votes": 1722,
+          "share": 5.6
+        }
+      ]
+    },
+    {
+      "name": "Port Coquitlam",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/port-coquitlam",
+      "results": [
+        {
+          "name": "Mike Farnworth",
+          "party": "ndp",
+          "votes": 13843,
+          "share": 53.9
+        },
+        {
+          "name": "Keenan Adams",
+          "party": "con",
+          "votes": 9967,
+          "share": 38.8
+        },
+        {
+          "name": "Adam Bremner-Akins",
+          "party": "green",
+          "votes": 1644,
+          "share": 6.4
+        },
+        {
+          "name": "Lewis Dahlby",
+          "party": "other",
+          "votes": 244,
+          "share": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Port Moody-Burquitlam",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/port-moody-burquitlam",
+      "results": [
+        {
+          "name": "Rick Glumac",
+          "party": "ndp",
+          "votes": 13488,
+          "share": 52.1
+        },
+        {
+          "name": "Kerry van Aswegen",
+          "party": "con",
+          "votes": 10493,
+          "share": 40.5
+        },
+        {
+          "name": "Samantha Agtarap",
+          "party": "green",
+          "votes": 1927,
+          "share": 7.4
+        }
+      ]
+    },
+    {
+      "name": "Richmond Centre",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/richmond-centre",
+      "results": [
+        {
+          "name": "Hon Chan",
+          "party": "con",
+          "votes": 8426,
+          "share": 52.0
+        },
+        {
+          "name": "Henry Yao",
+          "party": "ndp",
+          "votes": 5961,
+          "share": 36.8
+        },
+        {
+          "name": "Wendy Yuan",
+          "party": "other",
+          "votes": 1028,
+          "share": 6.3
+        },
+        {
+          "name": "Dickens Cheung",
+          "party": "other",
+          "votes": 556,
+          "share": 3.4
+        },
+        {
+          "name": "Sunny Ho",
+          "party": "other",
+          "votes": 237,
+          "share": 1.5
+        }
+      ]
+    },
+    {
+      "name": "Richmond-Bridgeport",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/richmond-bridgeport",
+      "results": [
+        {
+          "name": "Teresa Wat",
+          "party": "con",
+          "votes": 9908,
+          "share": 58.2
+        },
+        {
+          "name": "Linda Li",
+          "party": "ndp",
+          "votes": 5921,
+          "share": 34.8
+        },
+        {
+          "name": "Tam\u00e1s Rev\u00f3czi",
+          "party": "green",
+          "votes": 547,
+          "share": 3.2
+        },
+        {
+          "name": "Glynnis Hoi Sum Chan",
+          "party": "other",
+          "votes": 519,
+          "share": 3.0
+        },
+        {
+          "name": "Charlie Smith",
+          "party": "other",
+          "votes": 132,
+          "share": 0.8
+        }
+      ]
+    },
+    {
+      "name": "Richmond-Queensborough",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/richmond-queensborough",
+      "results": [
+        {
+          "name": "Steve Kooner",
+          "party": "con",
+          "votes": 10052,
+          "share": 50.9
+        },
+        {
+          "name": "Aman Singh",
+          "party": "ndp",
+          "votes": 8713,
+          "share": 44.1
+        },
+        {
+          "name": "Cindy Wu",
+          "party": "other",
+          "votes": 721,
+          "share": 3.6
+        },
+        {
+          "name": "Errol E. Povah",
+          "party": "other",
+          "votes": 258,
+          "share": 1.3
+        }
+      ]
+    },
+    {
+      "name": "Richmond-Steveston",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/richmond-steveston",
+      "results": [
+        {
+          "name": "Kelly Greene",
+          "party": "ndp",
+          "votes": 10332,
+          "share": 44.3
+        },
+        {
+          "name": "Michelle Mollineaux",
+          "party": "con",
+          "votes": 9848,
+          "share": 42.2
+        },
+        {
+          "name": "Jackie Lee",
+          "party": "other",
+          "votes": 2354,
+          "share": 10.1
+        },
+        {
+          "name": "Elodie Vaudandaine",
+          "party": "green",
+          "votes": 803,
+          "share": 3.4
+        }
+      ]
+    },
+    {
+      "name": "Surrey City Centre",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/surrey-city-centre",
+      "results": [
+        {
+          "name": "Amna Shah",
+          "party": "ndp",
+          "votes": 6726,
+          "share": 46.7
+        },
+        {
+          "name": "Zeeshan Wahla",
+          "party": "con",
+          "votes": 6494,
+          "share": 45.1
+        },
+        {
+          "name": "Colin Boyd",
+          "party": "green",
+          "votes": 877,
+          "share": 6.1
+        },
+        {
+          "name": "Saeed Naguib",
+          "party": "other",
+          "votes": 160,
+          "share": 1.1
+        },
+        {
+          "name": "Ryan Abbott",
+          "party": "other",
+          "votes": 147,
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Surrey North",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/surrey-north",
+      "results": [
+        {
+          "name": "Mandeep Dhaliwal",
+          "party": "con",
+          "votes": 7954,
+          "share": 50.7
+        },
+        {
+          "name": "Rachna Singh",
+          "party": "ndp",
+          "votes": 6795,
+          "share": 43.3
+        },
+        {
+          "name": "Sim Sandhu",
+          "party": "green",
+          "votes": 662,
+          "share": 4.2
+        },
+        {
+          "name": "Kiran Hundal",
+          "party": "other",
+          "votes": 162,
+          "share": 1.0
+        },
+        {
+          "name": "Hobby Nijjar",
+          "party": "other",
+          "votes": 125,
+          "share": 0.8
+        }
+      ]
+    },
+    {
+      "name": "Surrey South",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/surrey-south",
+      "results": [
+        {
+          "name": "Brent Chapman",
+          "party": "con",
+          "votes": 13056,
+          "share": 58.8
+        },
+        {
+          "name": "Haroon Ghaffar",
+          "party": "ndp",
+          "votes": 9136,
+          "share": 41.2
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Cloverdale",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/surrey-cloverdale",
+      "results": [
+        {
+          "name": "Elenore Sturko",
+          "party": "con",
+          "votes": 10268,
+          "share": 48.3
+        },
+        {
+          "name": "Mike Starchuk",
+          "party": "ndp",
+          "votes": 9682,
+          "share": 45.6
+        },
+        {
+          "name": "Pat McCutcheon",
+          "party": "green",
+          "votes": 1150,
+          "share": 5.4
+        },
+        {
+          "name": "Judy Meilleur",
+          "party": "other",
+          "votes": 153,
+          "share": 0.7
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Fleetwood",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/surrey-fleetwood",
+      "results": [
+        {
+          "name": "Jagrup Brar",
+          "party": "ndp",
+          "votes": 9923,
+          "share": 48.6
+        },
+        {
+          "name": "Avtar Gill",
+          "party": "con",
+          "votes": 9170,
+          "share": 44.9
+        },
+        {
+          "name": "Tim Binnema",
+          "party": "green",
+          "votes": 1321,
+          "share": 6.5
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Guildford",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/surrey-guildford",
+      "results": [
+        {
+          "name": "Garry Begg",
+          "party": "ndp",
+          "votes": 8947,
+          "share": 46.9
+        },
+        {
+          "name": "Honveer Singh Randhawa",
+          "party": "con",
+          "votes": 8925,
+          "share": 46.8
+        },
+        {
+          "name": "Manjeet Singh Sahota",
+          "party": "green",
+          "votes": 824,
+          "share": 4.3
+        },
+        {
+          "name": "Kabir Qurban",
+          "party": "other",
+          "votes": 370,
+          "share": 1.9
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Newton",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/surrey-newton",
+      "results": [
+        {
+          "name": "Jessie Sunner",
+          "party": "ndp",
+          "votes": 7924,
+          "share": 51.2
+        },
+        {
+          "name": "Tegjot Bal",
+          "party": "con",
+          "votes": 6658,
+          "share": 43.0
+        },
+        {
+          "name": "Amrit Birring",
+          "party": "other",
+          "votes": 371,
+          "share": 2.4
+        },
+        {
+          "name": "Japreet Lehal",
+          "party": "other",
+          "votes": 344,
+          "share": 2.2
+        },
+        {
+          "name": "Joginder Singh Randhawa",
+          "party": "other",
+          "votes": 189,
+          "share": 1.2
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Panorama",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/surrey-panorama",
+      "results": [
+        {
+          "name": "Bryan Tepper",
+          "party": "con",
+          "votes": 8735,
+          "share": 49.6
+        },
+        {
+          "name": "Jinny Sims",
+          "party": "ndp",
+          "votes": 8472,
+          "share": 48.1
+        },
+        {
+          "name": "Paramjit Rai",
+          "party": "other",
+          "votes": 404,
+          "share": 2.3
+        }
+      ]
+    },
+    {
+      "name": "Surrey-Serpentine River",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/surrey-serpentine-river",
+      "results": [
+        {
+          "name": "Linda Hepner",
+          "party": "con",
+          "votes": 9782,
+          "share": 49.7
+        },
+        {
+          "name": "Baltej Singh Dhillon",
+          "party": "ndp",
+          "votes": 9347,
+          "share": 47.5
+        },
+        {
+          "name": "Jim McMurtry",
+          "party": "other",
+          "votes": 554,
+          "share": 2.8
+        }
+      ]
+    },
+    {
+      "name": "Surrey-White Rock",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/surrey-white-rock",
+      "results": [
+        {
+          "name": "Trevor Halford",
+          "party": "con",
+          "votes": 14667,
+          "share": 52.3
+        },
+        {
+          "name": "Darryl Walker",
+          "party": "ndp",
+          "votes": 12698,
+          "share": 45.3
+        },
+        {
+          "name": "Damyn Tassie",
+          "party": "other",
+          "votes": 671,
+          "share": 2.4
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Fraserview",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-fraserview",
+      "results": [
+        {
+          "name": "George Chow",
+          "party": "ndp",
+          "votes": 11896,
+          "share": 57.2
+        },
+        {
+          "name": "Jag S Sanghera",
+          "party": "con",
+          "votes": 7618,
+          "share": 36.6
+        },
+        {
+          "name": "Francoise Raunet",
+          "party": "green",
+          "votes": 1290,
+          "share": 6.2
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Hastings",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-hastings",
+      "results": [
+        {
+          "name": "Niki Sharma",
+          "party": "ndp",
+          "votes": 14237,
+          "share": 64.2
+        },
+        {
+          "name": "Jacob Burdge",
+          "party": "con",
+          "votes": 5391,
+          "share": 24.3
+        },
+        {
+          "name": "Bridget Burns",
+          "party": "green",
+          "votes": 2409,
+          "share": 10.8
+        },
+        {
+          "name": "Zsolt Kiss",
+          "party": "other",
+          "votes": 157,
+          "share": 0.7
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Kensington",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-kensington",
+      "results": [
+        {
+          "name": "Mable Elmore",
+          "party": "ndp",
+          "votes": 11713,
+          "share": 60.9
+        },
+        {
+          "name": "Syed Mohsin",
+          "party": "con",
+          "votes": 6061,
+          "share": 31.5
+        },
+        {
+          "name": "Amy Fox",
+          "party": "green",
+          "votes": 1458,
+          "share": 7.6
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Langara",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-langara",
+      "results": [
+        {
+          "name": "Sunita Dhir",
+          "party": "ndp",
+          "votes": 8506,
+          "share": 48.4
+        },
+        {
+          "name": "Bryan Breguet",
+          "party": "con",
+          "votes": 8087,
+          "share": 46.0
+        },
+        {
+          "name": "Scottford Price",
+          "party": "green",
+          "votes": 969,
+          "share": 5.5
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Little Mountain",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-little-mountain",
+      "results": [
+        {
+          "name": "Christine Boyle",
+          "party": "ndp",
+          "votes": 15636,
+          "share": 62.1
+        },
+        {
+          "name": "John Coupar",
+          "party": "con",
+          "votes": 7704,
+          "share": 30.6
+        },
+        {
+          "name": "Wendy Hayko",
+          "party": "green",
+          "votes": 1833,
+          "share": 7.3
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Point Grey",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-point-grey",
+      "results": [
+        {
+          "name": "David Eby",
+          "party": "ndp",
+          "votes": 12538,
+          "share": 56.8
+        },
+        {
+          "name": "Paul Ratchford",
+          "party": "con",
+          "votes": 7622,
+          "share": 34.5
+        },
+        {
+          "name": "Devyani Singh",
+          "party": "green",
+          "votes": 1925,
+          "share": 8.7
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Quilchena",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-quilchena",
+      "results": [
+        {
+          "name": "Dallas Brodie",
+          "party": "con",
+          "votes": 11464,
+          "share": 51.6
+        },
+        {
+          "name": "Callista Ryan",
+          "party": "ndp",
+          "votes": 8649,
+          "share": 38.9
+        },
+        {
+          "name": "Michael Barkusky",
+          "party": "green",
+          "votes": 1729,
+          "share": 7.8
+        },
+        {
+          "name": "Caroline Ying-Mei Wang",
+          "party": "other",
+          "votes": 385,
+          "share": 1.7
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Renfrew",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-renfrew",
+      "results": [
+        {
+          "name": "Adrian Dix",
+          "party": "ndp",
+          "votes": 10983,
+          "share": 63.2
+        },
+        {
+          "name": "Tom Ikonomou",
+          "party": "con",
+          "votes": 5327,
+          "share": 30.7
+        },
+        {
+          "name": "Lawrence Taylor",
+          "party": "green",
+          "votes": 1064,
+          "share": 6.1
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-South Granville",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-south-granville",
+      "results": [
+        {
+          "name": "Brenda Bailey",
+          "party": "ndp",
+          "votes": 17208,
+          "share": 64.3
+        },
+        {
+          "name": "Aron Lageri",
+          "party": "con",
+          "votes": 6678,
+          "share": 25.0
+        },
+        {
+          "name": "Adam Hawk",
+          "party": "green",
+          "votes": 2872,
+          "share": 10.7
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Strathcona",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-strathcona",
+      "results": [
+        {
+          "name": "Joan Phillip",
+          "party": "ndp",
+          "votes": 13673,
+          "share": 68.2
+        },
+        {
+          "name": "Scott Muller",
+          "party": "con",
+          "votes": 3430,
+          "share": 17.1
+        },
+        {
+          "name": "Simon de Weerdt",
+          "party": "green",
+          "votes": 2618,
+          "share": 13.1
+        },
+        {
+          "name": "Kimball Cariou",
+          "party": "other",
+          "votes": 336,
+          "share": 1.7
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-West End",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-west-end",
+      "results": [
+        {
+          "name": "Spencer Chandra Herbert",
+          "party": "ndp",
+          "votes": 13143,
+          "share": 63.0
+        },
+        {
+          "name": "Jon Ellacott",
+          "party": "con",
+          "votes": 5677,
+          "share": 27.2
+        },
+        {
+          "name": "Eoin O'Dwyer",
+          "party": "green",
+          "votes": 1893,
+          "share": 9.1
+        },
+        {
+          "name": "Carl Turnbull",
+          "party": "other",
+          "votes": 144,
+          "share": 0.7
+        }
+      ]
+    },
+    {
+      "name": "Vancouver-Yaletown",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/vancouver-yaletown",
+      "results": [
+        {
+          "name": "Terry Yung",
+          "party": "ndp",
+          "votes": 9018,
+          "share": 49.8
+        },
+        {
+          "name": "Melissa De Genova",
+          "party": "con",
+          "votes": 7857,
+          "share": 43.4
+        },
+        {
+          "name": "Dana-Lyn Mackenzie",
+          "party": "green",
+          "votes": 1248,
+          "share": 6.9
+        }
+      ]
+    },
+    {
+      "name": "West Vancouver-Capilano",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/west-vancouver-capilano",
+      "results": [
+        {
+          "name": "Lynne Block",
+          "party": "con",
+          "votes": 12049,
+          "share": 46.7
+        },
+        {
+          "name": "Sara Eftekhar",
+          "party": "ndp",
+          "votes": 7006,
+          "share": 27.1
+        },
+        {
+          "name": "Karin Kirkpatrick",
+          "party": "other",
+          "votes": 5326,
+          "share": 20.6
+        },
+        {
+          "name": "Archie Kaario",
+          "party": "green",
+          "votes": 1435,
+          "share": 5.6
+        }
+      ]
+    },
+    {
+      "name": "West Vancouver-Sea to Sky",
+      "region": "Metro Vancouver",
+      "url": "https://northernvibe.ca/en/bc/district/west-vancouver-sea-to-sky",
+      "results": [
+        {
+          "name": "Jeremy Valeriote",
+          "party": "green",
+          "votes": 10438,
+          "share": 38.1
+        },
+        {
+          "name": "Yuri Fulmer",
+          "party": "con",
+          "votes": 9762,
+          "share": 35.6
+        },
+        {
+          "name": "Jen Ford",
+          "party": "ndp",
+          "votes": 7213,
+          "share": 26.3
+        }
+      ]
+    },
+    {
+      "name": "Abbotsford South",
+      "region": "Fraser Valley",
+      "url": "https://northernvibe.ca/en/bc/district/abbotsford-south",
+      "results": [
+        {
+          "name": "Bruce Banman",
+          "party": "con",
+          "votes": 13053,
+          "share": 61.6
+        },
+        {
+          "name": "Sarah Kooner",
+          "party": "ndp",
+          "votes": 7454,
+          "share": 35.2
+        },
+        {
+          "name": "Amandeep Singh",
+          "party": "other",
+          "votes": 681,
+          "share": 3.2
+        }
+      ]
+    },
+    {
+      "name": "Abbotsford West",
+      "region": "Fraser Valley",
+      "url": "https://northernvibe.ca/en/bc/district/abbotsford-west",
+      "results": [
+        {
+          "name": "Korky Neufeld",
+          "party": "con",
+          "votes": 11483,
+          "share": 58.4
+        },
+        {
+          "name": "Graeme Hutchison",
+          "party": "ndp",
+          "votes": 7255,
+          "share": 36.9
+        },
+        {
+          "name": "James Davison",
+          "party": "other",
+          "votes": 940,
+          "share": 4.8
+        }
+      ]
+    },
+    {
+      "name": "Abbotsford-Mission",
+      "region": "Fraser Valley",
+      "url": "https://northernvibe.ca/en/bc/district/abbotsford-mission",
+      "results": [
+        {
+          "name": "Reann Gasper",
+          "party": "con",
+          "votes": 13523,
+          "share": 55.4
+        },
+        {
+          "name": "Pam Alexis",
+          "party": "ndp",
+          "votes": 10894,
+          "share": 44.6
+        }
+      ]
+    },
+    {
+      "name": "Chilliwack North",
+      "region": "Fraser Valley",
+      "url": "https://northernvibe.ca/en/bc/district/chilliwack-north",
+      "results": [
+        {
+          "name": "Heather Maahs",
+          "party": "con",
+          "votes": 11776,
+          "share": 54.6
+        },
+        {
+          "name": "Dan Coulter",
+          "party": "ndp",
+          "votes": 8125,
+          "share": 37.7
+        },
+        {
+          "name": "Tim Cooper",
+          "party": "green",
+          "votes": 1187,
+          "share": 5.5
+        },
+        {
+          "name": "Dan Grice",
+          "party": "other",
+          "votes": 487,
+          "share": 2.3
+        }
+      ]
+    },
+    {
+      "name": "Chilliwack-Cultus Lake",
+      "region": "Fraser Valley",
+      "url": "https://northernvibe.ca/en/bc/district/chilliwack-cultus-lake",
+      "results": [
+        {
+          "name": "A'aliya Warbus",
+          "party": "con",
+          "votes": 13656,
+          "share": 54.6
+        },
+        {
+          "name": "Kelli Paddon",
+          "party": "ndp",
+          "votes": 11366,
+          "share": 45.4
+        }
+      ]
+    },
+    {
+      "name": "Langley-Abbotsford",
+      "region": "Fraser Valley",
+      "url": "https://northernvibe.ca/en/bc/district/langley-abbotsford",
+      "results": [
+        {
+          "name": "Harman Bhangu",
+          "party": "con",
+          "votes": 14341,
+          "share": 55.6
+        },
+        {
+          "name": "John Aldag",
+          "party": "ndp",
+          "votes": 8691,
+          "share": 33.7
+        },
+        {
+          "name": "Melissa Snazell",
+          "party": "green",
+          "votes": 1434,
+          "share": 5.6
+        },
+        {
+          "name": "Karen Long",
+          "party": "other",
+          "votes": 1104,
+          "share": 4.3
+        },
+        {
+          "name": "Alex Joehl",
+          "party": "other",
+          "votes": 200,
+          "share": 0.8
+        }
+      ]
+    },
+    {
+      "name": "Langley-Walnut Grove",
+      "region": "Fraser Valley",
+      "url": "https://northernvibe.ca/en/bc/district/langley-walnut-grove",
+      "results": [
+        {
+          "name": "Misty Van Popta",
+          "party": "con",
+          "votes": 12121,
+          "share": 49.6
+        },
+        {
+          "name": "Megan Dykeman",
+          "party": "ndp",
+          "votes": 10949,
+          "share": 44.8
+        },
+        {
+          "name": "Rylee Mac Lean",
+          "party": "green",
+          "votes": 1254,
+          "share": 5.1
+        },
+        {
+          "name": "Carlos Suarez Rubio",
+          "party": "other",
+          "votes": 134,
+          "share": 0.6
+        }
+      ]
+    },
+    {
+      "name": "Langley-Willowbrook",
+      "region": "Fraser Valley",
+      "url": "https://northernvibe.ca/en/bc/district/langley-willowbrook",
+      "results": [
+        {
+          "name": "Jody Toor",
+          "party": "con",
+          "votes": 10979,
+          "share": 48.2
+        },
+        {
+          "name": "Andrew Mercier",
+          "party": "ndp",
+          "votes": 10112,
+          "share": 44.4
+        },
+        {
+          "name": "Petrina Arnason",
+          "party": "green",
+          "votes": 1670,
+          "share": 7.3
+        }
+      ]
+    },
+    {
+      "name": "Boundary-Similkameen",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/boundary-similkameen",
+      "results": [
+        {
+          "name": "Donegal Wilson",
+          "party": "con",
+          "votes": 11935,
+          "share": 48.4
+        },
+        {
+          "name": "Roly Russell",
+          "party": "ndp",
+          "votes": 10497,
+          "share": 42.6
+        },
+        {
+          "name": "Kevin Eastwood",
+          "party": "green",
+          "votes": 1454,
+          "share": 5.9
+        },
+        {
+          "name": "Sean Taylor",
+          "party": "other",
+          "votes": 779,
+          "share": 3.2
+        }
+      ]
+    },
+    {
+      "name": "Cariboo-Chilcotin",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/cariboo-chilcotin",
+      "results": [
+        {
+          "name": "Lorne Doerkson",
+          "party": "con",
+          "votes": 13714,
+          "share": 69.6
+        },
+        {
+          "name": "Michael Moses",
+          "party": "ndp",
+          "votes": 5992,
+          "share": 30.4
+        }
+      ]
+    },
+    {
+      "name": "Columbia River-Revelstoke",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/columbia-river-revelstoke",
+      "results": [
+        {
+          "name": "Scott McInnis",
+          "party": "con",
+          "votes": 8768,
+          "share": 47.9
+        },
+        {
+          "name": "Andrea Dunlop",
+          "party": "ndp",
+          "votes": 8098,
+          "share": 44.3
+        },
+        {
+          "name": "Calvin Beauchesne",
+          "party": "green",
+          "votes": 1430,
+          "share": 7.8
+        }
+      ]
+    },
+    {
+      "name": "Fraser-Nicola",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/fraser-nicola",
+      "results": [
+        {
+          "name": "Tony Luck",
+          "party": "con",
+          "votes": 10326,
+          "share": 54.3
+        },
+        {
+          "name": "Francyne Joe",
+          "party": "ndp",
+          "votes": 6917,
+          "share": 36.4
+        },
+        {
+          "name": "Jonah Timms",
+          "party": "green",
+          "votes": 1761,
+          "share": 9.3
+        }
+      ]
+    },
+    {
+      "name": "Kamloops Centre",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/kamloops-centre",
+      "results": [
+        {
+          "name": "Peter Milobar",
+          "party": "con",
+          "votes": 12372,
+          "share": 48.8
+        },
+        {
+          "name": "Kamal Grewal",
+          "party": "ndp",
+          "votes": 10369,
+          "share": 40.9
+        },
+        {
+          "name": "Randy Sunderman",
+          "party": "green",
+          "votes": 2597,
+          "share": 10.3
+        }
+      ]
+    },
+    {
+      "name": "Kamloops-North Thompson",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/kamloops-north-thompson",
+      "results": [
+        {
+          "name": "Ward Stamer",
+          "party": "con",
+          "votes": 17930,
+          "share": 59.7
+        },
+        {
+          "name": "Maddi Genn",
+          "party": "ndp",
+          "votes": 9874,
+          "share": 32.9
+        },
+        {
+          "name": "Tristan Cavers",
+          "party": "green",
+          "votes": 2209,
+          "share": 7.4
+        }
+      ]
+    },
+    {
+      "name": "Kelowna Centre",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/kelowna-centre",
+      "results": [
+        {
+          "name": "Kristina Loewen",
+          "party": "con",
+          "votes": 11033,
+          "share": 42.9
+        },
+        {
+          "name": "Loyal Wooldridge",
+          "party": "ndp",
+          "votes": 10993,
+          "share": 42.7
+        },
+        {
+          "name": "Michael Humer",
+          "party": "other",
+          "votes": 2613,
+          "share": 10.2
+        },
+        {
+          "name": "Bryce Tippe",
+          "party": "green",
+          "votes": 1111,
+          "share": 4.3
+        }
+      ]
+    },
+    {
+      "name": "Kelowna-Lake Country-Coldstream",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/kelowna-lake-country-coldstream",
+      "results": [
+        {
+          "name": "Tara Armstrong",
+          "party": "con",
+          "votes": 14303,
+          "share": 53.9
+        },
+        {
+          "name": "Anna Warwick Sears",
+          "party": "ndp",
+          "votes": 9350,
+          "share": 35.3
+        },
+        {
+          "name": "Kevin Kraft",
+          "party": "other",
+          "votes": 1724,
+          "share": 6.5
+        },
+        {
+          "name": "Andrew Rose",
+          "party": "green",
+          "votes": 1151,
+          "share": 4.3
+        }
+      ]
+    },
+    {
+      "name": "Kelowna-Mission",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/kelowna-mission",
+      "results": [
+        {
+          "name": "Gavin Dew",
+          "party": "con",
+          "votes": 14071,
+          "share": 51.5
+        },
+        {
+          "name": "Harpreet Badohal",
+          "party": "ndp",
+          "votes": 8913,
+          "share": 32.6
+        },
+        {
+          "name": "Ashley Ramsay",
+          "party": "other",
+          "votes": 2996,
+          "share": 11.0
+        },
+        {
+          "name": "Billy Young",
+          "party": "green",
+          "votes": 1349,
+          "share": 4.9
+        }
+      ]
+    },
+    {
+      "name": "Kootenay Central",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/kootenay-central",
+      "results": [
+        {
+          "name": "Brittny Anderson",
+          "party": "ndp",
+          "votes": 8716,
+          "share": 39.6
+        },
+        {
+          "name": "Kelly Vandenberghe",
+          "party": "con",
+          "votes": 6967,
+          "share": 31.7
+        },
+        {
+          "name": "Nicole Charlwood",
+          "party": "green",
+          "votes": 4123,
+          "share": 18.7
+        },
+        {
+          "name": "Corinne Mori",
+          "party": "other",
+          "votes": 2190,
+          "share": 10.0
+        }
+      ]
+    },
+    {
+      "name": "Kootenay-Monashee",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/kootenay-monashee",
+      "results": [
+        {
+          "name": "Steve Morissette",
+          "party": "ndp",
+          "votes": 10202,
+          "share": 52.0
+        },
+        {
+          "name": "Glen Byle",
+          "party": "con",
+          "votes": 7616,
+          "share": 38.9
+        },
+        {
+          "name": "Donovan Cavers",
+          "party": "green",
+          "votes": 1785,
+          "share": 9.1
+        }
+      ]
+    },
+    {
+      "name": "Kootenay-Rockies",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/kootenay-rockies",
+      "results": [
+        {
+          "name": "Pete Davis",
+          "party": "con",
+          "votes": 8217,
+          "share": 42.7
+        },
+        {
+          "name": "Tom Shypitka",
+          "party": "other",
+          "votes": 5844,
+          "share": 30.4
+        },
+        {
+          "name": "Sam Atwal",
+          "party": "ndp",
+          "votes": 4184,
+          "share": 21.8
+        },
+        {
+          "name": "Kerri Wall",
+          "party": "green",
+          "votes": 996,
+          "share": 5.2
+        }
+      ]
+    },
+    {
+      "name": "Penticton-Summerland",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/penticton-summerland",
+      "results": [
+        {
+          "name": "Amelia Boultbee",
+          "party": "con",
+          "votes": 11615,
+          "share": 41.4
+        },
+        {
+          "name": "Tina Lee",
+          "party": "ndp",
+          "votes": 11298,
+          "share": 40.2
+        },
+        {
+          "name": "Tracy St Claire",
+          "party": "other",
+          "votes": 2720,
+          "share": 9.7
+        },
+        {
+          "name": "Bradley Bartsch",
+          "party": "green",
+          "votes": 1472,
+          "share": 5.2
+        },
+        {
+          "name": "Roger Harrington",
+          "party": "other",
+          "votes": 827,
+          "share": 3.0
+        },
+        {
+          "name": "Anna Paddon",
+          "party": "other",
+          "votes": 144,
+          "share": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Salmon Arm-Shuswap",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/salmon-arm-shuswap",
+      "results": [
+        {
+          "name": "David L. Williams",
+          "party": "con",
+          "votes": 16566,
+          "share": 52.1
+        },
+        {
+          "name": "Sylvia Lindgren",
+          "party": "ndp",
+          "votes": 9677,
+          "share": 30.4
+        },
+        {
+          "name": "Greg McCune",
+          "party": "other",
+          "votes": 2922,
+          "share": 9.2
+        },
+        {
+          "name": "Jed Wiebe",
+          "party": "green",
+          "votes": 2250,
+          "share": 7.1
+        },
+        {
+          "name": "Sherry Roy",
+          "party": "other",
+          "votes": 373,
+          "share": 1.2
+        }
+      ]
+    },
+    {
+      "name": "Vernon-Lumby",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/vernon-lumby",
+      "results": [
+        {
+          "name": "Harwinder Sandhu",
+          "party": "ndp",
+          "votes": 11837,
+          "share": 42.7
+        },
+        {
+          "name": "Dennis Giesbrecht",
+          "party": "con",
+          "votes": 11361,
+          "share": 41.0
+        },
+        {
+          "name": "Kevin Acton",
+          "party": "other",
+          "votes": 4266,
+          "share": 15.4
+        },
+        {
+          "name": "Robert Johnson",
+          "party": "other",
+          "votes": 265,
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "name": "West Kelowna-Peachland",
+      "region": "Interior",
+      "url": "https://northernvibe.ca/en/bc/district/west-kelowna-peachland",
+      "results": [
+        {
+          "name": "Macklin McCall",
+          "party": "con",
+          "votes": 13475,
+          "share": 50.9
+        },
+        {
+          "name": "Krystal Smith",
+          "party": "ndp",
+          "votes": 7394,
+          "share": 27.9
+        },
+        {
+          "name": "Stephen Johnston",
+          "party": "other",
+          "votes": 5630,
+          "share": 21.3
+        }
+      ]
+    },
+    {
+      "name": "Bulkley Valley-Stikine",
+      "region": "North",
+      "url": "https://northernvibe.ca/en/bc/district/bulkley-valley-stikine",
+      "results": [
+        {
+          "name": "Sharon L. Hartwell",
+          "party": "con",
+          "votes": 4992,
+          "share": 52.3
+        },
+        {
+          "name": "Nathan Cullen",
+          "party": "ndp",
+          "votes": 3709,
+          "share": 38.9
+        },
+        {
+          "name": "Gamlakyeltxw Wilhelm Marsden",
+          "party": "green",
+          "votes": 604,
+          "share": 6.3
+        },
+        {
+          "name": "Rod Taylor",
+          "party": "other",
+          "votes": 239,
+          "share": 2.5
+        }
+      ]
+    },
+    {
+      "name": "Nechako Lakes",
+      "region": "North",
+      "url": "https://northernvibe.ca/en/bc/district/nechako-lakes",
+      "results": [
+        {
+          "name": "John Rustad",
+          "party": "con",
+          "votes": 7851,
+          "share": 67.5
+        },
+        {
+          "name": "Murphy Abraham",
+          "party": "ndp",
+          "votes": 3167,
+          "share": 27.2
+        },
+        {
+          "name": "Douglas Gook",
+          "party": "green",
+          "votes": 622,
+          "share": 5.3
+        }
+      ]
+    },
+    {
+      "name": "North Coast-Haida Gwaii",
+      "region": "North",
+      "url": "https://northernvibe.ca/en/bc/district/north-coast-haida-gwaii",
+      "results": [
+        {
+          "name": "Tamara Davidson",
+          "party": "ndp",
+          "votes": 4863,
+          "share": 64.9
+        },
+        {
+          "name": "Christopher Jason Sankey",
+          "party": "con",
+          "votes": 2628,
+          "share": 35.1
+        }
+      ]
+    },
+    {
+      "name": "Peace River North",
+      "region": "North",
+      "url": "https://northernvibe.ca/en/bc/district/peace-river-north",
+      "results": [
+        {
+          "name": "Jordan Kealy",
+          "party": "con",
+          "votes": 11213,
+          "share": 74.4
+        },
+        {
+          "name": "Dan Davies",
+          "party": "other",
+          "votes": 3038,
+          "share": 20.1
+        },
+        {
+          "name": "Ian McMahon",
+          "party": "ndp",
+          "votes": 828,
+          "share": 5.5
+        }
+      ]
+    },
+    {
+      "name": "Peace River South",
+      "region": "North",
+      "url": "https://northernvibe.ca/en/bc/district/peace-river-south",
+      "results": [
+        {
+          "name": "Larry Neufeld",
+          "party": "con",
+          "votes": 7182,
+          "share": 69.8
+        },
+        {
+          "name": "Mike Bernier",
+          "party": "other",
+          "votes": 2525,
+          "share": 24.6
+        },
+        {
+          "name": "Marshall Bigsby",
+          "party": "ndp",
+          "votes": 576,
+          "share": 5.6
+        }
+      ]
+    },
+    {
+      "name": "Prince George-Mackenzie",
+      "region": "North",
+      "url": "https://northernvibe.ca/en/bc/district/prince-george-mackenzie",
+      "results": [
+        {
+          "name": "Kiel Giddens",
+          "party": "con",
+          "votes": 11307,
+          "share": 60.9
+        },
+        {
+          "name": "Shar McCrory",
+          "party": "ndp",
+          "votes": 5242,
+          "share": 28.2
+        },
+        {
+          "name": "James Steidle",
+          "party": "green",
+          "votes": 1576,
+          "share": 8.5
+        },
+        {
+          "name": "Rachael Weber",
+          "party": "other",
+          "votes": 435,
+          "share": 2.3
+        }
+      ]
+    },
+    {
+      "name": "Prince George-North Cariboo",
+      "region": "North",
+      "url": "https://northernvibe.ca/en/bc/district/prince-george-north-cariboo",
+      "results": [
+        {
+          "name": "Sheldon Clare",
+          "party": "con",
+          "votes": 11430,
+          "share": 56.8
+        },
+        {
+          "name": "Coralee Oakes",
+          "party": "other",
+          "votes": 4394,
+          "share": 21.8
+        },
+        {
+          "name": "Denice Bardua",
+          "party": "ndp",
+          "votes": 3426,
+          "share": 17.0
+        },
+        {
+          "name": "Randy Thompson",
+          "party": "green",
+          "votes": 866,
+          "share": 4.3
+        }
+      ]
+    },
+    {
+      "name": "Prince George-Valemount",
+      "region": "North",
+      "url": "https://northernvibe.ca/en/bc/district/prince-george-valemount",
+      "results": [
+        {
+          "name": "Rosalyn Bird",
+          "party": "con",
+          "votes": 9018,
+          "share": 55.2
+        },
+        {
+          "name": "Clay Pountney",
+          "party": "ndp",
+          "votes": 5709,
+          "share": 34.9
+        },
+        {
+          "name": "Gwen Johansson",
+          "party": "green",
+          "votes": 1612,
+          "share": 9.9
+        }
+      ]
+    },
+    {
+      "name": "Skeena",
+      "region": "North",
+      "url": "https://northernvibe.ca/en/bc/district/skeena",
+      "results": [
+        {
+          "name": "Claire Ratt\u00e9e",
+          "party": "con",
+          "votes": 6243,
+          "share": 51.2
+        },
+        {
+          "name": "Sarah Zimmerman",
+          "party": "ndp",
+          "votes": 5419,
+          "share": 44.4
+        },
+        {
+          "name": "Teri Young",
+          "party": "green",
+          "votes": 406,
+          "share": 3.3
+        },
+        {
+          "name": "Irwin Jeffrey",
+          "party": "other",
+          "votes": 126,
+          "share": 1.0
+        }
+      ]
+    }
+  ]
+}

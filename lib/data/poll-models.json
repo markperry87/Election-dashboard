@@ -1,0 +1,25 @@
+{
+  "northern": {
+    "data": {
+      "date": "2026-10-04",
+      "probabilities": {
+        "con": 74,
+        "ndp": 24
+      },
+      "tie": 1
+    },
+    "fetchedAt": "2026-10-04T17:31:13.775Z",
+    "live": false
+  },
+  "voteScope": {
+    "data": {
+      "date": "2026-10-03",
+      "probabilities": {
+        "con": 85,
+        "ndp": 15
+      }
+    },
+    "fetchedAt": "2026-10-04T17:31:13.775Z",
+    "live": false
+  }
+}
