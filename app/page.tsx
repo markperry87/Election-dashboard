@@ -1,4 +1,5 @@
 import Dashboard from './dashboard';
-import {initialData} from '@/lib/election';
+import {readDashboardSnapshot} from '@/lib/snapshot-store';
 import {historySeed} from '@/lib/history';
-export default function Home(){return <Dashboard initial={initialData} initialHistory={historySeed}/>;}
+export const dynamic='force-dynamic';
+export default async function Home(){return <Dashboard initial={await readDashboardSnapshot()} initialHistory={historySeed}/>;}

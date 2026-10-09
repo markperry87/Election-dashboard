@@ -1,3 +1,4 @@
+import {mergeSnapshots,newerSource} from './snapshots';
 import polySeed from './data/poly.json';
 import kalshiSeed from './data/kalshi.json';
 import modelSeed from './data/model.json';
@@ -45,6 +46,10 @@ let kalshiRecord:{source:Source<Quote[]>;nextAttempt:number}|null=null;
 async function getKalshiSource():Promise<Source<Quote[]>>{
  const cache=typeof caches!=='undefined'?(caches as CacheStorage & {default?:Cache}).default:undefined;
  try { const cached=await cache?.match(kalshiCacheKey);if(cached){const record=await cached.json() as NonNullable<typeof kalshiRecord>;if(!kalshiRecord||record.nextAttempt>kalshiRecord.nextAttempt)kalshiRecord=record;} }catch(error){console.warn('Kalshi cache read unavailable');}
+ // The persistent snapshot can be newer than a regional edge-cache entry.
+ if(kalshiRecord)kalshiRecord.source=newerSource(kalshiRecord.source,latest.kalshi);
+ const deadline=Math.max(Date.parse(latest.kalshi.retryAt??'')||0,Date.parse(latest.kalshi.fetchedAt)+300000);
+ if(!kalshiRecord||deadline>kalshiRecord.nextAttempt)kalshiRecord={source:latest.kalshi,nextAttempt:deadline};
  if(kalshiRecord && Date.now()<kalshiRecord.nextAttempt)return kalshiRecord.source;
  const previous=kalshiRecord?.source??latest.kalshi;
  let source:Source<Quote[]>;let nextAttempt:number;
@@ -54,4 +59,4 @@ async function getKalshiSource():Promise<Source<Quote[]>>{
  try{await cache?.put(kalshiCacheKey,Response.json(kalshiRecord,{headers:{'Cache-Control':'public, max-age=86400'}}));}catch{console.warn('Kalshi cache write unavailable');}
  return source;
 }
-export async function getDashboard():Promise<Dashboard>{if(inFlight)return inFlight;if(Date.now()-lastAttempt<60000)return latest;lastAttempt=Date.now();inFlight=(async()=>{const [poly,kalshi,model,northern,voteScope]=await Promise.all([loadSource(latest.poly,async()=>parsePoly(JSON.parse(await fetchText('https://gamma-api.polymarket.com/events?slug=british-columbia-general-election-winner'))[0])),getKalshiSource(),loadSource(latest.model,async()=>parseModel(await fetchText(links.model))),loadSource(latest.northern,async()=>parseNorthern(await fetchText('https://northernvibe.ca/en/bc'))),loadSource(latest.voteScope,async()=>parseVoteScope(await fetchText('https://vote-scope.com/en/canada/british-columbia/')))]);latest={poly,kalshi,model,northern,voteScope,astra:latest.astra,checkedAt:new Date().toISOString()};return latest;})().finally(()=>{inFlight=null;});return inFlight;}
+export async function getDashboard(saved:Dashboard=initialData):Promise<Dashboard>{latest=mergeSnapshots(latest,saved);if(inFlight)return inFlight;if(Date.now()-lastAttempt<60000)return latest;lastAttempt=Date.now();inFlight=(async()=>{const [poly,kalshi,model,northern,voteScope]=await Promise.all([loadSource(latest.poly,async()=>parsePoly(JSON.parse(await fetchText('https://gamma-api.polymarket.com/events?slug=british-columbia-general-election-winner'))[0])),getKalshiSource(),loadSource(latest.model,async()=>parseModel(await fetchText(links.model))),loadSource(latest.northern,async()=>parseNorthern(await fetchText('https://northernvibe.ca/en/bc'))),loadSource(latest.voteScope,async()=>parseVoteScope(await fetchText('https://vote-scope.com/en/canada/british-columbia/')))]);latest=mergeSnapshots(latest,{poly,kalshi,model,northern,voteScope,astra:latest.astra,checkedAt:new Date().toISOString()});return latest;})().finally(()=>{inFlight=null;});return inFlight;}
