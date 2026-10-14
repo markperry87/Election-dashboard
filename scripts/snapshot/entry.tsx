@@ -4,9 +4,10 @@ import Dashboard from '../../app/dashboard';
 import {savedSnapshot} from '../../lib/snapshots';
 import type {Dashboard as Data} from '../../lib/election';
 import type {Histories} from '../../lib/history';
+import type {PollLedger} from '../../lib/poll-ledger';
 
-declare global {interface Window {__SNAPSHOT__: {dashboard: Data; history: Histories}}}
-const {dashboard, history} = window.__SNAPSHOT__;
+declare global {interface Window {__SNAPSHOT__: {dashboard: Data; history: Histories; ledger: PollLedger}}}
+const {dashboard, history, ledger} = window.__SNAPSHOT__;
 const saved = savedSnapshot(dashboard);
 // A static page has no API routes: answer the dashboard's own requests from the snapshot.
 const native = window.fetch.bind(window);
@@ -16,4 +17,4 @@ window.fetch = (input, init) => {
  if (url.includes('/api/history')) return Promise.resolve(Response.json(history));
  return native(input, init);
 };
-createRoot(document.getElementById('root')!).render(<Dashboard initial={saved} initialHistory={history}/>);
+createRoot(document.getElementById('root')!).render(<Dashboard initial={saved} initialHistory={history} pollLedger={ledger}/>);

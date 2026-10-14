@@ -152,3 +152,5 @@ The Opus model is shown for comparison only: it is a row in the polling-model ta
 `.github/workflows/snapshot.yml` publishes a static copy of the dashboard to GitHub Pages every 2 hours from 8 a.m. to 6 p.m. Pacific, on pushes to `main` that touch the app, and on demand (Actions → Publish dashboard snapshot → Run workflow). Scheduled runs stop after October 25, 2026.
 
 Each run starts the app on the runner, captures `/api/election` and `/api/history`, and `scripts/snapshot/build.mjs` bundles the real dashboard components with that data into one self-contained `index.html`. The page cannot refresh itself; it shows when the snapshot was taken. To build one locally: `node scripts/snapshot/refresh.mjs _site`.
+
+The page's **Latest polls** panel marks polls that are new since the previous update. Each build publishes `poll-ledger.json` (when each poll first appeared) beside the page, and the next build downloads it to compare (`lib/poll-ledger.ts`). A poll whose fieldwork dates are revised keeps its original arrival time. In the live app, which has no ledger, the panel lists the most recent polls without arrival times.
