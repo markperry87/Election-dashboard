@@ -1,10 +1,11 @@
 // Builds a static snapshot of the dashboard as one self-contained HTML page.
-// Usage (from the project root): node scripts/snapshot/build.mjs <out-dir> <election.json> <history.json> [previous poll-ledger.json]
+// Usage (from the project root): node scripts/snapshot/build.mjs <out-dir> <election.json> <history.json> [previous-dir]
+// previous-dir holds the last published poll-ledger.json and snapshot-data.json, when available.
 // SNAPSHOT_NOTE sets the text after the snapshot time, e.g. "Updates every 2 hours".
 import fs from 'node:fs';
 import path from 'node:path';
 import {createRequire} from 'node:module';
-const [outDir, electionFile, historyFile, previousLedgerFile] = process.argv.slice(2);
+const [outDir, electionFile, historyFile, previousDir] = process.argv.slice(2);
 if (!outDir || !electionFile || !historyFile) throw Error('Usage: build.mjs <out-dir> <election.json> <history.json>');
 const root = process.cwd();
 const require = createRequire(path.join(root, 'package.json'));
@@ -45,20 +46,40 @@ const bundle = await esbuild.build({
 const cssFile = path.join(root, 'app/globals.css');
 const css = (await postcss([tailwind({base: root})]).process(fs.readFileSync(cssFile, 'utf8'), {from: cssFile})).css;
 
+// Shared logic is bundled from lib/ so the page and the build agree.
+const load = async file => {
+ const out = await esbuild.build({entryPoints: [path.join(root, file)], bundle: true, write: false, format: 'esm', platform: 'node', logLevel: 'error'});
+ return import('data:text/javascript;base64,' + Buffer.from(out.outputFiles[0].text).toString('base64'));
+};
+const {updateLedger} = await load('lib/poll-ledger.ts');
+const {newerSource, validSource, sourceKeys} = await load('lib/snapshots.ts');
+const readPrevious = name => { try { return previousDir ? JSON.parse(fs.readFileSync(path.join(previousDir, name), 'utf8')) : null; } catch { return null; } };
+
 const election = JSON.parse(fs.readFileSync(electionFile, 'utf8'));
+const history = JSON.parse(fs.readFileSync(historyFile, 'utf8'));
+// Each run starts from scratch, so a source that fails falls back to the data
+// bundled with the code. Keep the previous published copy when it is newer.
+const prior = readPrevious('snapshot-data.json');
+const carried = [];
+for (const key of sourceKeys) {
+ const old = prior?.dashboard?.[key];
+ if (!validSource(old, key) || (key === 'astra' || key === 'opus') && old.data.version !== election[key].data.version) continue;
+ election[key] = newerSource(old, election[key]);
+ if (election[key].fetchedAt === old.fetchedAt && !election[key].live) carried.push(key);
+}
+for (const key of ['poly', 'kalshi']) {
+ const old = prior?.history?.[key];
+ if (!old?.data || !Number.isFinite(Date.parse(old.fetchedAt))) continue;
+ history[key] = newerSource(old, history[key]);
+ if (history[key].fetchedAt === old.fetchedAt && !history[key].live) carried.push(key + ' history');
+}
+if (carried.length) console.log(`Kept the previous update's data for: ${carried.join(', ')}`);
 // Persistence warnings describe the build machine, not the forecast.
 for (const key of ['astra', 'opus']) if (/persistent saving is unavailable/.test(election[key].error ?? '')) delete election[key].error;
-const history = JSON.parse(fs.readFileSync(historyFile, 'utf8'));
 
-// Compare this snapshot's polls with the previous update's ledger. The ledger
-// logic is bundled from lib/poll-ledger.ts so the page and the build agree.
-const ledgerModule = await esbuild.build({entryPoints: [path.join(root, 'lib/poll-ledger.ts')], bundle: true, write: false, format: 'esm', platform: 'node', logLevel: 'error'});
-const {updateLedger} = await import('data:text/javascript;base64,' + Buffer.from(ledgerModule.outputFiles[0].text).toString('base64'));
-let previous = null;
-try {
- const value = previousLedgerFile && JSON.parse(fs.readFileSync(previousLedgerFile, 'utf8'));
- if (value && typeof value.updatedAt === 'string' && value.seen && typeof value.seen === 'object') previous = value;
-} catch { /* first run or unreadable: start a new ledger */ }
+// Compare this snapshot's polls with the previous update's ledger.
+let previous = readPrevious('poll-ledger.json');
+if (!(previous && typeof previous.updatedAt === 'string' && previous.seen && typeof previous.seen === 'object')) previous = null;
 if (!previous) console.log('No previous poll ledger; tracking new polls from this update.');
 const ledger = updateLedger(previous, election.astra.data.polls, election.checkedAt);
 const added = ledger.entries.filter(e => previous && e.firstSeen === ledger.updatedAt).map(e => `${e.firm} (${e.end})`);
@@ -88,4 +109,5 @@ fs.mkdirSync(outDir, {recursive: true});
 fs.writeFileSync(path.join(outDir, 'index.html'), html);
 fs.copyFileSync(path.join(root, 'public/favicon.svg'), path.join(outDir, 'favicon.svg'));
 fs.writeFileSync(path.join(outDir, 'poll-ledger.json'), JSON.stringify(ledger));
+fs.writeFileSync(path.join(outDir, 'snapshot-data.json'), JSON.stringify({dashboard: election, history}));
 console.log(`Built ${path.join(outDir, 'index.html')} (${(html.length / 1024).toFixed(0)} KB)`);

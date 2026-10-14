@@ -49,15 +49,20 @@ jobs:
       - name: Install dependencies
         if: steps.window.outputs.skip != 'true'
         run: npx -y pnpm@11.25.0 install --frozen-lockfile
-      - name: Download the previous update's poll ledger
+      - name: Download the previous update's data
         if: steps.window.outputs.skip != 'true'
-        # Missing on the first run; the build then starts a new ledger.
-        run: curl -fsSL "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/poll-ledger.json?t=$(date +%s)" -o previous-ledger.json || rm -f previous-ledger.json
+        # Missing on the first run. A source that fails this run keeps the previous update's copy.
+        run: |
+          mkdir -p previous
+          base="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          for f in poll-ledger.json snapshot-data.json; do
+            curl -fsSL "$base/$f?t=$(date +%s)" -o "previous/$f" || rm -f "previous/$f"
+          done
       - name: Fetch data and build snapshot
         if: steps.window.outputs.skip != 'true'
         env:
           SNAPSHOT_NOTE: Updates every 2 hours, 8 a.m. to 6 p.m. PT
-        run: node scripts/snapshot/refresh.mjs _site previous-ledger.json
+        run: node scripts/snapshot/refresh.mjs _site previous
       - uses: actions/upload-pages-artifact@v3
         if: steps.window.outputs.skip != 'true'
         with:

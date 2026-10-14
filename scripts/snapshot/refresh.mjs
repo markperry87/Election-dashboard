@@ -1,11 +1,11 @@
 // Starts the app locally, captures fresh dashboard data and builds the static snapshot.
-// Usage (from the project root): node scripts/snapshot/refresh.mjs <out-dir> [previous poll-ledger.json]
+// Usage (from the project root): node scripts/snapshot/refresh.mjs <out-dir> [previous-dir]
 // Used by .github/workflows/snapshot.yml; also works on a developer machine.
 import {spawn, execFileSync} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const [outDir, previousLedger] = process.argv.slice(2);
+const [outDir, previousDir] = process.argv.slice(2);
 if (!outDir) throw Error('Usage: refresh.mjs <out-dir>');
 const port = Number(process.env.SNAPSHOT_PORT || 5199), base = `http://127.0.0.1:${port}`;
 const dataDir = path.join('.sites-runtime', 'snapshot');
@@ -31,7 +31,7 @@ try {
   return file;
  };
  const [election, history] = await Promise.all([get('/api/election'), get('/api/history')]);
- execFileSync(process.execPath, ['scripts/snapshot/build.mjs', outDir, election, history, ...(previousLedger ? [previousLedger] : [])], {stdio: 'inherit'});
+ execFileSync(process.execPath, ['scripts/snapshot/build.mjs', outDir, election, history, ...(previousDir ? [previousDir] : [])], {stdio: 'inherit'});
  const e = JSON.parse(fs.readFileSync(election, 'utf8')), h = JSON.parse(fs.readFileSync(history, 'utf8'));
  const saved = ['poly', 'kalshi', 'model', 'northern', 'voteScope', 'astra', 'opus'].filter(k => !e[k].live).concat(['poly', 'kalshi'].filter(k => !h[k].live).map(k => k + ' history'));
  console.log(saved.length ? `Saved data used for: ${saved.join(', ')}` : 'All sources refreshed live.');
