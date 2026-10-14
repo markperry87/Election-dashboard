@@ -3,9 +3,10 @@ name: Publish dashboard snapshot
 
 on:
   schedule:
-    # Every 2 hours, 8 a.m. to 6 p.m. Pacific (PDT, UTC-7). GitHub may start runs a few minutes late.
-    - cron: "0 15,17,19,21,23 * * *"
-    - cron: "0 1 * * *"
+    # Every 2 hours, 8 a.m. to 6 p.m. Pacific (PDT, UTC-7), at :17 past the hour: top-of-the-hour
+    # schedules are GitHub's busiest and are often delayed or dropped.
+    - cron: "17 15,17,19,21,23 * * *"
+    - cron: "17 1 * * *"
   push:
     branches: [main]
     paths: ["app/**", "lib/**", "components/**", "scripts/snapshot/**", "pnpm-lock.yaml", ".github/workflows/snapshot.yml"]
