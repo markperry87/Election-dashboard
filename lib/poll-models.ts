@@ -20,7 +20,8 @@ export function parseNorthern(html:string):PollEstimate {
  const text=plain(html),date=text.match(/Current seat projection\s*[·]?\s*(\d{4}-\d{2}-\d{2})/)?.[1]??isoDate(text.match(/held today\s+([A-Za-z]{3,9}\.?\s+\d{1,2},\s+\d{4})/)?.[1]);
  // Read the published outcome list, not the headline majority call or riding odds.
  const items=[...html.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)].map(m=>plain(m[1]));
- const read=(label:string)=>{const item=items.find(t=>t.startsWith(label+' '));const value=item?.slice(label.length).trim().match(/^(\d+(?:\.\d+)?)\s*%$/);if(!value)throw Error('Northern Vibe outcome format changed');return Number(value[1]);};
+ // Small chances are published as "<1%" (sometimes still HTML-escaped); count them as half the bound.
+ const read=(label:string)=>{const item=items.find(t=>t.startsWith(label+' '));const value=item?.slice(label.length).trim().replace(/^&lt;\s*/,'<').match(/^(<\s*)?(\d+(?:\.\d+)?)\s*%$/);if(!value)throw Error('Northern Vibe outcome format changed');return value[1]?Number(value[2])/2:Number(value[2]);};
  return checked(date,read('Conservative majority')+read('Conservative most seats, no majority'),read('BC NDP majority')+read('BC NDP most seats, no majority'),read('Tie for most seats'));
 }
 // Vote-Scope publishes its forecast run as JSON; p_strict_largest excludes ties.
