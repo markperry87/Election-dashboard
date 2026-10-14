@@ -3,6 +3,8 @@ import {useCallback,useEffect,useState,useMemo,useRef} from 'react';
 import HistoryChart from './history-chart';
 import AstraPanel from './astra-panel';
 import OpusPanel from './opus-panel';
+import LatestPolls from './latest-polls';
+import type {PollLedger} from '@/lib/poll-ledger';
 import PollComparison from './poll-comparison';
 import {browserSnapshotKey,decodeSnapshot,encodeSnapshot,mergeSnapshots,savedSnapshot} from '@/lib/snapshots';
 import {pollModels,pollConsensus,opusModel} from '@/lib/poll-models';
@@ -19,7 +21,7 @@ const modelName=(s:string)=>s.replace('CPBC','BC Conservatives').replace(/^NDP/,
 const color=(s:string)=>s.includes('CPBC')?'#567fe9':s.includes('NDP')?'#df762e':'#82919f';
 function Status({name,source,href}:{name:string;source:Source<unknown>;href:string}){return <div className="source"><a href={href} target="_blank" rel="noreferrer">{name}<ArrowUpRight size={14}/></a><span className={source.live?'success':'warning'}>{source.live?'Fetched successfully':source.error?.includes('429')?'Rate-limited · saved snapshot':'Saved snapshot'}</span><small>{time(source.fetchedAt)}</small>{source.error&&<p>{source.error}{source.retryAt&&<> Next attempt after {time(source.retryAt)} while open.</>}</p>}</div>}
 const dollars=(v:number)=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v);
-export default function Dashboard({initial,initialHistory}:{initial:Data;initialHistory:Histories}){
+export default function Dashboard({initial,initialHistory,pollLedger}:{initial:Data;initialHistory:Histories;pollLedger?:PollLedger}){
  const[history,setHistory]=useState(initialHistory);const[historyBusy,setHistoryBusy]=useState(true);
  useEffect(()=>{let active=true;const load=async()=>{setHistoryBusy(true);try{const r=await fetch('/api/history');if(r.ok&&active)setHistory(await r.json());}catch{}finally{if(active)setHistoryBusy(false);}};void load();const i=setInterval(()=>{if(!document.hidden)void load();},3600000);return()=>{active=false;clearInterval(i);};},[]);
  const[data,setData]=useState(initial);const[busy,setBusy]=useState(true);const[error,setError]=useState('');const[mode,setMode]=useState<'reported'|'midpoint'>('reported');
@@ -46,6 +48,7 @@ export default function Dashboard({initial,initialHistory}:{initial:Data;initial
  <div className="refreshline" aria-live="polite">{error|| (busy?'Showing the latest saved figures while checking sources…':`Checked ${time(data.checkedAt)} · Refreshes every 5 minutes while open`)}{!busy&&stale&&<span className="warning">Includes saved market data</span>}</div>
  <section className="takeaway" aria-label="Combined election estimate"><div><div className="eyebrow">MARKETS + POLLING MODELS · COMBINED TAKEAWAY</div><h2>{leaderParty?.name??'Estimate unavailable'}{leader&&' lead the blend'}</h2><p>Estimated chance of winning the most seats</p><div className="blend-label">50% volume-weighted markets · 50% polling-model median</div>{leader&&<div className="headline-inputs"><span>Markets <b>{pct(leader.market)}</b></span><span>Polling median <b>{pct(leader.model)}</b></span></div>}</div><div className="takeaway-number" style={{color:leaderParty?.color}}>{pct(leader?.value??null)}</div><div className="blend-method"><strong>Illustrative blend, not a validated forecast.</strong> Markets and polling models overlap in their information. This averages two perspectives; it does not add independent evidence.{(stale||pollStale)&&<span className="warning"> Includes saved source data.</span>}</div><details className="blend-detail"><summary>See the calculation for both leading parties</summary><p>Headline = (normalized market consensus + polling-model median) ÷ 2, for each leading party. Market prices are volume-weighted across the two exchanges and normalized across all five matched parties. The polling median is used exactly as displayed below. Party medians need not sum to 100%, so blended estimates are not forced to total 100%. Markets apply their own tie-breaking rules; the polling estimates exclude ties.</p><div className="table-scroll"><table><thead><tr><th>Outcome</th><th>Markets (normalized)</th><th>Polling median</th><th>Combined</th></tr></thead><tbody>{blend?.map(b=><tr key={b.id}><th>{parties.find(p=>p.id===b.id)?.name??'Seat tie'}</th><td>{pct(b.market)}</td><td>{pct(b.model)}</td><td>{pct(b.value)}</td></tr>)}</tbody></table></div></details></section>
  <PollComparison models={models} challenger={challenger}/>
+ <LatestPolls polls={data.astra.data.polls} ledger={pollLedger}/>
  <AstraPanel source={data.astra}/>
  <OpusPanel source={data.opus} astra={data.astra}/>
  <section aria-labelledby="market-title"><div className="section-heading"><div><span className="section-no">02</span><h2 id="market-title">Market consensus</h2></div><div className="segmented" aria-label="Market price basis"><button aria-pressed={mode==='reported'} onClick={()=>setMode('reported')}>Reported prices</button><button aria-pressed={mode==='midpoint'} onClick={()=>setMode('midpoint')}>Bid/ask midpoint</button></div></div>

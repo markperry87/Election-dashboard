@@ -1,10 +1,10 @@
 // Builds a static snapshot of the dashboard as one self-contained HTML page.
-// Usage (from the project root): node scripts/snapshot/build.mjs <out-dir> <election.json> <history.json>
+// Usage (from the project root): node scripts/snapshot/build.mjs <out-dir> <election.json> <history.json> [previous poll-ledger.json]
 // SNAPSHOT_NOTE sets the text after the snapshot time, e.g. "Updates every 2 hours".
 import fs from 'node:fs';
 import path from 'node:path';
 import {createRequire} from 'node:module';
-const [outDir, electionFile, historyFile] = process.argv.slice(2);
+const [outDir, electionFile, historyFile, previousLedgerFile] = process.argv.slice(2);
 if (!outDir || !electionFile || !historyFile) throw Error('Usage: build.mjs <out-dir> <election.json> <history.json>');
 const root = process.cwd();
 const require = createRequire(path.join(root, 'package.json'));
@@ -49,7 +49,22 @@ const election = JSON.parse(fs.readFileSync(electionFile, 'utf8'));
 // Persistence warnings describe the build machine, not the forecast.
 for (const key of ['astra', 'opus']) if (/persistent saving is unavailable/.test(election[key].error ?? '')) delete election[key].error;
 const history = JSON.parse(fs.readFileSync(historyFile, 'utf8'));
-const data = JSON.stringify({dashboard: election, history}).replace(/</g, '\\u003c');
+
+// Compare this snapshot's polls with the previous update's ledger. The ledger
+// logic is bundled from lib/poll-ledger.ts so the page and the build agree.
+const ledgerModule = await esbuild.build({entryPoints: [path.join(root, 'lib/poll-ledger.ts')], bundle: true, write: false, format: 'esm', platform: 'node', logLevel: 'error'});
+const {updateLedger} = await import('data:text/javascript;base64,' + Buffer.from(ledgerModule.outputFiles[0].text).toString('base64'));
+let previous = null;
+try {
+ const value = previousLedgerFile && JSON.parse(fs.readFileSync(previousLedgerFile, 'utf8'));
+ if (value && typeof value.updatedAt === 'string' && value.seen && typeof value.seen === 'object') previous = value;
+} catch { /* first run or unreadable: start a new ledger */ }
+if (!previous) console.log('No previous poll ledger; tracking new polls from this update.');
+const ledger = updateLedger(previous, election.astra.data.polls, election.checkedAt);
+const added = ledger.entries.filter(e => previous && e.firstSeen === ledger.updatedAt).map(e => `${e.firm} (${e.end})`);
+if (previous) console.log(added.length ? `New polls: ${added.join(', ')}` : 'No new polls since the previous update.');
+
+const data = JSON.stringify({dashboard: election, history, ledger}).replace(/</g, '\\u003c');
 const js = bundle.outputFiles[0].text.replace(/<\/script/gi, '<\\/script');
 const html = `<!doctype html>
 <html lang="en">
@@ -72,4 +87,5 @@ const html = `<!doctype html>
 fs.mkdirSync(outDir, {recursive: true});
 fs.writeFileSync(path.join(outDir, 'index.html'), html);
 fs.copyFileSync(path.join(root, 'public/favicon.svg'), path.join(outDir, 'favicon.svg'));
+fs.writeFileSync(path.join(outDir, 'poll-ledger.json'), JSON.stringify(ledger));
 console.log(`Built ${path.join(outDir, 'index.html')} (${(html.length / 1024).toFixed(0)} KB)`);

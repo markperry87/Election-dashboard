@@ -19,3 +19,7 @@
 .poll-marker.marker-4,.legend-marker.marker-4{background:transparent;border:2px solid #f0c58c;border-radius:50%}.poll-marker.marker-4{top:-2px;width:11px;height:11px;transform:translateX(-50%)}
 .poll-challenger-row{color:#f3dcc0}.poll-challenger-row td:first-child a{color:#f3cf9f}
 .opus-compare td,.opus-compare th{text-align:right}.opus-compare th:first-child{text-align:left}.opus-diff{font-size:12px;color:#a9b8cb;display:block}
+/* Latest polls: arrivals since the previous snapshot are marked New. */
+.latest-polls{margin-bottom:42px}.latest-summary{font-size:15px;color:#a6bbcf;margin:0 0 16px}.latest-summary.has-new{color:#f3dcc0}
+.latest-polls td,.latest-polls thead th{text-align:right}.latest-polls th:first-child{text-align:left}.latest-polls tr.is-new{background:#2a2a24}
+.new-pill{display:inline-block;margin-left:9px;padding:2px 7px;border-radius:4px;background:#e8b77a;color:#1b1407;font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;vertical-align:1px}
