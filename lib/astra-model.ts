@@ -3,7 +3,24 @@ import {IDS,key,firmKey,pollSample,type Poll,type Candidate,type Party} from './
 export const ASTRA_VERSION='2.0';
 export const ELECTION_DAY='2026-10-24';
 export type District={name:string;region:string;url:string;results:{name:string;party:string;votes:number;share:number}[]};
-export type AstraResult={date:string;version:string;electionDay:string;probabilities:Record<Party,number>;tie:number;simulations:number;latestPoll:string;pollAgeDays:number;polls:Poll[];pollAverage:number[];effectiveSample:number;firmCount:number;candidateCounts:Record<Party,number>;seats:Record<Party,{mean:number;low:number;high:number;majority:number}>;districts:{name:string;region:string;shares:number[];win:number[];candidates:Candidate[]}[];seed:number;diagnostics:{maxProvinceShare:number[];provinceSD:number[];maxShareSumError:number};warnings:string[]};
+export type AstraResult={date:string;version:string;electionDay:string;probabilities:Record<Party,number>;tie:number;simulations:number;latestPoll:string;pollAgeDays:number;polls:Poll[];pollAverage:number[];effectiveSample:number;firmCount:number;candidateCounts:Record<Party,number>;seats:Record<Party,{mean:number;low:number;high:number;majority:number}>;districts:{name:string;region:string;shares:number[];win:number[];candidates:Candidate[]}[];seed:number;diagnostics:{maxProvinceShare:number[];provinceSD:number[];maxShareSumError:number};warnings:string[];popularVote?:PopularVote};
+export type VoteShare={mean:number;low:number;high:number};
+// share: each party's province-wide vote (mean and 80% range) across simulations.
+// splitWinner: % of simulations where one party wins the most seats outright
+// although another party wins the most votes.
+export type PopularVote={share:VoteShare[];splitWinner:number};
+export function popularVoteTracker(simulations:number){
+ const samples=IDS.map(()=>new Float64Array(simulations));let split=0;
+ return {
+  add(run:number,vote:number[],seatLeader:number|null){
+   for(let p=0;p<6;p++)samples[p][run]=vote[p];
+   if(seatLeader===null)return;
+   let leader=0;for(let p=1;p<5;p++)if(vote[p]>vote[leader])leader=p;
+   if(leader!==seatLeader)split++;
+  },
+  result():PopularVote{return {share:samples.map(s=>{const v=s.slice().sort();let total=0;for(const x of v)total+=x;return {mean:total/simulations,low:v[Math.floor(simulations*.1)],high:v[Math.floor(simulations*.9)]};}),splitWinner:split/simulations*100};},
+ };
+}
 const sum=(v:number[])=>v.reduce((a,b)=>a+b,0);
 const normalize=(v:number[])=>{const total=sum(v);if(!total)throw Error('Empty vote vector');return v.map(x=>x/total*100);};
 export function hash(s:string){let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return h>>>0;}
@@ -80,18 +97,20 @@ export function runAstra(all:Poll[],candidates:Candidate[],baseline:District[],d
  const provinceK=concentration(.24/agg.effectiveSample+(4+futureSD**2)/10000);
  const regionK=concentration(.015**2),localK=concentration(.035**2);
  const maxProvinceShare=Array(6).fill(0),provinceSum=Array(6).fill(0),provinceSquares=Array(6).fill(0);let maxShareSumError=0;
+ const popular=popularVoteTracker(simulations);
  for(let run=0;run<simulations;run++){
   const center=normalize(pollAverage.map((v,p)=>newParties.includes(IDS[p])?v*Math.exp(rng.normal()*.35*uncertaintyScale-.5*(.35*uncertaintyScale)**2):v));
   const province=rng.dirichlet(center,provinceK);
   province.forEach((v,p)=>{maxProvinceShare[p]=Math.max(maxProvinceShare[p],v);provinceSum[p]+=v;provinceSquares[p]+=v*v;});
   const regional=regions.map(()=>rng.dirichlet(province,regionK));
   maxShareSumError=Math.max(maxShareSumError,Math.abs(sum(province)-100));
-  const seats=Array(6).fill(0),otherGroups:Record<string,number>={};
+  const seats=Array(6).fill(0),otherGroups:Record<string,number>={},realized=Array(6).fill(0);
   for(let r=0;r<districts.length;r++){
    const d=districts[r];let best=-Infinity,winningParty=0;let dOther:Candidate|undefined;
    const localMean=normalize(d.shares.map((v,p)=>pollAverage[p]>0?v*regional[ri[r]][p]/pollAverage[p]:0));
    const local=rng.dirichlet(localMean,localK);
    maxShareSumError=Math.max(maxShareSumError,Math.abs(sum(local)-100));
+   for(let p=0;p<6;p++)realized[p]+=local[p]*weights[r];
    for(let p=0;p<6;p++){
     if(d.shares[p]===0)continue;
     const value=local[p];
@@ -105,9 +124,11 @@ export function runAstra(all:Poll[],candidates:Candidate[],baseline:District[],d
    if(winningParty===5&&dOther){const group=/independent|unaffiliated/i.test(dOther.affiliation)?key(d.name)+key(dOther.name):key(dOther.affiliation);otherGroups[group]=(otherGroups[group]??0)+1;}
   }
   const actual=[...seats.slice(0,5),...Object.values(otherGroups)],max=Math.max(...actual),leaders=actual.filter(s=>s===max).length;
-  if(leaders>1)ties++;else {const party=seats.slice(0,5).findIndex(s=>s===max);wins[party>=0?party:5]++;}
+  let seatLeader:number|null=null;
+  if(leaders>1)ties++;else {const party=seats.slice(0,5).findIndex(s=>s===max);wins[party>=0?party:5]++;if(party>=0)seatLeader=party;}
+  popular.add(run,realized,seatLeader);
   for(let p=0;p<6;p++){seatSamples[p].push(seats[p]);if(p<5&&seats[p]>baseline.length/2)majorities[p]++;}
  }
  const pct=(x:number)=>x/simulations*100;
- return {date,version:ASTRA_VERSION,electionDay,probabilities:Object.fromEntries(IDS.map((p,i)=>[p,pct(wins[i])])) as Record<Party,number>,tie:pct(ties),simulations,latestPoll,pollAgeDays,polls:agg.polls,pollAverage,effectiveSample:agg.effectiveSample,firmCount:agg.firmCount,candidateCounts:counts,seats:Object.fromEntries(IDS.map((p,i)=>{const v=seatSamples[i].sort((a,b)=>a-b);return[p,{mean:sum(v)/simulations,low:v[Math.floor(simulations*.1)],high:v[Math.floor(simulations*.9)],majority:pct(majorities[i])}];})) as AstraResult['seats'],districts:districts.map(d=>({name:d.name,region:d.region,candidates:d.candidates,shares:d.shares,win:d.win.map(pct)})),seed,diagnostics:{maxProvinceShare,provinceSD:provinceSum.map((v,p)=>Math.sqrt(Math.max(0,provinceSquares[p]/simulations-(v/simulations)**2))),maxShareSumError},warnings:['Experimental: parameters are judgment calls. Two retrospective election tests do not establish calibration.','Poll catalogs can contain errors; source disagreement and missing minor-party options remain limitations.','New-party geography, floor-crossing personal votes and turnout are uncertain.','Astra shares polling inputs with the other models; it is not independent evidence.',...(pollAgeDays>7?['Latest poll is more than a week old; forecast uncertainty includes its age.']:[])]};
+ return {popularVote:popular.result(),date,version:ASTRA_VERSION,electionDay,probabilities:Object.fromEntries(IDS.map((p,i)=>[p,pct(wins[i])])) as Record<Party,number>,tie:pct(ties),simulations,latestPoll,pollAgeDays,polls:agg.polls,pollAverage,effectiveSample:agg.effectiveSample,firmCount:agg.firmCount,candidateCounts:counts,seats:Object.fromEntries(IDS.map((p,i)=>{const v=seatSamples[i].sort((a,b)=>a-b);return[p,{mean:sum(v)/simulations,low:v[Math.floor(simulations*.1)],high:v[Math.floor(simulations*.9)],majority:pct(majorities[i])}];})) as AstraResult['seats'],districts:districts.map(d=>({name:d.name,region:d.region,candidates:d.candidates,shares:d.shares,win:d.win.map(pct)})),seed,diagnostics:{maxProvinceShare,provinceSD:provinceSum.map((v,p)=>Math.sqrt(Math.max(0,provinceSquares[p]/simulations-(v/simulations)**2))),maxShareSumError},warnings:['Experimental: parameters are judgment calls. Two retrospective election tests do not establish calibration.','Poll catalogs can contain errors; source disagreement and missing minor-party options remain limitations.','New-party geography, floor-crossing personal votes and turnout are uncertain.','Astra shares polling inputs with the other models; it is not independent evidence.',...(pollAgeDays>7?['Latest poll is more than a week old; forecast uncertainty includes its age.']:[])]};
 }

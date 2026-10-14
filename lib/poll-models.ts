@@ -4,6 +4,8 @@ export type PollEstimate = {
  date: string;
  probabilities: {con:number; ndp:number};
  tie?: number;
+ // Projected province-wide vote share with an 80% range, where the source publishes one.
+ vote?: Partial<Record<'con'|'ndp'|'green'|'one'|'centre'|'other', {mean:number; low:number; high:number}>>;
 };
 export type PollModel = {id:string;name:string;href:string;source:Source<PollEstimate>;basis:string};
 const plain=(html:string)=>html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,' ').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/g,' ').replace(/\s+/g,' ').trim();
@@ -27,8 +29,16 @@ export function parseNorthern(html:string):PollEstimate {
 // Vote-Scope publishes its forecast run as JSON; p_strict_largest excludes ties.
 export function parseVoteScope(json:string):PollEstimate {
  const data=JSON.parse(json);if(data.meta?.election_cycle!=='bc_44')throw Error('Wrong Vote-Scope election');
- const read=(party:string)=>{const p=(data.parties??[]).find((x:{party?:string})=>x.party===party)?.p_strict_largest;if(typeof p!=='number')throw Error('Vote-Scope largest-party format changed');return p*100;};
- return checked(data.meta.run_date,read('bc_con'),read('bc_ndp'));
+ type Row={party?:string;p_strict_largest?:unknown;vote_mean?:unknown;vote_ci_low_80?:unknown;vote_ci_high_80?:unknown};
+ const rows:Row[]=data.parties??[];
+ const read=(party:string)=>{const p=rows.find(x=>x.party===party)?.p_strict_largest;if(typeof p!=='number')throw Error('Vote-Scope largest-party format changed');return p*100;};
+ // Vote shares are optional extras: keep any party whose three figures are present.
+ const vote:PollEstimate['vote']={};
+ for(const [id,party] of [['con','bc_con'],['ndp','bc_ndp'],['green','bc_grn'],['one','bc_onebc'],['centre','bc_centre'],['other','bc_oth']] as const){
+  const r=rows.find(x=>x.party===party),v=[r?.vote_mean,r?.vote_ci_low_80,r?.vote_ci_high_80];
+  if(v.every(n=>typeof n==='number'&&Number.isFinite(n)&&n>=0&&n<=100))vote[id]={mean:v[0] as number,low:v[1] as number,high:v[2] as number};
+ }
+ return {...checked(data.meta.run_date,read('bc_con'),read('bc_ndp')),...(Object.keys(vote).length?{vote}:{})};
 }
 export function pollModels(data:Dashboard):PollModel[] {
  const odds=data.model.data.indexodds;

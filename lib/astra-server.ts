@@ -10,7 +10,7 @@ import type {Source} from './election';
 import {env} from 'cloudflare:workers';
 
 // Astra and the Opus model share fetched inputs and one cache record.
-const cacheKey='current-v'+ASTRA_VERSION+'-opus'+OPUS_VERSION+'-inputs-2026-10-05';
+const cacheKey='current-v'+ASTRA_VERSION+'-opus'+OPUS_VERSION+'-vote1-inputs-2026-10-05';
 type RecordState={source:Source<AstraResult>;opus:Source<OpusResult>;polls:Poll[];candidates:Candidate[];lastAttempt:number;feeds:{name:string;checkedAt:string;ok:boolean;error?:string}[];inputKey?:string};
 const initial:RecordState={source:seedResult as Source<AstraResult>,opus:opusSeed as unknown as Source<OpusResult>,polls:withSupplementalPolls(seedInputs.polls as Poll[],supplemental as Poll[]),candidates:seedInputs.candidates as Candidate[],lastAttempt:0,feeds:[]};
 let memory=initial,inFlight:Promise<RecordState>|null=null;
