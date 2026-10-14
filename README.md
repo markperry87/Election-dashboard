@@ -146,3 +146,9 @@ It differs from Astra by design: centred, shrunk pollster house effects; inverse
 The Opus model is shown for comparison only: it is a row in the polling-model table and a hollow marker on the range bars, but **not** part of the headline median. To include it, add `opusModel(data)` to the list returned by `pollModels()` in `lib/poll-models.ts` (the median then becomes the middle of five values).
 
 `GET /api/opus` returns the current forecast, feed status and backtests. `node scripts/opus-check.mjs` checks seat/probability conservation, riding share sums, calibration of riding baselines to the polling average, reproducibility, extreme-poll direction and name matching, regenerates `lib/data/opus-result.json` (stamped with its inputs' retrieval time) and runs the same 2020/2024 election-eve fixtures as Astra, writing `lib/data/opus-backtests.json` with Astra's scores alongside. Two elections with three polls each cannot establish calibration, and the model's author knew both outcomes.
+
+## Public snapshot on GitHub Pages
+
+`.github/workflows/snapshot.yml` publishes a static copy of the dashboard to GitHub Pages every 2 hours from 8 a.m. to 6 p.m. Pacific, on pushes to `main` that touch the app, and on demand (Actions → Publish dashboard snapshot → Run workflow). Scheduled runs stop after October 25, 2026.
+
+Each run starts the app on the runner, captures `/api/election` and `/api/history`, and `scripts/snapshot/build.mjs` bundles the real dashboard components with that data into one self-contained `index.html`. The page cannot refresh itself; it shows when the snapshot was taken. To build one locally: `node scripts/snapshot/refresh.mjs _site`.

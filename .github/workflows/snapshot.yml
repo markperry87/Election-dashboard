@@ -1,0 +1,71 @@
+# Rebuilds the static dashboard snapshot with fresh data and publishes it to GitHub Pages.
+name: Publish dashboard snapshot
+
+on:
+  schedule:
+    # Every 2 hours, 8 a.m. to 6 p.m. Pacific (PDT, UTC-7). GitHub may start runs a few minutes late.
+    - cron: "0 15,17,19,21,23 * * *"
+    - cron: "0 1 * * *"
+  push:
+    branches: [main]
+    paths: ["app/**", "lib/**", "components/**", "scripts/snapshot/**", "pnpm-lock.yaml", ".github/workflows/snapshot.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      skip: ${{ steps.window.outputs.skip }}
+    steps:
+      - name: Skip scheduled runs after election day
+        id: window
+        run: |
+          today=$(TZ=America/Vancouver date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && [[ "$today" > "2026-10-25" ]]; then
+            echo "Forecasting has closed; nothing to publish."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.window.outputs.skip != 'true'
+      - uses: actions/setup-node@v4
+        if: steps.window.outputs.skip != 'true'
+        with:
+          node-version: 22
+      - uses: actions/cache@v4
+        if: steps.window.outputs.skip != 'true'
+        with:
+          path: .sites-runtime/pnpm-store
+          key: pnpm-store-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+      - name: Install dependencies
+        if: steps.window.outputs.skip != 'true'
+        run: npx -y pnpm@11.25.0 install --frozen-lockfile
+      - name: Fetch data and build snapshot
+        if: steps.window.outputs.skip != 'true'
+        env:
+          SNAPSHOT_NOTE: Updates every 2 hours, 8 a.m. to 6 p.m. PT
+        run: node scripts/snapshot/refresh.mjs _site
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.window.outputs.skip != 'true'
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
