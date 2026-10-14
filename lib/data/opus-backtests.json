@@ -1,0 +1,136 @@
+{
+  "version": "1.0",
+  "createdAt": "2026-10-14",
+  "description": "Retrospective election-eve checks on the same fixtures as Astra. Not a full historical replay or proof of calibration.",
+  "results": [
+    {
+      "year": 2020,
+      "date": "2020-10-23",
+      "electionDay": "2020-10-24",
+      "simulations": 20000,
+      "polls": 3,
+      "firms": 2,
+      "winner": "BC NDP",
+      "winnerProbability": 95.185,
+      "parties": [
+        {
+          "id": "con",
+          "name": "BC Liberals",
+          "probability": 4.215,
+          "mean": 28.6127,
+          "low": 18,
+          "high": 39,
+          "actual": 28
+        },
+        {
+          "id": "ndp",
+          "name": "BC NDP",
+          "probability": 95.185,
+          "mean": 55.91105,
+          "low": 46,
+          "high": 67,
+          "actual": 57
+        },
+        {
+          "id": "green",
+          "name": "BC Greens",
+          "probability": 0.01,
+          "mean": 2.0415,
+          "low": 1,
+          "high": 3,
+          "actual": 2
+        },
+        {
+          "id": "centre",
+          "name": "BC Conservatives",
+          "probability": 0,
+          "mean": 0.43475,
+          "low": 0,
+          "high": 2,
+          "actual": 0
+        },
+        {
+          "id": "other",
+          "name": "Other candidates",
+          "probability": 0,
+          "mean": 0,
+          "low": 0,
+          "high": 0,
+          "actual": 0
+        }
+      ],
+      "brier": 0.004129865000000002,
+      "seatMAE": 0.4355799999999995,
+      "covered": 5,
+      "scored": 5,
+      "ridingCalls": 75,
+      "ridings": 87,
+      "astra": {
+        "winnerProbability": 99.7,
+        "brier": 0.000014000000000000015,
+        "seatMAE": 0.9770199999999998,
+        "covered": 4
+      }
+    },
+    {
+      "year": 2024,
+      "date": "2024-10-18",
+      "electionDay": "2024-10-19",
+      "simulations": 20000,
+      "polls": 3,
+      "firms": 3,
+      "winner": "BC NDP",
+      "winnerProbability": 65.125,
+      "parties": [
+        {
+          "id": "con",
+          "name": "BC Conservatives",
+          "probability": 32.15,
+          "mean": 42.6769,
+          "low": 32,
+          "high": 53,
+          "actual": 44
+        },
+        {
+          "id": "ndp",
+          "name": "BC NDP",
+          "probability": 65.125,
+          "mean": 48.6983,
+          "low": 38,
+          "high": 59,
+          "actual": 47
+        },
+        {
+          "id": "green",
+          "name": "BC Greens",
+          "probability": 0.01,
+          "mean": 1.573,
+          "low": 1,
+          "high": 3,
+          "actual": 2
+        },
+        {
+          "id": "other",
+          "name": "Other candidates",
+          "probability": 0,
+          "mean": 0.0518,
+          "low": 0,
+          "high": 0,
+          "actual": 0
+        }
+      ],
+      "brier": 0.225725945,
+      "seatMAE": 0.87505,
+      "covered": 4,
+      "scored": 4,
+      "ridingCalls": 80,
+      "ridings": 93,
+      "astra": {
+        "winnerProbability": 73.67,
+        "brier": 0.12004665499999999,
+        "seatMAE": 1.0534249999999992,
+        "covered": 4
+      }
+    }
+  ]
+}

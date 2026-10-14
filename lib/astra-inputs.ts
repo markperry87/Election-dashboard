@@ -34,11 +34,13 @@ export function parse338Polls(html:string):Poll[]{
   return [{firm:clean(firm),start:date,end:date,n:Number(n.replace(/,/g,'')),shares:[v[1],v[0],v[2],v[3],v[4],v.every(x=>x!==null)?Math.max(0,100-v.reduce<number>((s,x)=>s+(x??0),0)):null],sources:['338Canada']}];
  }).filter(valid);if(polls.length<3)throw Error('338Canada polling table unavailable');return polls;
 }
+// Catalogs round differently (44.7 vs 45), so match toplines within half a point.
+const sameTopline=(a:Poll,b:Poll)=>a.shares.slice(0,3).every((v,i)=>v!==null&&b.shares[i]!==null&&Math.abs(v-b.shares[i]!)<=.5);
 export function mergePolls(groups:Poll[][]):Poll[]{
  const result:Poll[]=[];
  // Prefer full fieldwork dates from Vote-Scope/Northern Vibe over 338 midpoint dates.
  for(const p of groups.flat()){
-  const match=result.find(q=>firmKey(q.firm)===firmKey(p.firm)&&(Math.abs(Date.parse(q.end)-Date.parse(p.end))<=3*86400000||p.end>=q.start&&p.end<=q.end||q.end>=p.start&&q.end<=p.end)&&q.shares.slice(0,3).every((v,i)=>v===p.shares[i]));
+  const match=result.find(q=>firmKey(q.firm)===firmKey(p.firm)&&(Math.abs(Date.parse(q.end)-Date.parse(p.end))<=3*86400000||p.end>=q.start&&p.end<=q.end||q.end>=p.start&&q.end<=p.end)&&sameTopline(q,p));
   if(match){match.sources=[...new Set([...match.sources,...p.sources])];for(let i=0;i<6;i++)if(match.shares[i]===null)match.shares[i]=p.shares[i];match.n=match.n===null?p.n:p.n===null?match.n:Math.min(match.n,p.n);}
   else result.push({...p,shares:[...p.shares],sources:[...p.sources]});
  }return result.sort((a,b)=>b.end.localeCompare(a.end));
@@ -47,7 +49,7 @@ export function mergePolls(groups:Poll[][]):Poll[]{
 // with catalog metadata when it arrives. Do not count the same wave twice.
 export function withSupplementalPolls(polls:Poll[],supplemental:Poll[]):Poll[]{
  const catalog=polls.filter(p=>!p.provisional);
- const pending=supplemental.filter(p=>!catalog.some(q=>firmKey(q.firm)===firmKey(p.firm)&&Math.abs(Date.parse(q.end)-Date.parse(p.reportedAt??p.end))<=7*86400000&&q.shares.slice(0,3).every((v,i)=>v===p.shares[i])));
+ const pending=supplemental.filter(p=>!catalog.some(q=>firmKey(q.firm)===firmKey(p.firm)&&Math.abs(Date.parse(q.end)-Date.parse(p.reportedAt??p.end))<=7*86400000&&sameTopline(q,p)));
  return mergePolls([catalog,pending]);
 }
 export function candidateParty(s:string):Party {if(/conservative/i.test(s))return 'con';if(/ndp/i.test(s))return 'ndp';if(/green/i.test(s))return 'green';if(/one\s?bc/i.test(s))return 'one';if(/centre/i.test(s))return 'centre';return 'other';}

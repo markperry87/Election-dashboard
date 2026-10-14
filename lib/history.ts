@@ -1,6 +1,7 @@
 import seed from './data/history.json';
 import polyMarkets from './data/poly.json';
 import {fetchText,UpstreamError,type Source} from './election';
+import {readHistorySnapshot,saveHistorySnapshot} from './snapshot-store';
 export type HistoryPoint={t:number;price:number|null;volume:number};
 export type MarketHistory=Record<string,HistoryPoint[]>;
 export type Histories={poly:Source<MarketHistory>;kalshi:Source<MarketHistory>};
@@ -12,12 +13,16 @@ async function polyHistory():Promise<MarketHistory>{
  for(const map of mappings){
   const m=polyMarkets.markets.find(m=>m.groupItemTitle===map.poly)!;
   const token=JSON.parse(m.clobTokenIds)[0];
-  const h=JSON.parse(await fetchText(`https://clob.polymarket.com/prices-history?market=${token}&startTs=${start}&endTs=${end}&fidelity=60`));
-  if(!h.history?.length)throw Error('Missing Polymarket price history');
+  // The CLOB rejects startTs/endTs ranges longer than about 15 days, so request
+  // the history in 14-day windows and de-duplicate the joins.
+  const points=new Map<number,{t:number;p:number}>();
+  for(let from=start;from<end;from+=14*86400){const h=JSON.parse(await fetchText(`https://clob.polymarket.com/prices-history?market=${token}&startTs=${from}&endTs=${Math.min(end,from+14*86400)}&fidelity=60`));if(!Array.isArray(h.history))throw Error('Polymarket price history unavailable');for(const p of h.history)points.set(p.t,p);}
+  const history=[...points.values()];
+  if(!history.length)throw Error('Missing Polymarket price history');
   const trades:any[]=[];
   for(let offset=0;;offset+=1000){if(offset>9000)throw Error('Trade history exceeds public backfill limit');const batch=JSON.parse(await fetchText(`https://data-api.polymarket.com/trades?market=${m.conditionId}&limit=1000&offset=${offset}&takerOnly=true`));if(!Array.isArray(batch))throw Error('Trade history unavailable');trades.push(...batch);if(batch.length<1000)break;}
   trades.sort((a,b)=>a.timestamp-b.timestamp);let i=0,volume=0;
-  out[map.id]=h.history.sort((a:any,b:any)=>a.t-b.t).map((p:any)=>{while(i<trades.length&&trades[i].timestamp<=p.t){const size=Number(trades[i++].size);if(!Number.isFinite(size)||size<0)throw Error('Invalid trade size');volume+=size;}if(!Number.isFinite(p.p)||p.p<0||p.p>1)throw Error('Invalid historical price');return{t:p.t,price:p.p*100,volume};});
+  out[map.id]=history.sort((a:any,b:any)=>a.t-b.t).map((p:any)=>{while(i<trades.length&&trades[i].timestamp<=p.t){const size=Number(trades[i++].size);if(!Number.isFinite(size)||size<0)throw Error('Invalid trade size');volume+=size;}if(!Number.isFinite(p.p)||p.p<0||p.p>1)throw Error('Invalid historical price');return{t:p.t,price:p.p*100,volume};});
  }
  return out;
 }
@@ -38,7 +43,14 @@ async function sourceHistory(name:keyof Histories,read:()=>Promise<MarketHistory
  try{const r=await cache?.match(key);if(r){const record=await r.json() as NonNullable<typeof memory.poly>;if(!memory[name]||record.nextAttempt>memory[name]!.nextAttempt)memory[name]=record;}}catch{}
  const prior=memory[name];if(prior&&prior.nextAttempt>Date.now())return prior.source;
  let source:Source<MarketHistory>;let delay=3600000;
- try{source={data:await read(),fetchedAt:new Date().toISOString(),live:true};}catch(e){if(e instanceof UpstreamError)delay=Math.max(delay,e.retryAfterMs);source={...(prior?.source??historySeed[name]),live:false,error:'Historical refresh unavailable. Saved source history is shown.',retryAt:new Date(Date.now()+delay).toISOString()};}
+ try{source={data:await read(),fetchedAt:new Date().toISOString(),live:true};await saveHistorySnapshot(name,source);}
+ catch(e){
+  console.error('Market history refresh failed',name,e instanceof Error?e.message:'Unknown error');
+  if(e instanceof UpstreamError)delay=Math.max(delay,e.retryAfterMs);
+  // Prefer the newest successful history: this isolate, then D1, then the bundled seed.
+  const saved=[prior?.source,await readHistorySnapshot<MarketHistory>(name),historySeed[name]].filter((s):s is Source<MarketHistory>=>!!s).sort((a,b)=>Date.parse(b.fetchedAt)-Date.parse(a.fetchedAt))[0];
+  source={...saved,live:false,error:'Historical refresh unavailable. Saved source history is shown.',retryAt:new Date(Date.now()+delay).toISOString()};
+ }
  const record={source,nextAttempt:Date.now()+delay};memory[name]=record;
  try{await cache?.put(key,Response.json(record,{headers:{'Cache-Control':'public, max-age=86400'}}));}catch{}
  return source;

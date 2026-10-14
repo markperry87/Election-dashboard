@@ -11,13 +11,13 @@
       "polls": 3,
       "firms": 2,
       "winner": "BC NDP",
-      "winnerProbability": 99.785,
+      "winnerProbability": 99.7,
       "parties": [
         {
           "id": "con",
           "name": "BC Liberals",
-          "probability": 0.16999999999999998,
-          "mean": 27.18265,
+          "probability": 0.2,
+          "mean": 27.1738,
           "low": 20,
           "high": 34,
           "actual": 28
@@ -25,8 +25,8 @@
         {
           "id": "ndp",
           "name": "BC NDP",
-          "probability": 99.785,
-          "mean": 55.62135,
+          "probability": 99.7,
+          "mean": 55.6197,
           "low": 49,
           "high": 63,
           "actual": 57
@@ -35,7 +35,7 @@
           "id": "green",
           "name": "BC Greens",
           "probability": 0,
-          "mean": 1.75725,
+          "mean": 1.76395,
           "low": 1,
           "high": 3,
           "actual": 2
@@ -44,7 +44,7 @@
           "id": "centre",
           "name": "BC Conservatives",
           "probability": 0,
-          "mean": 2.43875,
+          "mean": 2.44255,
           "low": 1,
           "high": 3,
           "actual": 0
@@ -59,8 +59,8 @@
           "actual": 0
         }
       ],
-      "brier": 0.000007714999999999937,
-      "seatMAE": 0.9755000000000003,
+      "brier": 0.000014000000000000015,
+      "seatMAE": 0.9770199999999998,
       "covered": 4,
       "scored": 5,
       "sources": [
@@ -77,22 +77,22 @@
       "polls": 3,
       "firms": 3,
       "winner": "BC NDP",
-      "winnerProbability": 73.275,
+      "winnerProbability": 73.67,
       "parties": [
         {
           "id": "con",
           "name": "BC Conservatives",
-          "probability": 22.415,
-          "mean": 42.68425,
-          "low": 37,
+          "probability": 22.125,
+          "mean": 42.6221,
+          "low": 36,
           "high": 49,
           "actual": 44
         },
         {
           "id": "ndp",
           "name": "BC NDP",
-          "probability": 73.275,
-          "mean": 49.0356,
+          "probability": 73.67,
+          "mean": 49.10445,
           "low": 43,
           "high": 55,
           "actual": 47
@@ -101,7 +101,7 @@
           "id": "green",
           "name": "BC Greens",
           "probability": 0,
-          "mean": 1.27835,
+          "mean": 1.27105,
           "low": 1,
           "high": 2,
           "actual": 2
@@ -110,14 +110,14 @@
           "id": "other",
           "name": "Other candidates",
           "probability": 0,
-          "mean": 0.0018,
+          "mean": 0.0024,
           "low": 0,
           "high": 0,
           "actual": 0
         }
       ],
-      "brier": 0.123523395,
-      "seatMAE": 1.018700000000001,
+      "brier": 0.12004665499999999,
+      "seatMAE": 1.0534249999999992,
       "covered": 4,
       "scored": 4,
       "sources": [
