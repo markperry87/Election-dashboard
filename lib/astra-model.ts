@@ -17,7 +17,7 @@ export function generator(seed:number){
   const d=shape-1/3,c=1/Math.sqrt(9*d);
   for(;;){const x=normal(),root=1+c*x;if(root<=0)continue;const v=root**3,u=uniform();if(u<1-.0331*x**4||Math.log(u)<.5*x*x+d*(1-v+Math.log(v)))return d*v;}
  };
- return {normal,dirichlet:(mean:number[],concentration:number)=>normalize(mean.map(p=>gamma(p/100*concentration)))};
+ return {normal,gamma,dirichlet:(mean:number[],concentration:number)=>normalize(mean.map(p=>gamma(p/100*concentration)))};
 }
 export type AstraOptions={electionDay?:string;districtCount?:number;newParties?:Party[];historical?:boolean};
 
