@@ -154,3 +154,7 @@ The Opus model is shown for comparison only: it is a row in the polling-model ta
 Each run starts the app on the runner, captures `/api/election` and `/api/history`, and `scripts/snapshot/build.mjs` bundles the real dashboard components with that data into one self-contained `index.html`. The page cannot refresh itself; it shows when the snapshot was taken. To build one locally: `node scripts/snapshot/refresh.mjs _site`.
 
 The page's **Latest polls** panel marks polls that are new since the previous update. Each build publishes `poll-ledger.json` (when each poll first appeared) beside the page, and the next build downloads it to compare (`lib/poll-ledger.ts`). A poll whose fieldwork dates are revised keeps its original arrival time. In the live app, which has no ledger, the panel lists the most recent polls without arrival times.
+
+## Popular vote
+
+The **Popular vote** panel shows each party's expected province-wide vote share on election day (mean and 80% range across simulations) from Astra and Opus 5.5, Vote-Scope's own published estimate, and each party's expected share of seats. Both simulations record the turnout-weighted vote in every run (`popularVoteTracker` in `lib/astra-model.ts`) and how often the party with the most votes fails to win the most seats outright. Recording these does not change either model's forecast.

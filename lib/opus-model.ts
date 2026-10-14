@@ -1,5 +1,5 @@
 import {IDS,key,firmKey,pollSample,type Poll,type Candidate,type Party} from './astra-inputs';
-import {generator,hash,ELECTION_DAY,type AstraResult,type District} from './astra-model';
+import {generator,hash,popularVoteTracker,ELECTION_DAY,type AstraResult,type District} from './astra-model';
 
 // Opus 5.5 model: an independent election-day forecast built by Claude Opus 5.5.
 // It reads the same public poll catalogs, candidate list and 2024 baseline as
@@ -135,6 +135,7 @@ export function runOpus(all:Poll[],candidates:Candidate[],baseline:District[],da
  const maxProvinceShare=Array(6).fill(0),provinceSum=Array(6).fill(0),provinceSquares=Array(6).fill(0);let maxShareSumError=0;
  const tScale=()=>Math.sqrt((P.tails-2)/(2*rng.gamma(P.tails/2)));
  const province=Array(6).fill(0),regional=regions.map(()=>Array(6).fill(0)),local=Array(6).fill(0);
+ const popular=popularVoteTracker(simulations);
  for(let run=0;run<simulations;run++){
   const scale=tScale();
   for(let p=0;p<6;p++)province[p]=provinceSD[p]*scale*rng.normal()-.5*provinceSD[p]**2;
@@ -156,11 +157,13 @@ export function runOpus(all:Poll[],candidates:Candidate[],baseline:District[],da
   maxShareSumError=Math.max(maxShareSumError,Math.abs(sum(realized)-100));
   realized.forEach((v,p)=>{maxProvinceShare[p]=Math.max(maxProvinceShare[p],v);provinceSum[p]+=v;provinceSquares[p]+=v*v;});
   const actual=[...seats.slice(0,5),...Object.values(otherGroups)],max=Math.max(...actual),leaders=actual.filter(s=>s===max).length;
-  if(leaders>1)ties++;else{const party=seats.slice(0,5).findIndex(s=>s===max);wins[party>=0?party:5]++;}
+  let seatLeader:number|null=null;
+  if(leaders>1)ties++;else{const party=seats.slice(0,5).findIndex(s=>s===max);wins[party>=0?party:5]++;if(party>=0)seatLeader=party;}
+  popular.add(run,realized,seatLeader);
   for(let p=0;p<6;p++){seatSamples[p].push(seats[p]);if(p<5&&seats[p]>baseline.length/2)majorities[p]++;}
  }
  const pct=(x:number)=>x/simulations*100;
- return {date,version:OPUS_VERSION,electionDay,probabilities:Object.fromEntries(IDS.map((p,i)=>[p,pct(wins[i])])) as Record<Party,number>,tie:pct(ties),simulations,latestPoll,pollAgeDays,polls:agg.polls,pollAverage:target,effectiveSample:agg.effectiveSample,firmCount:agg.firmCount,candidateCounts:counts,
+ return {popularVote:popular.result(),date,version:OPUS_VERSION,electionDay,probabilities:Object.fromEntries(IDS.map((p,i)=>[p,pct(wins[i])])) as Record<Party,number>,tie:pct(ties),simulations,latestPoll,pollAgeDays,polls:agg.polls,pollAverage:target,effectiveSample:agg.effectiveSample,firmCount:agg.firmCount,candidateCounts:counts,
   seats:Object.fromEntries(IDS.map((p,i)=>{const v=seatSamples[i].sort((a,b)=>a-b);return[p,{mean:sum(v)/simulations,low:v[Math.floor(simulations*.1)],high:v[Math.floor(simulations*.9)],majority:pct(majorities[i])}];})) as OpusResult['seats'],
   districts:districts.map(d=>({name:d.name,region:d.region,candidates:d.candidates,shares:d.shares,win:d.win.map(pct)})),seed,houseEffects:agg.houseEffects,
   diagnostics:{maxProvinceShare,provinceSD:provinceSum.map((v,p)=>Math.sqrt(Math.max(0,provinceSquares[p]/simulations-(v/simulations)**2))),maxShareSumError},
