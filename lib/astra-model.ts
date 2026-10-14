@@ -6,7 +6,7 @@ export type District={name:string;region:string;url:string;results:{name:string;
 export type AstraResult={date:string;version:string;electionDay:string;probabilities:Record<Party,number>;tie:number;simulations:number;latestPoll:string;pollAgeDays:number;polls:Poll[];pollAverage:number[];effectiveSample:number;firmCount:number;candidateCounts:Record<Party,number>;seats:Record<Party,{mean:number;low:number;high:number;majority:number}>;districts:{name:string;region:string;shares:number[];win:number[];candidates:Candidate[]}[];seed:number;diagnostics:{maxProvinceShare:number[];provinceSD:number[];maxShareSumError:number};warnings:string[]};
 const sum=(v:number[])=>v.reduce((a,b)=>a+b,0);
 const normalize=(v:number[])=>{const total=sum(v);if(!total)throw Error('Empty vote vector');return v.map(x=>x/total*100);};
-function hash(s:string){let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return h>>>0;}
+export function hash(s:string){let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return h>>>0;}
 export function generator(seed:number){
  let a=seed,spare:number|undefined;
  const uniform=()=>{a+=0x6D2B79F5;let t=a;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return Math.max(1e-12,((t^t>>>14)>>>0)/4294967296);};
@@ -56,7 +56,10 @@ export function runAstra(all:Poll[],candidates:Candidate[],baseline:District[],d
   if(!options.historical&&returned&&returned.party!==winner.party&&winner.party!=='other'){
    const moved=Math.min(10,shares[IDS.indexOf(winner.party as Party)]*.3);shares[IDS.indexOf(winner.party as Party)]-=moved;shares[IDS.indexOf(returned.party)]+=moved;
   }
-  return {name:d.name,region,candidates:running,shares:normalize(shares.map((x,p)=>running.some(c=>c.party===IDS[p])?Math.max(.2,x):0)),win:Array(6).fill(0) as number[]};
+  // Other candidates compete separately; their relative split is fixed per riding.
+  const others=running.filter(c=>c.party==='other');
+  const otherSplit=others.length?normalize(others.map(c=>{const old=d.results.find(o=>key(o.name)===key(c.name));return old?old.party==='other'?Math.max(1,old.share):key(old.name)===key(winner.name)?10:1:1;})):[];
+  return {name:d.name,region,candidates:running,others,otherSplit,shares:normalize(shares.map((x,p)=>running.some(c=>c.party===IDS[p])?Math.max(.2,x):0)),win:Array(6).fill(0) as number[]};
  });
  // Rake district shares to province-wide polling, using 2024 turnout weights.
  // Structural zeros stay zero; provincial support is concentrated where eligible.
@@ -94,10 +97,8 @@ export function runAstra(all:Poll[],candidates:Candidate[],baseline:District[],d
     const value=local[p];
     if(p===5){
      // Other candidates compete separately; independents never form one party.
-     const options=d.candidates.filter(c=>c.party==='other');
-     const raw=options.map(c=>{const old=baseline[r].results.find(o=>key(o.name)===key(c.name));const oldWinner=[...baseline[r].results].sort((a,b)=>b.votes-a.votes)[0];return old?old.party==='other'?Math.max(1,old.share):key(old.name)===key(oldWinner.name)?10:1:1;});
-     const split=normalize(raw);let max=-1,idx=0;for(let i=0;i<split.length;i++){const score=value*split[i]/100;if(score>max){max=score;idx=i;}}
-     if(max>best){best=max;winningParty=p;dOther=options[idx];}
+     const split=d.otherSplit;let max=-1,idx=0;for(let i=0;i<split.length;i++){const score=value*split[i]/100;if(score>max){max=score;idx=i;}}
+     if(max>best){best=max;winningParty=p;dOther=d.others[idx];}
     }else if(value>best){best=value;winningParty=p;}
    }
    seats[winningParty]++;d.win[winningParty]++;
@@ -108,5 +109,5 @@ export function runAstra(all:Poll[],candidates:Candidate[],baseline:District[],d
   for(let p=0;p<6;p++){seatSamples[p].push(seats[p]);if(p<5&&seats[p]>baseline.length/2)majorities[p]++;}
  }
  const pct=(x:number)=>x/simulations*100;
- return {date,version:ASTRA_VERSION,electionDay,probabilities:Object.fromEntries(IDS.map((p,i)=>[p,pct(wins[i])])) as Record<Party,number>,tie:pct(ties),simulations,latestPoll,pollAgeDays,polls:agg.polls,pollAverage,effectiveSample:agg.effectiveSample,firmCount:agg.firmCount,candidateCounts:counts,seats:Object.fromEntries(IDS.map((p,i)=>{const v=seatSamples[i].sort((a,b)=>a-b);return[p,{mean:sum(v)/simulations,low:v[Math.floor(simulations*.1)],high:v[Math.floor(simulations*.9)],majority:pct(majorities[i])}];})) as AstraResult['seats'],districts:districts.map(d=>({...d,win:d.win.map(pct)})),seed,diagnostics:{maxProvinceShare,provinceSD:provinceSum.map((v,p)=>Math.sqrt(Math.max(0,provinceSquares[p]/simulations-(v/simulations)**2))),maxShareSumError},warnings:['Experimental: parameters are judgment calls. Two retrospective election tests do not establish calibration.','Poll catalogs can contain errors; source disagreement and missing minor-party options remain limitations.','New-party geography, floor-crossing personal votes and turnout are uncertain.','Astra shares polling inputs with the other models; it is not independent evidence.',...(pollAgeDays>7?['Latest poll is more than a week old; forecast uncertainty includes its age.']:[])]};
+ return {date,version:ASTRA_VERSION,electionDay,probabilities:Object.fromEntries(IDS.map((p,i)=>[p,pct(wins[i])])) as Record<Party,number>,tie:pct(ties),simulations,latestPoll,pollAgeDays,polls:agg.polls,pollAverage,effectiveSample:agg.effectiveSample,firmCount:agg.firmCount,candidateCounts:counts,seats:Object.fromEntries(IDS.map((p,i)=>{const v=seatSamples[i].sort((a,b)=>a-b);return[p,{mean:sum(v)/simulations,low:v[Math.floor(simulations*.1)],high:v[Math.floor(simulations*.9)],majority:pct(majorities[i])}];})) as AstraResult['seats'],districts:districts.map(d=>({name:d.name,region:d.region,candidates:d.candidates,shares:d.shares,win:d.win.map(pct)})),seed,diagnostics:{maxProvinceShare,provinceSD:provinceSum.map((v,p)=>Math.sqrt(Math.max(0,provinceSquares[p]/simulations-(v/simulations)**2))),maxShareSumError},warnings:['Experimental: parameters are judgment calls. Two retrospective election tests do not establish calibration.','Poll catalogs can contain errors; source disagreement and missing minor-party options remain limitations.','New-party geography, floor-crossing personal votes and turnout are uncertain.','Astra shares polling inputs with the other models; it is not independent evidence.',...(pollAgeDays>7?['Latest poll is more than a week old; forecast uncertainty includes its age.']:[])]};
 }
