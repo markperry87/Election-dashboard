@@ -17,7 +17,7 @@ export default function LatestPolls({polls,ledger}:{polls:Poll[];ledger?:PollLed
   :since===null?'Tracking of new polls starts with this update. The most recent polls are below.'
   :fresh.length?`${fresh.length} new poll${fresh.length>1?'s':''} since the last update at ${time(since)}.`
   :`No new polls since the last update at ${time(since)}. The most recent are below.`;
- return <section className="latest-polls" aria-labelledby="latest-polls-title">
+ return <section id="latest-polls" className="latest-polls" aria-labelledby="latest-polls-title">
   <div className="section-heading"><div><h2 id="latest-polls-title">Latest polls</h2></div><span className="poll-method-tag">Inputs to Astra and Opus 5.5</span></div>
   <p className={fresh.length?'latest-summary has-new':'latest-summary'}>{summary}</p>
   <div className="table-panel"><div className="table-scroll"><table><thead><tr><th>Pollster · fieldwork</th>{ledger&&<th>Added</th>}<th>Sample</th><th>Con</th><th>NDP</th><th>Green</th><th>OneBC</th><th>Centre</th></tr></thead><tbody>

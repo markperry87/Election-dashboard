@@ -14,7 +14,7 @@ export default function PopularVote({astra,opus,voteScope}:{astra:AstraResult;op
  if(!o&&!a)return null;
  // Cards use the Opus estimate, falling back to Astra when only it is available.
  const lead=o?{name:'Opus 5.5',vote:o,seats:opus.seats}:{name:'Astra',vote:a!,seats:astra.seats};
- return <section className="popular-vote" aria-labelledby="popular-vote-title">
+ return <section id="popular-vote" className="popular-vote" aria-labelledby="popular-vote-title">
   <div className="section-heading"><div><h2 id="popular-vote-title">Popular vote</h2></div><span className="poll-method-tag">Election-day estimates · October 24</span></div>
   <p className="poll-intro">Each party’s expected share of the province-wide vote, with the range that covers 8 in 10 simulated outcomes. Individual polls measure intention on the days they were taken; these estimates combine them and allow for polling error and movement before election day.</p>
   <div className="vote-cards">

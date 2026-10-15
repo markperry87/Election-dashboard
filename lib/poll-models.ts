@@ -47,12 +47,9 @@ export function pollModels(data:Dashboard):PollModel[] {
   {id:'338',name:'338Canada',href:'https://338canada.com/bc/',source:{...data.model,data:{date:odds.date,probabilities:{con:value('CPBC'),ndp:value('NDP')},tie:value('Tie')}},basis:'Published odds of winning the most seats'},
   {id:'northern',name:'Northern Vibe',href:'https://northernvibe.ca/en/bc',source:data.northern,basis:'Majority + most seats without a majority; rounded source figures'},
   {id:'votescope',name:'Vote-Scope',href:'https://vote-scope.com/en/canada/british-columbia/',source:data.voteScope,basis:'P(largest): finishes strictly first'},
-  {id:'astra',name:'Astra model',href:'#astra',source:data.astra,basis:'Experimental election-day forecast: 20,000 correlated riding simulations; outright most seats'},
+  {id:'astra',name:'Astra model',href:'#astra',source:data.astra,basis:'AI-built election-day forecast: 20,000 correlated riding simulations; outright most seats'},
+  {id:'opus',name:'Opus 5.5 model',href:'#opus',source:data.opus,basis:'AI-built election-day forecast by Claude Opus 5.5: house-effect-adjusted polls, mixed uniform/proportional swing, fat-tailed joint errors, 10,000 riding simulations; outright most seats'},
  ];
-}
-// Shown beside the four headline models for comparison; not part of the median.
-export function opusModel(data:Dashboard):PollModel {
- return {id:'opus',name:'Opus 5.5 model',href:'#opus',source:data.opus,basis:'AI-built challenger to Astra: house-effect-adjusted polls, mixed uniform/proportional swing, fat-tailed joint errors, 10,000 riding simulations; outright most seats. Not in the headline median'};
 }
 export function pollConsensus(models:PollModel[]) {
  return (['con','ndp'] as const).map(id=>{
