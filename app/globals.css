@@ -14,10 +14,9 @@
 .astra-stats>div{display:flex;flex-direction:column;gap:8px}.astra-stats span{font-size:14px;color:#b9c5d4}.astra-stats strong{font-size:36px;letter-spacing:-.03em}.astra-stats small{font-size:14px;letter-spacing:0;font-weight:400;display:block;color:#b9c5d4}
 .astra-caption{font-size:14px;color:#a9b8cb;margin-bottom:20px}.astra-field-date{display:block;font-size:12px;color:#a9b8cb;font-weight:400;margin-top:5px}.astra-section table{font-variant-numeric:tabular-nums}.astra-section details p{line-height:1.7}.astra-section a{color:#bbcbff;text-decoration:underline;text-underline-offset:3px}.poll-marker.marker-3,.legend-marker.marker-3{background:#bdcbff;border-color:#bdcbff;border-radius:50%}.poll-marker.marker-3{top:24px;width:10px;height:10px;transform:translateX(-50%)}.source-grid{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:640px){.source-grid{grid-template-columns:1fr}}
 @media(max-width:760px){.astra-section{padding:18px 14px}.astra-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.astra-stats strong{font-size:30px}.astra-section .section-heading{align-items:flex-start;gap:12px;flex-wrap:wrap}}
-/* Opus 5.5 model: AI-built challenger to Astra, shown for comparison only. */
+/* Opus 5.5 model panel and its marker in the polling comparison. */
 .opus-section{border-top-color:#e8b77a}.opus-section .astra-symbol{border-color:#e8b77a;color:#f6d7ae}.opus-section a{color:#f3cf9f}
 .poll-marker.marker-4,.legend-marker.marker-4{background:transparent;border:2px solid #f0c58c;border-radius:50%}.poll-marker.marker-4{top:-2px;width:11px;height:11px;transform:translateX(-50%)}
-.poll-challenger-row{color:#f3dcc0}.poll-challenger-row td:first-child a{color:#f3cf9f}
 .opus-compare td,.opus-compare th{text-align:right}.opus-compare th:first-child{text-align:left}.opus-diff{font-size:12px;color:#a9b8cb;display:block}
 /* Latest polls: arrivals since the previous snapshot are marked New. */
 .latest-polls{margin-bottom:42px}.latest-summary{font-size:15px;color:#a6bbcf;margin:0 0 16px}.latest-summary.has-new{color:#f3dcc0}
@@ -33,3 +32,11 @@
 .vote-table td,.vote-table thead th{text-align:right}.vote-table th:first-child{text-align:left}.vote-table thead span{display:block;font-size:11px;color:#8ca1b7}.vote-range{display:block;font-size:12px;color:#8fa2b7}
 @media(max-width:1000px){.vote-cards{grid-template-columns:1fr 1fr}.split-card{grid-column:span 2}}
 @media(max-width:640px){.vote-cards{grid-template-columns:1fr;gap:10px}.split-card{grid-column:auto}.vote-flow strong{font-size:30px}.vote-card{padding:18px}}
+/* Table of contents: jump links under the page heading. */
+html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+main section[id],main article[id]{scroll-margin-top:20px}
+.toc{display:flex;align-items:baseline;gap:14px;margin:-12px 0 30px;padding:14px 18px;border:1px solid #2b394a;border-radius:10px;background:#101a27}
+.toc-label{flex-shrink:0;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#8b9fb5}
+.toc ul{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0;padding:0;list-style:none}
+.toc a{font-size:14px;color:#c7d5e4;text-decoration:underline;text-decoration-color:#3c5068;text-underline-offset:4px}.toc a:hover{color:#fff;text-decoration-color:#aad1ff}
+@media(max-width:640px){.toc{flex-direction:column;gap:10px;padding:14px;margin:-8px 0 24px}.toc ul{gap:8px 16px}.toc a{font-size:13px}}

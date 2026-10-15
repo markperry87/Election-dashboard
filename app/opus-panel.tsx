@@ -21,8 +21,8 @@ export default function OpusPanel({source,astra}:{source:Source<OpusResult>;astr
   ['Polling average · Con / NDP / Green',o.pollAverage.slice(0,3).map(v=>v.toFixed(1)).join(' / '),a.pollAverage.slice(0,3).map(v=>v.toFixed(1)).join(' / ')],
  ];
  return <section id="opus" className="astra-section opus-section" aria-labelledby="opus-title">
- <div className="section-heading"><div><span className="astra-symbol">O</span><h2 id="opus-title">Opus 5.5 model</h2></div><span className="poll-method-tag">AI-built challenger · v{o.version} · not in headline</span></div>
- <p className="poll-intro">A competing election-day forecast designed and coded by Claude Opus 5.5, an Anthropic AI model. It reads the same public polls, candidate list and 2024 results as Astra, but makes its own modelling choices. Shown for comparison; it does not feed the headline estimate.</p>
+ <div className="section-heading"><div><span className="astra-symbol">O</span><h2 id="opus-title">Opus 5.5 model</h2></div><span className="poll-method-tag">AI-built · v{o.version}</span></div>
+ <p className="poll-intro">An election-day forecast designed and coded by Claude Opus 5.5, an Anthropic AI model. It reads the same public polls, candidate list and 2024 results as Astra, but makes its own modelling choices. It is one of the five models in the polling median.</p>
  <div className="astra-stats"><div><span>Conservatives · most seats</span><strong style={{color:'#567fe9'}}>{probability(o.probabilities.con)}</strong></div><div><span>NDP · most seats</span><strong style={{color:'#df762e'}}>{probability(o.probabilities.ndp)}</strong></div><div><span>Tied for most seats</span><strong>{probability(o.tie)}</strong></div><div><span>Polling inputs</span><strong>{o.polls.length} <small>polls / {o.firmCount} firms</small></strong></div></div>
  <p className="astra-caption">Forecast date {o.date} · Latest poll date {o.latestPoll} · {o.simulations.toLocaleString()} simulations · Last calculation {time(source.fetchedAt)}</p>
  {source.error&&<p className="model-warning">{source.error}</p>}
