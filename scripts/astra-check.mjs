@@ -20,13 +20,14 @@ assert.deepEqual(pollConsensus([...mock,{id:'x',excluded:'test',source:{data:{pr
 }
 const date=process.argv[2]??'2026-10-05';
 const supplemental=JSON.parse(fs.readFileSync('lib/data/astra-supplemental-polls.json'));
-const report=supplemental[0];
+// Checks below use the Oct 5 report; later supplemental polls are listed after it.
+const report=supplemental.find(p=>p.reportedAt==='2026-10-05');
 assert.equal(report.n,null);
 assert.deepEqual(report.shares,[48,43,7,null,null,2]);
 assert.equal(parsers.pollSample(report),500);
-assert.deepEqual(parsers.withSupplementalPolls(supplemental,supplemental),supplemental);
+assert.deepEqual(parsers.withSupplementalPolls(supplemental,supplemental),[...supplemental].sort((a,b)=>b.end.localeCompare(a.end)));
 const confirmed={...report,provisional:undefined,start:'2026-10-01',end:'2026-10-04',n:1200,sources:['Vote-Scope']};
-const replaced=parsers.withSupplementalPolls([confirmed],supplemental);
+const replaced=parsers.withSupplementalPolls([confirmed],[report]);
 assert.equal(replaced.length,1);
 assert.equal(replaced[0].n,1200);
 assert.equal(replaced[0].end,'2026-10-04');
