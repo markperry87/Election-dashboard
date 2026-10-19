@@ -42,6 +42,17 @@ assert.ok(Math.abs(b.seats.market.con-r.market.con/100)<1e-9);
 assert.ok(Math.abs(b.seats.astra.con-r.astra.con/100)<1e-9);
 assert.ok(Math.abs(b.disagreements[0].gap-(r.market.con-(r.astra.con+r.opus.con)/2))<1e-9);
 
+// Real Polymarket shape (Oct 19): 26 unused "Person A–Z" outcomes and "Other",
+// each priced 50 with an empty book. They must not swamp the real candidates.
+const blanks=[...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'].map(l=>({name:'Person '+l,price:50,bid:0,ask:100,volume:0})).concat({name:'Other',price:50,bid:0,ask:100,volume:0});
+const real=[
+ {riding:'Vancouver-Yaletown',volume:5409.17,quotes:[{name:'Terry Yung',price:46.5,bid:43,ask:50,volume:1412.5},{name:'Margareta Dovgal',price:52,bid:49,ask:55,volume:2037.72},{name:'Sam Chandola',price:1.1,bid:.3,ask:1.9,volume:841.31},{name:'Priyan Samarakoone',price:1.05,bid:.2,ask:1.9,volume:749.82},{name:'Timothy Webster',price:1.15,bid:.3,ask:2,volume:367.81}]},
+ {riding:'Vancouver-Langara',volume:2945.25,quotes:[{name:'Sunita Dhir',price:30,bid:28,ask:32,volume:1045.28},{name:'Jaime Stein',price:69.5,bid:67,ask:72,volume:1479.46},{name:'John Atoyebi',price:.75,bid:.2,ask:1.3,volume:189.77},{name:'Alan Beesley',price:.5,bid:.1,ask:.9,volume:230.74}]},
+].map(m=>({...m,slug:m.riding.toLowerCase(),quotes:[...m.quotes,...blanks]}));
+const live=battleground(real,astra,opus);
+assert.equal(live.counted,2,'Both real ridings count once placeholders are dropped: '+JSON.stringify(live.ridings.map(r=>r.note)));
+for(const r of live.ridings){assert.ok(r.overround>-2&&r.overround<5,'Overround from real candidates only');assert.ok(Math.max(r.market.con,r.market.ndp)>45);}
+
 // Thin or unmatched markets are listed but not counted; unknown ridings are reported.
 const thin=battleground([{...parsed,volume:100}],astra,opus);
 assert.equal(thin.counted,0);assert.equal(thin.ridings.length,1);assert.match(thin.ridings[0].note,/Too little trading/);
@@ -54,4 +65,5 @@ assert.match(wide.ridings[0].note,/Wide bid\/ask spread \(25 points\)/);
 // Every known slug maps to a district in the forecasts.
 const {key}=await import(`../${out}/astra-inputs.js`);
 for(const slug of KNOWN_RIDING_SLUGS){const name=slug.replace('-british-columbia-legislative-assembly-election-winner','');assert.ok(astra.districts.some(d=>key(d.name)===key(name.replace(/-/g,' '))),slug);}
+for(const r of live.ridings)console.log(r.riding,'market con/ndp',r.market.con.toFixed(1),r.market.ndp.toFixed(1),'astra',r.astra.con.toFixed(1),'opus',r.opus.con.toFixed(1),r.note??'');
 console.log('PASS: riding market parsing, candidate matching, rescaling, seat totals, disagreements, thin/unmatched/wide-spread handling.');

@@ -23,6 +23,11 @@ export type Battleground = {
  seats: Record<'market'|'astra'|'opus', Record<Party, number>>;
  disagreements: (RidingComparison & {gap: number; modelCon: number})[];
 };
+// Polymarket pre-lists placeholder outcomes ("Person A"…"Person Z", "Other")
+// with no trades and an empty book (bid 0, ask 100). Their 50% "midpoint" is
+// meaningless, so they are left out entirely.
+export const placeholder = (q: {name: string; price: number|null; bid: number|null; ask: number|null; volume: number}) =>
+ /^(Person [A-Z]{1,2}|Other)$/i.test(q.name) || q.volume === 0 && (q.bid ?? 0) <= 0 && (q.ask ?? 100) >= 100;
 const zero = () => Object.fromEntries(IDS.map(p => [p, 0])) as Record<Party, number>;
 const byParty = (win: number[]) => Object.fromEntries(IDS.map((p, i) => [p, win[i] ?? 0])) as Record<Party, number>;
 // Midpoint of the order book when both sides are quoted, otherwise the last price.
@@ -34,7 +39,7 @@ export function battleground(markets: RidingMarket[], astra: AstraResult, opus: 
  for (const m of markets) {
   const a = astra.districts.find(d => key(d.name) === key(m.riding)), o = opus.districts.find(d => key(d.name) === key(m.riding));
   if (!a || !o) { unmatched.push(m.riding); continue; }
-  const raw = m.quotes.map(q => ({q, value: quoteValue(q), who: a.candidates.find(c => samePerson(c.name, q.name))}));
+  const raw = m.quotes.filter(q => !placeholder(q)).map(q => ({q, value: quoteValue(q), who: a.candidates.find(c => samePerson(c.name, q.name))}));
   const total = raw.reduce((s, r) => s + (r.value ?? 0), 0);
   const matched = raw.filter(r => r.value !== null && r.who);
   const matchedTotal = matched.reduce((s, r) => s + r.value!, 0);

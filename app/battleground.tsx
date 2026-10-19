@@ -24,7 +24,7 @@ export default function Battleground({ridings,astra,opus}:{ridings:Source<Riding
  return <section id="battleground" className="battleground" aria-labelledby="battleground-title">
   <div className="section-heading"><div><span className="section-no">03</span><h2 id="battleground-title">Battleground ridings</h2></div><span className="poll-method-tag">Riding markets vs Astra &amp; Opus</span></div>
   <p className="poll-intro">Polymarket has winner markets in only some ridings, mostly the competitive ones. These are the seats most likely to decide the election, so they are a fair place to compare what bettors expect with what the AI-built models expect.</p>
-  {!n?<p className="model-warning">Riding market prices are not available yet{ridings.error?` (${ridings.error})`:''}.</p>:<>
+  {!b.ridings.length?<p className="model-warning">Riding market prices are not available yet{ridings.error?` (${ridings.error})`:''}.</p>:!n?<><p className="model-warning">None of the {b.ridings.length} riding markets passed the checks below, so there are no totals to compare.</p><details className="poll-definitions"><summary>All {b.ridings.length} riding markets</summary><div className="table-scroll"><table className="bg-table"><thead><tr><th>Riding</th><th>Markets</th><th>Astra</th><th>Opus</th></tr></thead><tbody>{b.ridings.map(r=><Row key={r.slug} r={r}/>)}</tbody></table></div></details></>:<>
   <div className="bg-cards">{cards.map(([name,s,sub])=><article key={name} className="bg-card">
    <h3>{name}<span>{sub}</span></h3>
    <div className="bg-seats"><div><strong style={{color:CON}}>{seats(s.con)}</strong><span>Conservative</span></div><div><strong style={{color:NDP}}>{seats(s.ndp)}</strong><span>NDP</span></div></div>
