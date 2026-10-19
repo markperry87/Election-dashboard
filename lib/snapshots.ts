@@ -1,6 +1,6 @@
 import type {Dashboard, Source} from './election';
 
-export const sourceKeys = ['poly', 'kalshi', 'model', 'northern', 'taylor', 'voteScope', 'astra', 'opus'] as const;
+export const sourceKeys = ['poly', 'kalshi', 'model', 'northern', 'taylor', 'voteScope', 'ridings', 'astra', 'opus'] as const;
 export const browserSnapshotKey = 'bc-election-watch:snapshot:v1';
 const stamp = (value: string) => Date.parse(value) || 0;
 
@@ -39,6 +39,7 @@ export function validSource(value: any, key: typeof sourceKeys[number]): boolean
  const quote = (v: unknown) => v === null || num(v);
  if (key === 'poly' || key === 'kalshi') return Array.isArray(d) && ['ndp','con'].every(id => d.some(q => q.id === id)) && d.every(q => q && typeof q.id === 'string' && typeof q.status === 'string' && num(q.volume) && quote(q.price) && quote(q.bid) && quote(q.ask));
  if (key === 'model') return ['indexodds','indexoutcome'].every(k => d[k] && typeof d[k].date === 'string' && Array.isArray(d[k].dates) && d[k].dates.every((v: unknown) => typeof v === 'string') && Array.isArray(d[k].parties) && d[k].parties.length && d[k].parties.every((p: any) => p && typeof p.label === 'string' && num(p.value) && Array.isArray(p.values) && p.values.every(num)));
+ if (key === 'ridings') return Array.isArray(d) && d.every((m: any) => m && typeof m.slug === 'string' && typeof m.riding === 'string' && num(m.volume) && Array.isArray(m.quotes) && m.quotes.every((q: any) => q && typeof q.name === 'string' && quote(q.price) && quote(q.bid) && quote(q.ask) && num(q.volume)));
  if (key === 'northern' || key === 'taylor' || key === 'voteScope') return typeof d.date === 'string' && d.probabilities && num(d.probabilities.con) && num(d.probabilities.ndp);
  if (key === 'opus' && !(Array.isArray(d.houseEffects) && d.houseEffects.every((h: {firm?: unknown; polls?: unknown} | null) => h && typeof h.firm === 'string' && num(h.polls)))) return false;
  const ids = ['con','ndp','green','one','centre','other'];

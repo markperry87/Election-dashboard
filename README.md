@@ -162,3 +162,9 @@ The **Popular vote** panel shows each party's expected province-wide vote share 
 ## Stephen Taylor projection
 
 `parseTaylor` in `lib/poll-models.ts` reads Stephen Taylor's BC projection page (stephentaylor.ca) for each party's "Most seats in N% of simulations" and the "As of" date. There is no data feed, so a layout change makes the refresh fail and the dashboard keeps the last saved figures with a warning. Taylor updates less often than 338Canada, so check the projection date in the comparison table.
+
+## Battleground ridings
+
+The **Battleground ridings** section compares Polymarket's riding-level winner markets with Astra and Opus in the same ridings. Only some ridings have markets (15 on October 19, 2026, mostly competitive seats), so this is not a province-wide seat projection.
+
+`lib/ridings.ts` finds markets with one Polymarket search plus a list of known slugs, then fetches each by slug; `getDashboard` refreshes them at most every 30 minutes. `lib/battleground.ts` takes each candidate's bid/ask midpoint (or last price), matches names to parties using the Elections BC candidate list, drops placeholders and rescales each riding to 100%. A riding counts toward the seat totals only with at least US$500 traded and 80% of its price matched to listed candidates; bid/ask spreads over 10 points are flagged. The section shows expected seats in these ridings for markets, Astra and Opus, and the five ridings where markets and the models' average disagree most on the Conservative chance. `node scripts/battleground-check.mjs` checks parsing, matching, rescaling and the totals.

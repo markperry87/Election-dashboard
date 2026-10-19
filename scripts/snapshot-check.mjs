@@ -5,7 +5,7 @@ import {execFileSync} from 'node:child_process';
 const dir='.sites-runtime/snapshot-check';
 fs.mkdirSync(dir,{recursive:true});
 fs.cpSync('lib/data',dir+'/data',{recursive:true});
-for(const name of ['snapshots','election','poll-models','snapshot-store']){
+for(const name of ['snapshots','election','poll-models','ridings','snapshot-store']){
  const code=ts.transpile(fs.readFileSync('lib/'+name+'.ts','utf8'),{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022})
   .replace(/from ['"]cloudflare:workers['"]/g,"from './mock-env'")
   .replace(/from (['"])(\.\/[^'"]+)\1/g,(_,q,p)=>p.endsWith('.json')?`from '${p}' with {type:'json'}`:`from '${p}.js'`);
