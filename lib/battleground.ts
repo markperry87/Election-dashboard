@@ -7,7 +7,8 @@ import type {RidingMarket} from './ridings';
 export const BATTLEGROUND = {
  minVolume: 500,   // US$ traded; thinner markets are listed but not counted
  minMatched: 80,   // % of the market's price mass that must map to known candidates
- wideSpread: 10,   // points between bid and ask on the favourite
+ wideSpread: 10,   // points between bid and ask on the favourite: flagged
+ maxSpread: 30,    // wider than this, the favourite has no real market: not counted
 };
 export type RidingComparison = {
  riding: string; slug: string; volume: number;
@@ -51,8 +52,9 @@ export function battleground(markets: RidingMarket[], astra: AstraResult, opus: 
   const notes: string[] = [];
   if (m.volume < BATTLEGROUND.minVolume) notes.push('Too little trading to count');
   if (matchedTotal / total * 100 < BATTLEGROUND.minMatched) notes.push('Some candidates could not be matched to the Elections BC list');
-  if (spread !== null && spread > BATTLEGROUND.wideSpread) notes.push(`Wide bid/ask spread (${spread.toFixed(0)} points)`);
-  const counted = m.volume >= BATTLEGROUND.minVolume && matchedTotal / total * 100 >= BATTLEGROUND.minMatched;
+  if (spread !== null && spread > BATTLEGROUND.maxSpread) notes.push(`No real market on the favourite (bid/ask ${spread.toFixed(0)} points apart)`);
+  else if (spread !== null && spread > BATTLEGROUND.wideSpread) notes.push(`Wide bid/ask spread (${spread.toFixed(0)} points)`);
+  const counted = m.volume >= BATTLEGROUND.minVolume && matchedTotal / total * 100 >= BATTLEGROUND.minMatched && !(spread !== null && spread > BATTLEGROUND.maxSpread);
   ridings.push({riding: a.name, slug: m.slug, volume: m.volume, market, astra: byParty(a.win), opus: byParty(o.win),
    favourite: {name: top.who!.name, party: top.who!.party, value: market[top.who!.party], spread}, overround: total - 100, counted, ...(notes.length ? {note: notes.join('. ')} : {})});
  }

@@ -61,6 +61,9 @@ assert.equal(strangers.counted,0,'Less than 80% of the price matched');
 assert.deepEqual(battleground([{...parsed,riding:'Atlantis'}],astra,opus).unmatched,['Atlantis']);
 const wide=battleground([{...parsed,quotes:[{...parsed.quotes[0],bid:40,ask:65},parsed.quotes[1]]}],astra,opus);
 assert.match(wide.ridings[0].note,/Wide bid\/ask spread \(25 points\)/);
+assert.equal(wide.counted,1,'A wide spread is flagged but still counted');
+const empty=battleground([{...parsed,quotes:[{...parsed.quotes[0],bid:27,ask:78},parsed.quotes[1]]}],astra,opus);
+assert.equal(empty.counted,0,'No real market on the favourite');assert.match(empty.ridings[0].note,/No real market/);
 
 // Every known slug maps to a district in the forecasts.
 const {key}=await import(`../${out}/astra-inputs.js`);
