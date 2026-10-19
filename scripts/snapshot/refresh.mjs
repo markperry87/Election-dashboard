@@ -33,6 +33,6 @@ try {
  const [election, history] = await Promise.all([get('/api/election'), get('/api/history')]);
  execFileSync(process.execPath, ['scripts/snapshot/build.mjs', outDir, election, history, ...(previousDir ? [previousDir] : [])], {stdio: 'inherit'});
  const e = JSON.parse(fs.readFileSync(election, 'utf8')), h = JSON.parse(fs.readFileSync(history, 'utf8'));
- const saved = ['poly', 'kalshi', 'model', 'northern', 'voteScope', 'astra', 'opus'].filter(k => !e[k].live).concat(['poly', 'kalshi'].filter(k => !h[k].live).map(k => k + ' history'));
+ const saved = ['poly', 'kalshi', 'model', 'northern', 'taylor', 'voteScope', 'astra', 'opus'].filter(k => !e[k].live).concat(['poly', 'kalshi'].filter(k => !h[k].live).map(k => k + ' history'));
  console.log(saved.length ? `Saved data used for: ${saved.join(', ')}` : 'All sources refreshed live.');
 } finally { stop(); }

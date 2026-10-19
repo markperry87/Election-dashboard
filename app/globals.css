@@ -40,3 +40,4 @@ main section[id],main article[id]{scroll-margin-top:20px}
 .toc ul{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0;padding:0;list-style:none}
 .toc a{font-size:14px;color:#c7d5e4;text-decoration:underline;text-decoration-color:#3c5068;text-underline-offset:4px}.toc a:hover{color:#fff;text-decoration-color:#aad1ff}
 @media(max-width:640px){.toc{flex-direction:column;gap:10px;padding:14px;margin:-8px 0 24px}.toc ul{gap:8px 16px}.toc a{font-size:13px}}
+.poll-excluded-row td{color:#9fb1c4}.poll-excluded-row td a{color:#c3d0dd}.poll-table td small.poll-distrust{color:#f0b46a}.poll-distrust-note{color:#d9c3a3}.poll-distrust-note strong{color:#f0b46a}

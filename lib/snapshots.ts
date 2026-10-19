@@ -1,6 +1,6 @@
 import type {Dashboard, Source} from './election';
 
-export const sourceKeys = ['poly', 'kalshi', 'model', 'northern', 'voteScope', 'astra', 'opus'] as const;
+export const sourceKeys = ['poly', 'kalshi', 'model', 'northern', 'taylor', 'voteScope', 'astra', 'opus'] as const;
 export const browserSnapshotKey = 'bc-election-watch:snapshot:v1';
 const stamp = (value: string) => Date.parse(value) || 0;
 
@@ -39,7 +39,7 @@ export function validSource(value: any, key: typeof sourceKeys[number]): boolean
  const quote = (v: unknown) => v === null || num(v);
  if (key === 'poly' || key === 'kalshi') return Array.isArray(d) && ['ndp','con'].every(id => d.some(q => q.id === id)) && d.every(q => q && typeof q.id === 'string' && typeof q.status === 'string' && num(q.volume) && quote(q.price) && quote(q.bid) && quote(q.ask));
  if (key === 'model') return ['indexodds','indexoutcome'].every(k => d[k] && typeof d[k].date === 'string' && Array.isArray(d[k].dates) && d[k].dates.every((v: unknown) => typeof v === 'string') && Array.isArray(d[k].parties) && d[k].parties.length && d[k].parties.every((p: any) => p && typeof p.label === 'string' && num(p.value) && Array.isArray(p.values) && p.values.every(num)));
- if (key === 'northern' || key === 'voteScope') return typeof d.date === 'string' && d.probabilities && num(d.probabilities.con) && num(d.probabilities.ndp);
+ if (key === 'northern' || key === 'taylor' || key === 'voteScope') return typeof d.date === 'string' && d.probabilities && num(d.probabilities.con) && num(d.probabilities.ndp);
  if (key === 'opus' && !(Array.isArray(d.houseEffects) && d.houseEffects.every((h: {firm?: unknown; polls?: unknown} | null) => h && typeof h.firm === 'string' && num(h.polls)))) return false;
  const ids = ['con','ndp','green','one','centre','other'];
  return typeof d.version === 'string' && typeof d.date === 'string' && num(d.tie) && d.probabilities && d.seats && d.candidateCounts && ids.every(id => num(d.probabilities[id]) && num(d.candidateCounts[id]) && d.seats[id] && ['mean','low','high','majority'].every(k => num(d.seats[id][k]))) && Array.isArray(d.pollAverage) && d.pollAverage.every(num) && Array.isArray(d.polls) && d.polls.every((p: any) => p && typeof p.firm === 'string' && (p.n === null || num(p.n)) && Array.isArray(p.shares) && p.shares.every(quote) && Array.isArray(p.sources) && p.sources.every((s: unknown) => typeof s === 'string')) && Array.isArray(d.districts) && d.districts.every((r: any) => r && typeof r.name === 'string' && Array.isArray(r.win) && r.win.length === 6 && r.win.every(num));

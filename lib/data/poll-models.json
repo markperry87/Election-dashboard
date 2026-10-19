@@ -11,6 +11,17 @@
     "fetchedAt": "2026-10-04T17:31:13.775Z",
     "live": false
   },
+  "taylor": {
+    "data": {
+      "date": "2026-10-12",
+      "probabilities": {
+        "con": 73,
+        "ndp": 25
+      }
+    },
+    "fetchedAt": "2026-10-19T19:55:00.000Z",
+    "live": false
+  },
   "voteScope": {
     "data": {
       "date": "2026-10-03",

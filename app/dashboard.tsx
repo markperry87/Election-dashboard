@@ -42,7 +42,7 @@ export default function Dashboard({initial,initialHistory,pollLedger}:{initial:D
  const pv=totalVolume(data.poly.data),kv=totalVolume(data.kalshi.data),pWeight=pv+kv>0?pv/(pv+kv):0;
  const rows=parties.map(p=>{const pq=data.poly.data.find(q=>q.id===p.id),kq=data.kalshi.data.find(q=>q.id===p.id);const pval=quoteValue(pq,mode),kval=quoteValue(kq,mode);return{...p,pq,kq,pval,kval,average:weightedMean(pval,kval,pv,kv),gap:pval!==null&&kval!==null?Math.abs(pval-kval):null};});
  const largest=[...rows].filter(r=>r.gap!==null).sort((a,b)=>b.gap!-a.gap!)[0];const stale=!data.poly.live||!data.kalshi.live;const odds=data.model.data.indexodds;const outcomes=data.model.data.indexoutcome;
- const models=pollModels(data);const polling=pollConsensus(models);const pollStale=models.some(m=>!m.source.live);
+ const models=pollModels(data);const polling=pollConsensus(models);const pollStale=models.some(m=>!m.excluded&&!m.source.live);
  const blend=blendedEstimate(rows,polling);const leader=blend?.[0];const leaderParty=parties.find(p=>p.id===leader?.id);
  const historyRows=useMemo(()=>marketChartRows(history,data),[history,data]);
  const modelOdds=useMemo(()=>modelChartRows(odds),[odds]);const modelOutcomes=useMemo(()=>modelChartRows(outcomes),[outcomes]);

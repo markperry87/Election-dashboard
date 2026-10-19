@@ -7,7 +7,8 @@ export type PollEstimate = {
  // Projected province-wide vote share with an 80% range, where the source publishes one.
  vote?: Partial<Record<'con'|'ndp'|'green'|'one'|'centre'|'other', {mean:number; low:number; high:number}>>;
 };
-export type PollModel = {id:string;name:string;href:string;source:Source<PollEstimate>;basis:string};
+// excluded: shown for reference, with this reason, but left out of the median.
+export type PollModel = {id:string;name:string;href:string;source:Source<PollEstimate>;basis:string;excluded?:string};
 const plain=(html:string)=>html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,' ').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/g,' ').replace(/\s+/g,' ').trim();
 function checked(date:string|undefined,con:number,ndp:number,tie?:number):PollEstimate {
  if(!date||!/^\d{4}-\d{2}-\d{2}$/.test(date)||[con,ndp,...(tie===undefined?[]:[tie])].some(n=>!Number.isFinite(n)||n<0||n>100)||con+ndp>101.5)throw Error('Incomplete most-seats probabilities');
@@ -40,18 +41,38 @@ export function parseVoteScope(json:string):PollEstimate {
  }
  return {...checked(data.meta.run_date,read('bc_con'),read('bc_ndp')),...(Object.keys(vote).length?{vote}:{})};
 }
+// Stephen Taylor publishes "Most seats in N% of simulations" under each party's
+// card, and "As of 12 October 2026" for the projection date.
+export function parseTaylor(html:string):PollEstimate {
+ const text=plain(html);
+ const asOf=text.match(/As of (\d{1,2}) ([A-Za-z]+) (\d{4})/),month=asOf?months.indexOf(asOf[2].slice(0,3).toLowerCase()):-1;
+ const date=asOf&&month>=0?`${asOf[3]}-${String(month+1).padStart(2,'0')}-${asOf[1].padStart(2,'0')}`:undefined;
+ // Attribute each "Most seats" figure to the party named closest before it.
+ const found:{con?:number;ndp?:number}={};
+ for(const m of text.matchAll(/Most seats in (\d+(?:\.\d+)?)% of simulations/g)){
+  const before=text.slice(Math.max(0,m.index!-400),m.index!);
+  const named=[...before.matchAll(/\b(Conservatives?|NDP|New Democrats?)\b/g)].at(-1)?.[1];
+  const id=named?/^Conservative/.test(named)?'con':'ndp':undefined;
+  if(id&&found[id]===undefined)found[id]=Number(m[1]);
+ }
+ if(found.con===undefined||found.ndp===undefined)throw Error('Stephen Taylor most-seats format changed');
+ return checked(date,found.con,found.ndp);
+}
+const VOTE_SCOPE_EXCLUDED='Its 80% vote ranges are only about ±1.8 points, which leaves almost no room for an industry-wide polling miss like BC’s in 2013, when the final polls missed the margin by about 14 points. That narrow band is why its odds run so close to 100%';
 export function pollModels(data:Dashboard):PollModel[] {
  const odds=data.model.data.indexodds;
  const value=(label:string)=>odds.parties.find(p=>p.label===label)?.value??NaN;
  return [
   {id:'338',name:'338Canada',href:'https://338canada.com/bc/',source:{...data.model,data:{date:odds.date,probabilities:{con:value('CPBC'),ndp:value('NDP')},tie:value('Tie')}},basis:'Published odds of winning the most seats'},
   {id:'northern',name:'Northern Vibe',href:'https://northernvibe.ca/en/bc',source:data.northern,basis:'Majority + most seats without a majority; rounded source figures'},
-  {id:'votescope',name:'Vote-Scope',href:'https://vote-scope.com/en/canada/british-columbia/',source:data.voteScope,basis:'P(largest): finishes strictly first'},
+  {id:'taylor',name:'Stephen Taylor',href:'https://www.stephentaylor.ca/data/political/canada/provincial/projection/bc/',source:data.taylor,basis:'Published share of simulations winning the most seats; polling errors sized from 10 past provincial elections'},
   {id:'astra',name:'Astra model',href:'#astra',source:data.astra,basis:'AI-built election-day forecast: 20,000 correlated riding simulations; outright most seats'},
   {id:'opus',name:'Opus 5.5 model',href:'#opus',source:data.opus,basis:'AI-built election-day forecast by Claude Opus 5.5: house-effect-adjusted polls, mixed uniform/proportional swing, fat-tailed joint errors, 10,000 riding simulations; outright most seats'},
+  {id:'votescope',name:'Vote-Scope',href:'https://vote-scope.com/en/canada/british-columbia/',source:data.voteScope,basis:'P(largest): finishes strictly first',excluded:VOTE_SCOPE_EXCLUDED},
  ];
 }
-export function pollConsensus(models:PollModel[]) {
+export function pollConsensus(all:PollModel[]) {
+ const models=all.filter(m=>!m.excluded);
  return (['con','ndp'] as const).map(id=>{
   const values=models.map(m=>m.source.data.probabilities[id]).filter(Number.isFinite).sort((a,b)=>a-b);
   if(values.length!==models.length||!values.length)return {id,median:null,min:null,max:null,spread:null};

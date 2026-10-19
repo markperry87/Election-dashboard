@@ -8,6 +8,16 @@ const parsers=await import('../.sites-runtime/astra-check/astra-inputs.js');
 const {pollConsensus}=await import('../.sites-runtime/astra-check/poll-models.js');
 const mock=[10,20,70,80].map((v,i)=>({id:String(i),source:{data:{probabilities:{con:v,ndp:100-v}}}}));
 assert.equal(pollConsensus(mock)[0].median,45);assert.equal(pollConsensus(mock)[0].spread,70);
+// An excluded model is listed but never moves the median or the spread.
+assert.deepEqual(pollConsensus([...mock,{id:'x',excluded:'test',source:{data:{probabilities:{con:99.7,ndp:.3}}}}])[0],pollConsensus(mock)[0]);
+{
+ const {parseTaylor}=await import('../.sites-runtime/astra-check/poll-models.js');
+ const page=`<h1>British Columbia seat projection</h1><p>As of 12 October 2026, from 53 polls · election day 24 October 2026</p><p>the Conservatives win a median of 53 seats (90% range 32–73) and a majority in 72%. No party wins a majority in 5%.</p>
+ <div class="card"><h3>Conservative</h3><b>53</b><span>Majority in 72%</span><span>Most seats in 73% of simulations</span></div>
+ <div class="card"><h3>NDP</h3><b>38</b><span>Majority in 24%</span><span>Most seats in 25% of simulations</span></div>`;
+ assert.deepEqual(parseTaylor(page),{date:'2026-10-12',probabilities:{con:73,ndp:25}});
+ assert.throws(()=>parseTaylor(page.replaceAll('Most seats','Plurality')));
+}
 const date=process.argv[2]??'2026-10-05';
 const supplemental=JSON.parse(fs.readFileSync('lib/data/astra-supplemental-polls.json'));
 const report=supplemental[0];
