@@ -20,5 +20,16 @@
     "sources": ["Angus Reid Institute release, Oct 19, 2026 (reported by Jas Johal @JasJohalBC, Indo-Canadian Voice, Castanet); user-supplied screenshot"],
     "provisional": true,
     "note": "Reported topline from secondary coverage; not yet in any catalog. Fieldwork Oct 15-19 online, n=793 B.C. adults (MoE +/-3); the decided-voter base for vote intention may be smaller. Other 3% is an undivided bucket including OneBC and CentreBC; those parties are unknown, not zero. Under Astra's existing method, this poll informs the three named parties; the undivided Other bucket is excluded from the minor-party averages."
+  },
+  {
+    "firm": "Innovative",
+    "start": "2026-10-15",
+    "end": "2026-10-19",
+    "reportedAt": "2026-10-20",
+    "n": 1000,
+    "shares": [43, 38, 12, null, null, 7],
+    "sources": ["Innovative Research Group release, Oct 20, 2026 (reported by Jas Johal @JasJohalBC, reposted by Rob Shaw); user-supplied screenshot"],
+    "provisional": true,
+    "note": "Reported decided-vote topline from secondary coverage; not yet in any catalog (checked Vote-Scope Oct 20). Fieldwork Oct 15-19 online panel, 1,153 unweighted respondents; results weighted to n=1,000, which is used here. Other 7% is the remainder after the three named parties and is an undivided bucket; OneBC and CentreBC are unknown, not zero. Under Astra's existing method, this poll informs the three named parties; the undivided Other bucket is excluded from the minor-party averages."
   }
 ]
