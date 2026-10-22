@@ -31,5 +31,16 @@
     "sources": ["Innovative Research Group release, Oct 20, 2026 (reported by Jas Johal @JasJohalBC, reposted by Rob Shaw); user-supplied screenshot"],
     "provisional": true,
     "note": "Reported decided-vote topline from secondary coverage; not yet in any catalog (checked Vote-Scope Oct 20). Fieldwork Oct 15-19 online panel, 1,153 unweighted respondents; results weighted to n=1,000, which is used here. Other 7% is the remainder after the three named parties and is an undivided bucket; OneBC and CentreBC are unknown, not zero. Under Astra's existing method, this poll informs the three named parties; the undivided Other bucket is excluded from the minor-party averages."
+  },
+  {
+    "firm": "Leger",
+    "start": "2026-10-20",
+    "end": "2026-10-22",
+    "reportedAt": "2026-10-22",
+    "n": 1072,
+    "shares": [44, 39, 13, null, null, 4],
+    "sources": ["Leger release, Oct 22, 2026 (leger360.com/bc-election-2026-october22-poll)"],
+    "provisional": true,
+    "note": "Final campaign poll; not yet in any catalog (checked Vote-Scope, Northern Vibe and 338Canada Oct 22). Fieldwork Oct 20-22, online LEO panel, n=1,072 B.C. adults; 6% undecided, so the decided-voter base is somewhat smaller than the n used here. Other 4% is the remainder after the three named parties and is an undivided bucket; OneBC and CentreBC are unknown, not zero. Under Astra's existing method, this poll informs the three named parties; the undivided Other bucket is excluded from the minor-party averages."
   }
 ]
