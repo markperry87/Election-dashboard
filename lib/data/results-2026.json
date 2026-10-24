@@ -1,0 +1,9 @@
+{
+  "status": "pending",
+  "updatedAt": null,
+  "source": "https://elections.bc.ca/resources/results/provincial-election-results/",
+  "note": "Fill in from Elections BC. ridings maps each district name (as in astra-baseline.json) to the winning party id: con, ndp, green, one, centre or other. seats may be left null when all 93 ridings are listed; it is then counted from them. vote is the province-wide popular vote in percent, or null. Run node scripts/scorecard-check.mjs after editing.",
+  "seats": null,
+  "vote": null,
+  "ridings": {}
+}

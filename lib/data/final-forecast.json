@@ -1,0 +1,7 @@
+{
+  "frozenAt": null,
+  "note": "Filled once, after election day, by scripts/freeze-final.mjs from the last published snapshot. Until then the live forecasts are used.",
+  "snapshotCheckedAt": null,
+  "astra": null,
+  "opus": null
+}

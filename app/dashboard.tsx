@@ -8,6 +8,7 @@ import PopularVote from './popular-vote';
 import Battleground from './battleground';
 import type {PollLedger} from '@/lib/poll-ledger';
 import PollComparison from './poll-comparison';
+import Scorecard from './scorecard';
 import {browserSnapshotKey,decodeSnapshot,encodeSnapshot,mergeSnapshots,savedSnapshot} from '@/lib/snapshots';
 import {pollModels,pollConsensus} from '@/lib/poll-models';
 import type {Histories} from '@/lib/history';
@@ -23,7 +24,7 @@ const modelName=(s:string)=>s.replace('CPBC','BC Conservatives').replace(/^NDP/,
 const color=(s:string)=>s.includes('CPBC')?'#567fe9':s.includes('NDP')?'#df762e':'#82919f';
 function Status({name,source,href}:{name:string;source:Source<unknown>;href:string}){return <div className="source"><a href={href} target="_blank" rel="noreferrer">{name}<ArrowUpRight size={14}/></a><span className={source.live?'success':'warning'}>{source.live?'Fetched successfully':source.error?.includes('429')?'Rate-limited · saved snapshot':'Saved snapshot'}</span><small>{time(source.fetchedAt)}</small>{source.error&&<p>{source.error}{source.retryAt&&<> Next attempt after {time(source.retryAt)} while open.</>}</p>}</div>}
 // Jump links shown under the page heading, in page order.
-const sections=[['takeaway','Headline estimate'],['polling','Polling models'],['latest-polls','Latest polls'],['popular-vote','Popular vote'],['astra','Astra model'],['opus','Opus 5.5 model'],['markets','Prediction markets'],['battleground','Battleground ridings'],['history-338','338Canada history'],['sources','Sources & method']];
+const sections=[['takeaway','Headline estimate'],['scorecard','Forecast scorecard'],['polling','Polling models'],['latest-polls','Latest polls'],['popular-vote','Popular vote'],['astra','Astra model'],['opus','Opus 5.5 model'],['markets','Prediction markets'],['battleground','Battleground ridings'],['history-338','338Canada history'],['sources','Sources & method']];
 const dollars=(v:number)=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v);
 export default function Dashboard({initial,initialHistory,pollLedger}:{initial:Data;initialHistory:Histories;pollLedger?:PollLedger}){
  const[history,setHistory]=useState(initialHistory);const[historyBusy,setHistoryBusy]=useState(true);
@@ -52,6 +53,7 @@ export default function Dashboard({initial,initialHistory,pollLedger}:{initial:D
  <div className="refreshline" aria-live="polite">{error|| (busy?'Showing the latest saved figures while checking sources…':`Checked ${time(data.checkedAt)} · Refreshes every 5 minutes while open`)}{!busy&&stale&&<span className="warning">Includes saved market data</span>}</div>
  <nav className="toc" aria-label="On this page"><span className="toc-label">On this page</span><ul>{sections.map(([id,label])=><li key={id}><a href={'#'+id}>{label}</a></li>)}</ul></nav>
  <section id="takeaway" className="takeaway" aria-label="Combined election estimate"><div><div className="eyebrow">MARKETS + POLLING MODELS · COMBINED TAKEAWAY</div><h2>{leaderParty?.name??'Estimate unavailable'}{leader&&' lead the blend'}</h2><p>Estimated chance of winning the most seats</p><div className="blend-label">50% volume-weighted markets · 50% polling-model median</div>{leader&&<div className="headline-inputs"><span>Markets <b>{pct(leader.market)}</b></span><span>Polling median <b>{pct(leader.model)}</b></span></div>}</div><div className="takeaway-number" style={{color:leaderParty?.color}}>{pct(leader?.value??null)}</div><div className="blend-method"><strong>Illustrative blend, not a validated forecast.</strong> Markets and polling models overlap in their information. This averages two perspectives; it does not add independent evidence.{(stale||pollStale)&&<span className="warning"> Includes saved source data.</span>}</div><details className="blend-detail"><summary>See the calculation for both leading parties</summary><p>Headline = (normalized market consensus + polling-model median) ÷ 2, for each leading party. Market prices are volume-weighted across the two exchanges and normalized across all five matched parties. The polling median is used exactly as displayed below. Party medians need not sum to 100%, so blended estimates are not forced to total 100%. Markets apply their own tie-breaking rules; the polling estimates exclude ties.</p><div className="table-scroll"><table><thead><tr><th>Outcome</th><th>Markets (normalized)</th><th>Polling median</th><th>Combined</th></tr></thead><tbody>{blend?.map(b=><tr key={b.id}><th>{parties.find(p=>p.id===b.id)?.name??'Seat tie'}</th><td>{pct(b.market)}</td><td>{pct(b.model)}</td><td>{pct(b.value)}</td></tr>)}</tbody></table></div></details></section>
+ <Scorecard astra={data.astra} opus={data.opus}/>
  <PollComparison models={models}/>
  <LatestPolls polls={data.astra.data.polls} ledger={pollLedger}/>
  <PopularVote astra={data.astra.data} opus={data.opus.data} voteScope={data.voteScope}/>

@@ -7,12 +7,14 @@ import {ASTRA_URLS,parse338Polls,parseCandidates,parseNorthernPolls,parseVotePol
 import {runAstra,hash,type AstraResult,ELECTION_DAY,ASTRA_VERSION} from './astra-model';
 import {runOpus,type OpusResult,OPUS_VERSION} from './opus-model';
 import type {Source} from './election';
+import {finalForecast} from './final-forecast';
 import {env} from 'cloudflare:workers';
 
 // Astra and the Opus model share fetched inputs and one cache record.
 const cacheKey='current-v'+ASTRA_VERSION+'-opus'+OPUS_VERSION+'-vote1-inputs-2026-10-05';
 type RecordState={source:Source<AstraResult>;opus:Source<OpusResult>;polls:Poll[];candidates:Candidate[];lastAttempt:number;feeds:{name:string;checkedAt:string;ok:boolean;error?:string}[];inputKey?:string};
-const initial:RecordState={source:seedResult as Source<AstraResult>,opus:opusSeed as unknown as Source<OpusResult>,polls:withSupplementalPolls(seedInputs.polls as Poll[],supplemental as Poll[]),candidates:seedInputs.candidates as Candidate[],lastAttempt:0,feeds:[]};
+// Once frozen after election day, the final forecasts replace the October 5 seeds.
+const initial:RecordState={source:finalForecast.astra??seedResult as Source<AstraResult>,opus:finalForecast.opus??opusSeed as unknown as Source<OpusResult>,polls:withSupplementalPolls(seedInputs.polls as Poll[],supplemental as Poll[]),candidates:seedInputs.candidates as Candidate[],lastAttempt:0,feeds:[]};
 let memory=initial,inFlight:Promise<RecordState>|null=null;
 const today=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'America/Vancouver',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 export async function getAstra():Promise<RecordState>{

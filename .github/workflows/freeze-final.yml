@@ -1,0 +1,64 @@
+# Commits the final election-day Astra and Opus forecasts to lib/data/final-forecast.json,
+# taken from the last snapshot published on election day. Runs once, after the
+# 6:17 p.m. PT update on October 24; can also be started by hand.
+name: Freeze final forecasts
+
+on:
+  schedule:
+    # 03:37 UTC on October 25 = 8:37 p.m. PDT on October 24, after the last scheduled update.
+    - cron: "37 3 25 10 *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Replace an already frozen forecast
+        type: boolean
+        default: false
+      allow_earlier:
+        description: Allow forecasts not dated election day
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: freeze-final
+  cancel-in-progress: false
+
+jobs:
+  freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Only for the 2026 election
+        id: window
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%Y)" != "2026" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.window.outputs.skip != 'true'
+      - uses: actions/setup-node@v4
+        if: steps.window.outputs.skip != 'true'
+        with:
+          node-version: 22
+      - name: Download the published snapshot
+        if: steps.window.outputs.skip != 'true'
+        run: |
+          base="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          curl -fsSL --retry 3 --retry-delay 10 "$base/snapshot-data.json?t=$(date +%s)" -o "$RUNNER_TEMP/snapshot-data.json"
+      - name: Freeze the forecasts
+        if: steps.window.outputs.skip != 'true'
+        env:
+          FORCE: ${{ inputs.force && '1' || '' }}
+          ALLOW_EARLIER: ${{ inputs.allow_earlier && '1' || '' }}
+        run: node scripts/freeze-final.mjs "$RUNNER_TEMP/snapshot-data.json"
+      - name: Commit
+        if: steps.window.outputs.skip != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add lib/data/final-forecast.json
+          if git diff --cached --quiet; then echo "Nothing changed."; exit 0; fi
+          git commit -m "Freeze final election-day forecasts"
+          git push

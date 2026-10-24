@@ -5,6 +5,7 @@ import modelSeed from './data/model.json';
 import pollSeeds from './data/poll-models.json';
 import astraSeed from './data/astra-result.json';
 import opusSeed from './data/opus-result.json';
+import {finalForecast} from './final-forecast';
 import type {AstraResult} from './astra-model';
 import type {OpusResult} from './opus-model';
 import {parseNorthern,parseTaylor,parseVoteScope,type PollEstimate} from './poll-models';
@@ -25,7 +26,7 @@ function validate(q:Quote[]) { if(!q.some(v=>v.id==='ndp'&&v.price!==null)||!q.s
 // 338Canada has switched to French labels (PCCB, NPD, Égalité); store English ones.
 const englishLabel=(label:string)=>label.trim().replace(/^PCCB(?= |$)/,'CPBC').replace(/^NPD(?= |$)/,'NDP').replace(/^(Égalité|Egalite)$/i,'Tie').replace(/ majoritaire$/,' majority').replace(/ minoritaire$/,' plurality');
 export function parseModel(html:string):Model { const result:any={};for(const name of ['indexodds','indexoutcome']){const section=html.split('window.'+name+'_DATA = {')[1]?.split('</script>')[0];if(!section)throw new Error('Projection format changed');const dates=[...section.split('rangeOptions:')[0].matchAll(/'(\d{4}-\d{2}-\d{2})'/g)].map(m=>m[1]);const rows=[...section.matchAll(/label:\s*'([^']+)'[\s\S]*?values:\s*\[([^\]]+)\]/g)].map(m=>{const values=m[2].split(',').filter(v=>v.trim()).map(Number);if(values.length!==dates.length)throw new Error('Projection dates do not match values');return {label:englishLabel(m[1]),value:values[values.length-1],values};});if(!dates.length||rows.length<(name==='indexodds'?3:5)||rows.some(r=>!Number.isFinite(r.value)||r.value<0||r.value>100))throw new Error('Incomplete projection');result[name]={date:dates[dates.length-1],parties:rows,dates};}return result; }
-export const initialData:Dashboard={poly:{data:parsePoly(polySeed),fetchedAt:seedTime,live:false},kalshi:{data:parseKalshi(kalshiSeed),fetchedAt:seedTime,live:false},model:{data:modelSeed,fetchedAt:pollSeeds.northern.fetchedAt,live:false},northern:pollSeeds.northern,taylor:pollSeeds.taylor,voteScope:pollSeeds.voteScope,ridings:{data:[],fetchedAt:seedTime,live:false},astra:astraSeed as Source<AstraResult>,opus:opusSeed as unknown as Source<OpusResult>,checkedAt:seedTime};
+export const initialData:Dashboard={poly:{data:parsePoly(polySeed),fetchedAt:seedTime,live:false},kalshi:{data:parseKalshi(kalshiSeed),fetchedAt:seedTime,live:false},model:{data:modelSeed,fetchedAt:pollSeeds.northern.fetchedAt,live:false},northern:pollSeeds.northern,taylor:pollSeeds.taylor,voteScope:pollSeeds.voteScope,ridings:{data:[],fetchedAt:seedTime,live:false},astra:finalForecast.astra??astraSeed as Source<AstraResult>,opus:finalForecast.opus??opusSeed as unknown as Source<OpusResult>,checkedAt:seedTime};
 export function quoteValue(q:Quote|undefined,mode:'reported'|'midpoint'){if(!q)return null;if(mode==='reported')return q.price;if(q.bid===null||q.ask===null||q.bid>q.ask||q.status!=='active')return null;return(q.bid+q.ask)/2;}
 let latest:Dashboard=initialData;
 let inFlight:Promise<Dashboard>|null=null;
